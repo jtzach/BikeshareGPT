@@ -1,0 +1,23 @@
+run:
+  name: gbfs_bench_v1
+  output_root: outputs
+  model_main: gpt-4o
+  model_summary: gpt-4o-mini
+  model_moderation: gpt-4o-mini
+  temperature: 0.0
+  max_retries: 2
+  timeout_seconds: 30
+  parallelism: 1
+  seed: 42
+
+# In dataset mode, feeds are not required. The runner loads snapshots referenced by tasks.jsonl.
+feeds: []
+
+benchmark:
+  # Dataset mode: load tasks + snapshots from this folder (no downloads, no task generation)
+  dataset_path: benchmarks/gbfs_bench_v1
+
+  # You can toggle tracks on/off without editing the dataset:
+  semantics: true
+  retrieval: true
+  synthesis: true

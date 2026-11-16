@@ -1,0 +1,13 @@
+{
+  "last_updated": 1771440703,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "system_id": "dockless_sample",
+    "language": "en",
+    "name": "Munich Dockless Bike Share",
+    "operator": "Sample Operator",
+    "url": "https://example.com/dockless_sample",
+    "timezone": "Europe/Berlin"
+  }
+}

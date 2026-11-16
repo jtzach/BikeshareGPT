@@ -1,0 +1,13 @@
+{
+  "name": "gemma3-4b",
+  "provider": "ollama",
+  "model_main": "gemma3:4b",
+  "model_summary": "gemma3:4b",
+  "size_label": "4B",
+  "notes": null,
+  "summary_enabled": true,
+  "temperature": 0.0,
+  "max_retries": 2,
+  "base_url": null,
+  "api_key_env": null
+}

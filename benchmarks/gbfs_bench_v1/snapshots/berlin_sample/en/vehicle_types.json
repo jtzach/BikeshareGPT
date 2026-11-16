@@ -1,0 +1,21 @@
+{
+  "last_updated": 1771440671,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "vehicle_types": [
+      {
+        "vehicle_type_id": "bike",
+        "form_factor": "bicycle",
+        "propulsion_type": "human",
+        "name": "Standard Bike"
+      },
+      {
+        "vehicle_type_id": "ebike",
+        "form_factor": "bicycle",
+        "propulsion_type": "electric_assist",
+        "name": "E-Bike"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "run": "ministral_3_14b",
+  "model_label": "ministral-3-14b",
+  "provider": "ollama",
+  "model_main": "ministral-3:14b",
+  "size_label": "14B",
+  "num_tasks": 300,
+  "completed_tasks": 300,
+  "by_category": {
+    "semantics": {
+      "n": 100,
+      "accuracy": 1.0,
+      "exec_success_rate": 1.0,
+      "total_tokens": 135177,
+      "total_wall_time_s": 400.3465805053711
+    },
+    "retrieval": {
+      "n": 100,
+      "accuracy": 0.45,
+      "exec_success_rate": 0.99,
+      "total_tokens": 153603,
+      "total_wall_time_s": 1082.6406779289246
+    },
+    "synthesis": {
+      "n": 100,
+      "accuracy": 0.51,
+      "exec_success_rate": 0.97,
+      "total_tokens": 204969,
+      "total_wall_time_s": 1220.8109493255615
+    }
+  },
+  "overall": {
+    "n": 300,
+    "accuracy": 0.6533333333333333,
+    "exec_success_rate": 0.9866666666666667,
+    "total_tokens": 493749,
+    "total_wall_time_s": 2703.798207759857
+  }
+}

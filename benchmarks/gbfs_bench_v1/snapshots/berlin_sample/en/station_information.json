@@ -1,0 +1,58 @@
+{
+  "last_updated": 1771440671,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "B001",
+        "name": "Hauptbahnhof",
+        "lat": 52.52508,
+        "lon": 13.3694,
+        "capacity": 30
+      },
+      {
+        "station_id": "B002",
+        "name": "Brandenburger Tor",
+        "lat": 52.516275,
+        "lon": 13.377704,
+        "capacity": 20
+      },
+      {
+        "station_id": "B003",
+        "name": "Alexanderplatz",
+        "lat": 52.521918,
+        "lon": 13.413215,
+        "capacity": 25
+      },
+      {
+        "station_id": "B004",
+        "name": "Potsdamer Platz",
+        "lat": 52.509648,
+        "lon": 13.376,
+        "capacity": 18
+      },
+      {
+        "station_id": "B005",
+        "name": "Friedrichstraße",
+        "lat": 52.52067,
+        "lon": 13.3873,
+        "capacity": 15
+      },
+      {
+        "station_id": "B006",
+        "name": "East Side Gallery",
+        "lat": 52.505,
+        "lon": 13.439,
+        "capacity": 12
+      },
+      {
+        "station_id": "B007",
+        "name": "Tempelhofer Feld",
+        "lat": 52.473,
+        "lon": 13.403,
+        "capacity": 22
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "last_updated": 1772283206,
+  "ttl": 60,
+  "data": {
+    "regions": [
+      {
+        "region_id": "775",
+        "name": "MV-Rad"
+      },
+      {
+        "region_id": "949",
+        "name": "MV-Rad Scooter"
+      }
+    ]
+  },
+  "version": "2.3"
+}

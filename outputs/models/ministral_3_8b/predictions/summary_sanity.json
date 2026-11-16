@@ -1,0 +1,27 @@
+{
+  "by_category": {
+    "semantics": {
+      "n": 100,
+      "accuracy": 0.87
+    },
+    "retrieval": {
+      "n": 100,
+      "accuracy": 0.47
+    },
+    "synthesis": {
+      "n": 100,
+      "accuracy": 0.35
+    }
+  },
+  "overall": {
+    "n": 300,
+    "accuracy": 0.5633333333333334
+  },
+  "meta": {
+    "checked_failures": 20,
+    "promoted_to_correct": 0,
+    "max_checks": 20,
+    "total_tokens": 7899,
+    "total_wall_time_s": 93.25158619880676
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "last_updated": 0,
+  "ttl": 60,
+  "data": {
+    "en": {
+      "feeds": [
+        {
+          "name": "system_information",
+          "url": "en/system_information.json"
+        },
+        {
+          "name": "vehicle_types",
+          "url": "en/vehicle_types.json"
+        },
+        {
+          "name": "station_information",
+          "url": "en/station_information.json"
+        },
+        {
+          "name": "station_status",
+          "url": "en/station_status.json"
+        }
+      ]
+    }
+  },
+  "version": "2.3"
+}

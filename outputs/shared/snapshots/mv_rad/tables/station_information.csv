@@ -1,0 +1,65 @@
+station_id,name,short_name,lat,lon,region_id,is_virtual_station,capacity,rental_uris.android,rental_uris.ios,rental_uris.web
+65937,Ferienwohnanlage `Alte Molkerei` Liepe 5533,5533,53.969416,13.944654,775,False,12.0,https://mvrad.nextbike.app/station?id=65937,https://mvrad.nextbike.app/station?id=65937,https://nxtb.it/p/65937
+66429,57125 Bahnhof Anklam,57125,53.855675,13.701625,775,False,8.0,https://mvrad.nextbike.app/station?id=66429,https://mvrad.nextbike.app/station?id=66429,https://nxtb.it/p/66429
+66430,57126 Rathaus Anklam ,57126,53.856159,13.688149,775,False,10.0,https://mvrad.nextbike.app/station?id=66430,https://mvrad.nextbike.app/station?id=66430,https://nxtb.it/p/66430
+66431,57127 Naturcamping Lassan,57127,53.947513,13.857255,775,False,6.0,https://mvrad.nextbike.app/station?id=66431,https://mvrad.nextbike.app/station?id=66431,https://nxtb.it/p/66431
+66432,Bahnhof Züssow 5539,5539,53.973771,13.548503,775,False,4.0,https://mvrad.nextbike.app/station?id=66432,https://mvrad.nextbike.app/station?id=66432,https://nxtb.it/p/66432
+128091,57129 Hotel Leuchtfeuer Freest,57129,54.133235,13.732499,775,False,10.0,https://mvrad.nextbike.app/station?id=128091,https://mvrad.nextbike.app/station?id=128091,https://nxtb.it/p/128091
+128093,57130 Marina Kröslin,57130,54.12153,13.753611,775,False,10.0,https://mvrad.nextbike.app/station?id=128093,https://mvrad.nextbike.app/station?id=128093,https://nxtb.it/p/128093
+139977,57132 Tourismus Information Ueckermünde,57132,53.735804,14.049103,775,False,10.0,https://mvrad.nextbike.app/station?id=139977,https://mvrad.nextbike.app/station?id=139977,https://nxtb.it/p/139977
+139983,57133 Haffbad Ueckermünde,57133,53.748064,14.071598,775,False,4.0,https://mvrad.nextbike.app/station?id=139983,https://mvrad.nextbike.app/station?id=139983,https://nxtb.it/p/139983
+153092,57141 Hotel Ostseeländer Züssow,57141,53.97987,13.553034,775,False,6.0,https://mvrad.nextbike.app/station?id=153092,https://mvrad.nextbike.app/station?id=153092,https://nxtb.it/p/153092
+153213,57139 Kurverwaltung Seebad Lubmin,57139,54.133252,13.615091,775,False,20.0,https://mvrad.nextbike.app/station?id=153213,https://mvrad.nextbike.app/station?id=153213,https://nxtb.it/p/153213
+153216,57137 Seebrücke Seebad Lubmin,57137,54.137152,13.613144,775,False,8.0,https://mvrad.nextbike.app/station?id=153216,https://mvrad.nextbike.app/station?id=153216,https://nxtb.it/p/153216
+153220,57138 Marina Seebad Lubmin,57138,54.150887,13.64826,775,False,10.0,https://mvrad.nextbike.app/station?id=153220,https://mvrad.nextbike.app/station?id=153220,https://nxtb.it/p/153220
+199129,57161 Bahnhof Mirow,57161,53.270528,12.820653,775,False,12.0,https://mvrad.nextbike.app/station?id=199129,https://mvrad.nextbike.app/station?id=199129,https://nxtb.it/p/199129
+199130,57142 Waldcamp Freest ,57142,54.139512,13.717461,775,False,11.0,https://mvrad.nextbike.app/station?id=199130,https://mvrad.nextbike.app/station?id=199130,https://nxtb.it/p/199130
+199134,57143 Naturparkzentrum Stolpe bei Anklam,57143,53.873687,13.559441,775,False,9.0,https://mvrad.nextbike.app/station?id=199134,https://mvrad.nextbike.app/station?id=199134,https://nxtb.it/p/199134
+199140,"57144 Pension ""Zum Himmel"" Groß Ernsthof",57144,54.080157,13.74586,775,False,8.0,https://mvrad.nextbike.app/station?id=199140,https://mvrad.nextbike.app/station?id=199140,https://nxtb.it/p/199140
+272373,57145 Postel Wolgast,57145,54.053024,13.774113,775,False,7.0,https://mvrad.nextbike.app/station?id=272373,https://mvrad.nextbike.app/station?id=272373,https://nxtb.it/p/272373
+350543,57135 Rungeplatz Wolgast,57135,54.053241,13.780718,775,False,14.0,https://mvrad.nextbike.app/station?id=350543,https://mvrad.nextbike.app/station?id=350543,https://nxtb.it/p/350543
+417339,57136 Alte Schnitterkate Lassan,57136,53.949844,13.846615,775,False,10.0,https://mvrad.nextbike.app/station?id=417339,https://mvrad.nextbike.app/station?id=417339,https://nxtb.it/p/417339
+31395158,57150 Hotel Anklamer Hof,57150,53.855052,13.690231,775,False,16.0,https://mvrad.nextbike.app/station?id=31395158,https://mvrad.nextbike.app/station?id=31395158,https://nxtb.it/p/31395158
+76245743,57101 DJH-Jugendherberge Prora,57101,54.451273,13.569113,775,False,71.0,https://mvrad.nextbike.app/station?id=76245743,https://mvrad.nextbike.app/station?id=76245743,https://nxtb.it/p/76245743
+76245875,57103 DJH-Jugendherberge Binz,57103,54.403915,13.610334,775,False,19.0,https://mvrad.nextbike.app/station?id=76245875,https://mvrad.nextbike.app/station?id=76245875,https://nxtb.it/p/76245875
+76246101,57105 DJH-Jugendherberge Sellin,57105,54.372459,13.70096,775,False,21.0,https://mvrad.nextbike.app/station?id=76246101,https://mvrad.nextbike.app/station?id=76246101,https://nxtb.it/p/76246101
+76246285,57109 DJH-Jugendherberge Stralsund ,57109,54.267684,13.143176,775,False,10.0,https://mvrad.nextbike.app/station?id=76246285,https://mvrad.nextbike.app/station?id=76246285,https://nxtb.it/p/76246285
+76289016,57111 DJH-Jugendherberge Sellin,57111,53.494754,13.320059,775,False,10.0,https://mvrad.nextbike.app/station?id=76289016,https://mvrad.nextbike.app/station?id=76289016,https://nxtb.it/p/76289016
+76289121,57113 DJH-Jugendherberge Mirow ,57113,53.289998,12.795183,775,False,12.0,https://mvrad.nextbike.app/station?id=76289121,https://mvrad.nextbike.app/station?id=76289121,https://nxtb.it/p/76289121
+76289246,57115 DJH-Jugendherberge Waren,57115,53.504525,12.690787,775,False,10.0,https://mvrad.nextbike.app/station?id=76289246,https://mvrad.nextbike.app/station?id=76289246,https://nxtb.it/p/76289246
+76289539,57119 DJH-Jugendherberge Warnemünde,57119,54.175632,12.058179,775,False,20.0,https://mvrad.nextbike.app/station?id=76289539,https://mvrad.nextbike.app/station?id=76289539,https://nxtb.it/p/76289539
+76289676,57121 DJH-Jugendherberge Wismar,57121,53.889226,11.438554,775,False,11.0,https://mvrad.nextbike.app/station?id=76289676,https://mvrad.nextbike.app/station?id=76289676,https://nxtb.it/p/76289676
+96809355,57160 Amt Mecklenburgische Kleinseenplatte,57160,53.278345,12.816058,775,False,6.0,https://mvrad.nextbike.app/station?id=96809355,https://mvrad.nextbike.app/station?id=96809355,https://nxtb.it/p/96809355
+99962532,57155 Hotel Gutshaus Kajahn ,57155,54.287387,13.216381,775,False,8.0,https://mvrad.nextbike.app/station?id=99962532,https://mvrad.nextbike.app/station?id=99962532,https://nxtb.it/p/99962532
+255713801,57180 Tourismusinfo u. Rathaus Pasewalk,57180,53.503488,13.988224,775,False,8.0,https://mvrad.nextbike.app/station?id=255713801,https://mvrad.nextbike.app/station?id=255713801,https://nxtb.it/p/255713801
+255713854,57184 An der Kürassierkaserne Pasewalk,57184,53.49851,13.99044,775,False,8.0,https://mvrad.nextbike.app/station?id=255713854,https://mvrad.nextbike.app/station?id=255713854,https://nxtb.it/p/255713854
+255713882,57182 Hauptbahnhof Pasewalk,57182,53.514682,13.989319,775,False,8.0,https://mvrad.nextbike.app/station?id=255713882,https://mvrad.nextbike.app/station?id=255713882,https://nxtb.it/p/255713882
+255727865,57165 Bildungs und Erlebnishaus/ Fleeth,57165,53.214668,12.851665,775,False,12.0,https://mvrad.nextbike.app/station?id=255727865,https://mvrad.nextbike.app/station?id=255727865,https://nxtb.it/p/255727865
+255731882,57190 Scheune Bollewick,57190,53.35335,12.577661,775,False,8.0,https://mvrad.nextbike.app/station?id=255731882,https://mvrad.nextbike.app/station?id=255731882,https://nxtb.it/p/255731882
+340786035,57187 Lockschuppen Pasewalk,57187,53.517023,13.990971,775,False,10.0,https://mvrad.nextbike.app/station?id=340786035,https://mvrad.nextbike.app/station?id=340786035,https://nxtb.it/p/340786035
+393842949,57154 Seebad Altefähr/ Rügen,57154,54.329535,13.122944,775,False,10.0,https://mvrad.nextbike.app/station?id=393842949,https://mvrad.nextbike.app/station?id=393842949,https://nxtb.it/p/393842949
+414195423,57081 Hafen Ueckermünde/ Reederei Peters,57081,53.736693,14.050548,775,False,8.0,https://mvrad.nextbike.app/station?id=414195423,https://mvrad.nextbike.app/station?id=414195423,https://nxtb.it/p/414195423
+414200360,57175 Biber Ferienhof/ Diemitz,57175,53.20717,12.861434,775,False,10.0,https://mvrad.nextbike.app/station?id=414200360,https://mvrad.nextbike.app/station?id=414200360,https://nxtb.it/p/414200360
+448298966,57152 Hafen Altwarp,57152,53.738283,14.270371,775,False,10.0,https://mvrad.nextbike.app/station?id=448298966,https://mvrad.nextbike.app/station?id=448298966,https://nxtb.it/p/448298966
+474395971,57233 Friedrich von Schill- Kaserne Spechtberg Torgelow,57233,53.643239,14.044572,775,False,12.0,https://mvrad.nextbike.app/station?id=474395971,https://mvrad.nextbike.app/station?id=474395971,https://nxtb.it/p/474395971
+474397171,57232 Bahnhof Torgelow,57232,53.634333,14.009049,775,False,11.0,https://mvrad.nextbike.app/station?id=474397171,https://mvrad.nextbike.app/station?id=474397171,https://nxtb.it/p/474397171
+474397909,57236 Wasserwanderrastplatz Torgelow,57236,53.631878,14.016023,775,False,8.0,https://mvrad.nextbike.app/station?id=474397909,https://mvrad.nextbike.app/station?id=474397909,https://nxtb.it/p/474397909
+474401109,57234 Jugendherberge Torgelow,57234,53.629009,14.013436,775,False,13.0,https://mvrad.nextbike.app/station?id=474401109,https://mvrad.nextbike.app/station?id=474401109,https://nxtb.it/p/474401109
+474717387,57235 Heidebad Torgelow,57235,53.63967,14.016715,775,False,8.0,https://mvrad.nextbike.app/station?id=474717387,https://mvrad.nextbike.app/station?id=474717387,https://nxtb.it/p/474717387
+500773929,57238 Rathaus Eggesin,57238,53.681996,14.078534,775,False,8.0,https://mvrad.nextbike.app/station?id=500773929,https://mvrad.nextbike.app/station?id=500773929,https://nxtb.it/p/500773929
+500775367,57153 Bahnhof Eggesin,57153,53.681427,14.071802,775,False,10.0,https://mvrad.nextbike.app/station?id=500775367,https://mvrad.nextbike.app/station?id=500775367,https://nxtb.it/p/500775367
+522538972,57221 Campus Carolinum Babke,57221,53.358998,12.891362,775,False,6.0,https://mvrad.nextbike.app/station?id=522538972,https://mvrad.nextbike.app/station?id=522538972,https://nxtb.it/p/522538972
+547767379,57253 Mirow Parkplatz Schlossinsel,57253,53.275994,12.812544,775,False,10.0,https://mvrad.nextbike.app/station?id=547767379,https://mvrad.nextbike.app/station?id=547767379,https://nxtb.it/p/547767379
+547770264,57110 Bahnhof Wesenberg,57110,53.286467,12.96281,775,False,10.0,https://mvrad.nextbike.app/station?id=547770264,https://mvrad.nextbike.app/station?id=547770264,https://nxtb.it/p/547770264
+547771933,57118 Priepert Parkplatz,57118,53.21885,13.038776,775,False,12.0,https://mvrad.nextbike.app/station?id=547771933,https://mvrad.nextbike.app/station?id=547771933,https://nxtb.it/p/547771933
+550865550,57122 Parkplatz Canow,57122,53.201249,12.908322,775,False,16.0,https://mvrad.nextbike.app/station?id=550865550,https://mvrad.nextbike.app/station?id=550865550,https://nxtb.it/p/550865550
+550870234,57116 Strasen Parkplatz,57116,53.206762,12.993972,775,False,12.0,https://mvrad.nextbike.app/station?id=550870234,https://mvrad.nextbike.app/station?id=550870234,https://nxtb.it/p/550870234
+550872585,57108 Klein Quassow,57108,53.304424,12.974994,775,False,8.0,https://mvrad.nextbike.app/station?id=550872585,https://mvrad.nextbike.app/station?id=550872585,https://nxtb.it/p/550872585
+550874361,57252 Seewalde,57252,53.227241,12.934151,775,False,8.0,https://mvrad.nextbike.app/station?id=550874361,https://mvrad.nextbike.app/station?id=550874361,https://nxtb.it/p/550874361
+564919376,57124 Ahoi Camp Canow,57124,53.196762,12.9327,775,False,10.0,https://mvrad.nextbike.app/station?id=564919376,https://mvrad.nextbike.app/station?id=564919376,https://nxtb.it/p/564919376
+564920247,57120 Camping Ziernsee,57120,53.207845,13.070662,775,False,6.0,https://mvrad.nextbike.app/station?id=564920247,https://mvrad.nextbike.app/station?id=564920247,https://nxtb.it/p/564920247
+564921537,57114 Naturcamping Pälitzsee,57114,53.184369,12.97819,775,False,8.0,https://mvrad.nextbike.app/station?id=564921537,https://mvrad.nextbike.app/station?id=564921537,https://nxtb.it/p/564921537
+564923535,57112 Campingpark Drewensee,57112,53.262704,13.051447,775,False,10.0,https://mvrad.nextbike.app/station?id=564923535,https://mvrad.nextbike.app/station?id=564923535,https://nxtb.it/p/564923535
+564925228,57102 Campingplatz Am Leppinsee Zietlitz,57102,53.347413,12.826425,775,False,6.0,https://mvrad.nextbike.app/station?id=564925228,https://mvrad.nextbike.app/station?id=564925228,https://nxtb.it/p/564925228
+582593655,57173 Marina Neuhof Sundhagen,57173,54.263974,13.180735,775,False,13.0,https://mvrad.nextbike.app/station?id=582593655,https://mvrad.nextbike.app/station?id=582593655,https://nxtb.it/p/582593655
+582784416,MV-Rad Scooter,99999,53.969441,13.94356,949,True,,https://mvrad.nextbike.app/station?id=582784416,https://mvrad.nextbike.app/station?id=582784416,https://nxtb.it/p/582784416

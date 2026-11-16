@@ -1,0 +1,35 @@
+run:
+  name: mv_rad_gem_ollama_suite
+  output_root: outputs
+  provider: ollama
+  summary_enabled: false
+  temperature: 0.0
+  max_retries: 2
+  timeout_seconds: 30
+  parallelism: 1
+  seed: 42
+
+feeds: []
+
+benchmark:
+  dataset_path: benchmarks/gbfs_mv_rad_v1
+  semantics: true
+  retrieval: true
+  synthesis: true
+
+model_suite:
+  - name: llama3.2-3b
+    provider: ollama
+    model_main: llama3.2:3b
+    size_label: 3B
+    notes: Small Llama baseline on Ollama Cloud.
+  - name: llama3.1-8b
+    provider: ollama
+    model_main: llama3.1:8b
+    size_label: 8B
+    notes: Mid-size Llama baseline on Ollama Cloud.
+  - name: llama3.3-70b
+    provider: ollama
+    model_main: llama3.3:70b
+    size_label: 70B
+    notes: Large Llama baseline on Ollama Cloud.

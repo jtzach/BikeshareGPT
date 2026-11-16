@@ -1,0 +1,65 @@
+{
+  "last_updated": 1771440643,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "M001",
+        "name": "Hauptbahnhof",
+        "lat": 48.140228,
+        "lon": 11.558335,
+        "capacity": 25
+      },
+      {
+        "station_id": "M002",
+        "name": "Marienplatz",
+        "lat": 48.137154,
+        "lon": 11.575489,
+        "capacity": 18
+      },
+      {
+        "station_id": "M003",
+        "name": "Odeonsplatz",
+        "lat": 48.142531,
+        "lon": 11.577088,
+        "capacity": 15
+      },
+      {
+        "station_id": "M004",
+        "name": "Universität",
+        "lat": 48.150094,
+        "lon": 11.580247,
+        "capacity": 20
+      },
+      {
+        "station_id": "M005",
+        "name": "Gärtnerplatz",
+        "lat": 48.129872,
+        "lon": 11.582265,
+        "capacity": 12
+      },
+      {
+        "station_id": "M006",
+        "name": "Sendlinger Tor",
+        "lat": 48.13202,
+        "lon": 11.56653,
+        "capacity": 16
+      },
+      {
+        "station_id": "M007",
+        "name": "Olympiapark",
+        "lat": 48.17322,
+        "lon": 11.5463,
+        "capacity": 30
+      },
+      {
+        "station_id": "M008",
+        "name": "English Garden",
+        "lat": 48.159,
+        "lon": 11.603,
+        "capacity": 22
+      }
+    ]
+  }
+}

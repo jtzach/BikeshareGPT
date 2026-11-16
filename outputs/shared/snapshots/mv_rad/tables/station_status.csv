@@ -1,0 +1,65 @@
+station_id,num_bikes_available,vehicle_types_available,num_docks_available,is_installed,is_renting,is_returning,last_reported
+65937,2,"[{'vehicle_type_id': '3', 'count': 2}]",10,True,True,True,1772283084
+66429,5,"[{'vehicle_type_id': '3', 'count': 5}]",3,True,True,True,1772283084
+66430,3,"[{'vehicle_type_id': '183', 'count': 2}, {'vehicle_type_id': '3', 'count': 1}]",7,True,True,True,1772283084
+66431,0,[],6,True,True,True,1772283084
+66432,0,[],4,True,True,True,1772283084
+128091,7,"[{'vehicle_type_id': '2', 'count': 4}, {'vehicle_type_id': '8', 'count': 1}, {'vehicle_type_id': '1', 'count': 1}, {'vehicle_type_id': '7', 'count': 1}]",3,True,True,True,1772283084
+128093,8,"[{'vehicle_type_id': '2', 'count': 7}, {'vehicle_type_id': '3', 'count': 1}]",2,True,True,True,1772283084
+139977,9,"[{'vehicle_type_id': '8', 'count': 1}, {'vehicle_type_id': '29', 'count': 1}, {'vehicle_type_id': '7', 'count': 1}, {'vehicle_type_id': '3', 'count': 6}]",1,True,True,True,1772283084
+139983,4,"[{'vehicle_type_id': '3', 'count': 4}]",0,True,True,True,1772283084
+153092,0,[],6,True,True,True,1772283084
+153213,13,"[{'vehicle_type_id': '8', 'count': 2}, {'vehicle_type_id': '7', 'count': 2}, {'vehicle_type_id': '3', 'count': 9}]",7,True,True,True,1772283084
+153216,4,"[{'vehicle_type_id': '3', 'count': 4}]",4,True,True,True,1772283084
+153220,2,"[{'vehicle_type_id': '3', 'count': 2}]",8,True,True,True,1772283084
+199129,8,"[{'vehicle_type_id': '3', 'count': 8}]",4,True,True,True,1772283084
+199130,9,"[{'vehicle_type_id': '8', 'count': 1}, {'vehicle_type_id': '2', 'count': 7}, {'vehicle_type_id': '1', 'count': 1}]",2,True,True,True,1772283084
+199134,0,[],9,True,True,True,1772283084
+199140,0,[],8,True,True,True,1772283084
+272373,4,"[{'vehicle_type_id': '3', 'count': 4}]",3,True,True,True,1772283084
+350543,6,"[{'vehicle_type_id': '3', 'count': 6}]",8,True,True,True,1772283084
+417339,4,"[{'vehicle_type_id': '3', 'count': 4}]",6,True,True,True,1772283084
+31395158,16,"[{'vehicle_type_id': '6', 'count': 4}, {'vehicle_type_id': '7', 'count': 1}, {'vehicle_type_id': '8', 'count': 1}, {'vehicle_type_id': '2', 'count': 8}, {'vehicle_type_id': '3', 'count': 2}]",0,True,True,True,1772283084
+76245743,38,"[{'vehicle_type_id': '8', 'count': 2}, {'vehicle_type_id': '7', 'count': 2}, {'vehicle_type_id': '3', 'count': 34}]",33,True,True,True,1772283084
+76245875,14,"[{'vehicle_type_id': '8', 'count': 2}, {'vehicle_type_id': '7', 'count': 2}, {'vehicle_type_id': '3', 'count': 10}]",5,True,True,True,1772283084
+76246101,0,[],21,True,True,True,1772283084
+76246285,8,"[{'vehicle_type_id': '3', 'count': 8}]",2,True,True,True,1772283084
+76289016,4,"[{'vehicle_type_id': '3', 'count': 4}]",6,True,True,True,1772283084
+76289121,8,"[{'vehicle_type_id': '7', 'count': 1}, {'vehicle_type_id': '8', 'count': 1}, {'vehicle_type_id': '3', 'count': 6}]",4,True,True,True,1772283084
+76289246,8,"[{'vehicle_type_id': '3', 'count': 8}]",2,True,True,True,1772283084
+76289539,10,"[{'vehicle_type_id': '3', 'count': 10}]",10,True,True,True,1772283084
+76289676,7,"[{'vehicle_type_id': '3', 'count': 7}]",4,True,True,True,1772283084
+96809355,4,"[{'vehicle_type_id': '3', 'count': 4}]",2,True,True,True,1772283084
+99962532,0,[],8,True,True,True,1772283084
+255713801,6,"[{'vehicle_type_id': '3', 'count': 6}]",2,True,True,True,1772283084
+255713854,2,"[{'vehicle_type_id': '3', 'count': 2}]",6,True,True,True,1772283084
+255713882,8,"[{'vehicle_type_id': '3', 'count': 8}]",0,True,True,True,1772283084
+255727865,6,"[{'vehicle_type_id': '3', 'count': 6}]",6,True,True,True,1772283084
+255731882,4,"[{'vehicle_type_id': '3', 'count': 4}]",4,True,True,True,1772283084
+340786035,4,"[{'vehicle_type_id': '3', 'count': 4}]",6,True,True,True,1772283084
+393842949,4,"[{'vehicle_type_id': '3', 'count': 4}]",6,True,True,True,1772283084
+414195423,0,[],8,True,True,True,1772283084
+414200360,10,"[{'vehicle_type_id': '29', 'count': 1}, {'vehicle_type_id': '3', 'count': 9}]",0,True,True,True,1772283084
+448298966,0,[],10,True,True,True,1772283084
+474395971,1,"[{'vehicle_type_id': '3', 'count': 1}]",11,True,True,True,1772283084
+474397171,12,"[{'vehicle_type_id': '3', 'count': 12}]",0,True,True,True,1772283084
+474397909,0,[],8,True,True,True,1772283084
+474401109,5,"[{'vehicle_type_id': '3', 'count': 5}]",8,True,True,True,1772283084
+474717387,4,"[{'vehicle_type_id': '3', 'count': 4}]",4,True,True,True,1772283084
+500773929,4,"[{'vehicle_type_id': '3', 'count': 4}]",4,True,True,True,1772283084
+500775367,4,"[{'vehicle_type_id': '3', 'count': 4}]",6,True,True,True,1772283084
+522538972,4,"[{'vehicle_type_id': '3', 'count': 4}]",2,True,True,True,1772283084
+547767379,5,"[{'vehicle_type_id': '3', 'count': 5}]",5,True,True,True,1772283084
+547770264,6,"[{'vehicle_type_id': '3', 'count': 6}]",4,True,True,True,1772283084
+547771933,6,"[{'vehicle_type_id': '3', 'count': 6}]",6,True,True,True,1772283084
+550865550,4,"[{'vehicle_type_id': '3', 'count': 4}]",12,True,True,True,1772283084
+550870234,5,"[{'vehicle_type_id': '3', 'count': 5}]",7,True,True,True,1772283084
+550872585,3,"[{'vehicle_type_id': '3', 'count': 3}]",5,True,True,True,1772283084
+550874361,6,"[{'vehicle_type_id': '3', 'count': 6}]",2,True,True,True,1772283084
+564919376,6,"[{'vehicle_type_id': '3', 'count': 6}]",4,True,True,True,1772283084
+564920247,0,[],6,True,True,True,1772283084
+564921537,0,[],8,True,True,True,1772283084
+564923535,7,"[{'vehicle_type_id': '3', 'count': 7}]",3,True,True,True,1772283084
+564925228,4,"[{'vehicle_type_id': '3', 'count': 4}]",2,True,True,True,1772283084
+582593655,0,[],13,True,True,True,1772283084
+582784416,0,[],0,True,True,True,1772283084

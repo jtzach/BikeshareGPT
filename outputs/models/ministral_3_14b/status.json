@@ -1,0 +1,11 @@
+{
+  "model_label": "ministral-3-14b",
+  "provider": "ollama",
+  "model_main": "ministral-3:14b",
+  "size_label": "14B",
+  "state": "complete",
+  "completed_tasks": 300,
+  "total_tasks": 300,
+  "remaining_tasks": 0,
+  "message": null
+}

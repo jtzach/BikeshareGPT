@@ -1,0 +1,21 @@
+run:
+  name: mv_rad_ministral3_3b_full
+  output_root: outputs
+  provider: ollama
+  model_main: ministral-3:3b
+  model_summary: ministral-3:3b
+  model_moderation: ministral-3:3b
+  summary_enabled: true
+  temperature: 0.0
+  max_retries: 2
+  timeout_seconds: 30
+  parallelism: 1
+  seed: 42
+
+feeds: []
+
+benchmark:
+  dataset_path: benchmarks/gbfs_mv_rad_v1
+  semantics: true
+  retrieval: true
+  synthesis: true

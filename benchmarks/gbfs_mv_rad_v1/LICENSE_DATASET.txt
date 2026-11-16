@@ -1,0 +1,1 @@
+This benchmark bundle is released for research use. Preserve source attribution for the frozen MV-Rad snapshot and the benchmark metadata.

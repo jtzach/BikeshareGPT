@@ -1,0 +1,39 @@
+{
+  "name": "GBFS-Bench v1",
+  "version": "1.0.0",
+  "generated_at": 1771441304,
+  "description": "A small, self-contained GBFS benchmark bundle packaged with synthetic but spec-conformant snapshots for reproducible evaluation.",
+  "systems": [
+    {
+      "system_id": "munich_sample",
+      "city": "Munich",
+      "country": "DE",
+      "gbfs_version": "2.3",
+      "snapshot_type": "synthetic"
+    },
+    {
+      "system_id": "berlin_sample",
+      "city": "Berlin",
+      "country": "DE",
+      "gbfs_version": "2.3",
+      "snapshot_type": "synthetic"
+    },
+    {
+      "system_id": "dockless_sample",
+      "city": "Munich",
+      "country": "DE",
+      "gbfs_version": "2.3",
+      "snapshot_type": "synthetic",
+      "includes": "free_bike_status"
+    }
+  ],
+  "tasks": {
+    "total": 109,
+    "counts_by_category": {
+      "semantics": 32,
+      "retrieval": 44,
+      "synthesis": 33
+    }
+  },
+  "license": "CC0-1.0 (recommended) for synthetic snapshots and task text; see repo LICENSE for code."
+}

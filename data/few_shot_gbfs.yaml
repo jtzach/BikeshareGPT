@@ -1,0 +1,65 @@
+examples:
+  - user: "How many stations are in the system?"
+    code: |
+      ```python
+      n = int(feed.station_information.shape[0])
+      result = {"answer": n}
+      ```
+
+  - user: "Which station currently has the most bikes available?"
+    code: |
+      ```python
+      df = feed.merged_stations()
+      # Filter stations that are renting (if the field exists)
+      if "is_renting" in df.columns:
+          df = df[df["is_renting"] == 1]
+      idx = df["num_bikes_available"].astype(float).idxmax()
+      row = df.loc[idx]
+      result = {
+          "answer": {
+              "station_id": str(row.get("station_id")),
+              "name": str(row.get("name")),
+              "num_bikes_available": int(row.get("num_bikes_available")) if row.get("num_bikes_available") is not None else None,
+          },
+          "additional_info": "Max bikes among renting stations",
+      }
+      ```
+
+  - user: "What is the total number of bikes available right now across all stations?"
+    code: |
+      ```python
+      df = feed.station_status
+      total = int(df["num_bikes_available"].fillna(0).astype(float).sum())
+      result = {"answer": total}
+      ```
+
+  - user: "Find the nearest station to (48.1371, 11.5754) and report its name and distance in meters."
+    code: |
+      ```python
+      from bikesharegpt.gbfs.geo import nearest_point
+
+      info = feed.station_information
+      coords = list(zip(info["lat"].astype(float), info["lon"].astype(float)))
+      i, d = nearest_point(48.1371, 11.5754, coords)
+      row = info.iloc[i]
+      result = {
+          "answer": {"name": str(row.get("name")), "distance_m": float(d)},
+          "additional_info": "Nearest by haversine distance",
+      }
+      ```
+
+  - user: "Plot a histogram of bikes available per station and save it."
+    code: |
+      ```python
+      import matplotlib.pyplot as plt
+
+      df = feed.station_status
+      vals = df["num_bikes_available"].fillna(0).astype(float)
+      plt.figure()
+      plt.hist(vals)
+      out_path = f"{output_dir}/bikes_hist.png"
+      plt.savefig(out_path, dpi=200, bbox_inches="tight")
+      plt.close()
+
+      result = {"answer": "saved", "artifacts": [out_path]}
+      ```

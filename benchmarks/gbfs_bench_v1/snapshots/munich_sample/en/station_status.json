@@ -1,0 +1,89 @@
+{
+  "last_updated": 1771440643,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "M001",
+        "num_bikes_available": 4,
+        "num_docks_available": 21,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440352,
+        "num_ebikes_available": 0
+      },
+      {
+        "station_id": "M002",
+        "num_bikes_available": 8,
+        "num_docks_available": 10,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440583,
+        "num_ebikes_available": 3
+      },
+      {
+        "station_id": "M003",
+        "num_bikes_available": 14,
+        "num_docks_available": 1,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440402,
+        "num_ebikes_available": 5
+      },
+      {
+        "station_id": "M004",
+        "num_bikes_available": 12,
+        "num_docks_available": 8,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440536,
+        "num_ebikes_available": 0
+      },
+      {
+        "station_id": "M005",
+        "num_bikes_available": 7,
+        "num_docks_available": 5,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440629,
+        "num_ebikes_available": 3
+      },
+      {
+        "station_id": "M006",
+        "num_bikes_available": 13,
+        "num_docks_available": 3,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440642,
+        "num_ebikes_available": 5
+      },
+      {
+        "station_id": "M007",
+        "num_bikes_available": 14,
+        "num_docks_available": 16,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440507,
+        "num_ebikes_available": 5
+      },
+      {
+        "station_id": "M008",
+        "num_bikes_available": 7,
+        "num_docks_available": 15,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440591,
+        "num_ebikes_available": 2
+      }
+    ]
+  }
+}

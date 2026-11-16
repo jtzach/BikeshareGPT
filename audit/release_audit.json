@@ -1,0 +1,2077 @@
+{
+  "audit_schema_version": "1.0",
+  "scope": "Offline checks of the submitted frozen release; no generated code executed or model calls made.",
+  "interpretation": "Existence-only reconciliation is diagnostic. It neither modifies historical grades nor verifies chart semantics or authorizes replacement paper results.",
+  "source_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/gbfs.json",
+  "frozen_last_updated_utc": "2026-02-28T12:47:24+00:00",
+  "timestamp_caveat": "This is the feed's last_updated value, not independently established collection time.",
+  "endpoint_update_timestamps": {
+    "free_bike_status.json": {
+      "last_updated": 1772283084,
+      "utc": "2026-02-28T12:51:24+00:00"
+    },
+    "gbfs.json": {
+      "last_updated": 1772282844,
+      "utc": "2026-02-28T12:47:24+00:00"
+    },
+    "gbfs_source.json": {
+      "last_updated": 1772282844,
+      "utc": "2026-02-28T12:47:24+00:00"
+    },
+    "station_information.json": {
+      "last_updated": 1772282844,
+      "utc": "2026-02-28T12:47:24+00:00"
+    },
+    "station_status.json": {
+      "last_updated": 1772283084,
+      "utc": "2026-02-28T12:51:24+00:00"
+    },
+    "system_hours.json": {
+      "last_updated": 1772283206,
+      "utc": "2026-02-28T12:53:26+00:00"
+    },
+    "system_information.json": {
+      "last_updated": 1772282844,
+      "utc": "2026-02-28T12:47:24+00:00"
+    },
+    "system_pricing_plans.json": {
+      "last_updated": 1772283206,
+      "utc": "2026-02-28T12:53:26+00:00"
+    },
+    "system_regions.json": {
+      "last_updated": 1772283206,
+      "utc": "2026-02-28T12:53:26+00:00"
+    },
+    "vehicle_types.json": {
+      "last_updated": 1772282844,
+      "utc": "2026-02-28T12:47:24+00:00"
+    }
+  },
+  "atomic_snapshot_caveat": "Endpoint update timestamps differ; the bundle must not be represented as an atomic observation of one instant.",
+  "semantics_answer_labels": {
+    "A": 84,
+    "B": 14,
+    "C": 2,
+    "D": 0
+  },
+  "always_A_semantics_accuracy": 0.84,
+  "source_license_id_in_frozen_system_information": "CC0-1.0",
+  "snapshot_counts": {
+    "stations": 64,
+    "station_status_rows": 64,
+    "vehicle_types": 11,
+    "derived_free_bike_rows": 335,
+    "regions": 2
+  },
+  "category_counts": {
+    "semantics": 100,
+    "retrieval": 100,
+    "synthesis": 100
+  },
+  "grader_counts": {
+    "exact": 243,
+    "set": 10,
+    "numeric": 37,
+    "artifact_exists": 10
+  },
+  "checks": [
+    {
+      "check": "300 unique task IDs",
+      "passed": true
+    },
+    {
+      "check": "100 tasks per track",
+      "passed": true
+    },
+    {
+      "check": "10 artifact-production tasks",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: README.md",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: free_bike_status.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: gbfs.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: gbfs_source.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: manifest.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: station_information.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: station_status.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: system_hours.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: system_information.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: system_pricing_plans.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: system_regions.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot checksum: vehicle_types.json",
+      "passed": true
+    },
+    {
+      "check": "snapshot row counts",
+      "passed": true
+    },
+    {
+      "check": "saved-run tasks match release tasks",
+      "passed": true
+    },
+    {
+      "check": "gemma3_12b: complete grade IDs",
+      "passed": true
+    },
+    {
+      "check": "gemma3_12b: complete prediction IDs",
+      "passed": true
+    },
+    {
+      "check": "gemma3_12b: summary matches stored grades",
+      "passed": true
+    },
+    {
+      "check": "gemma3_27b: complete grade IDs",
+      "passed": true
+    },
+    {
+      "check": "gemma3_27b: complete prediction IDs",
+      "passed": true
+    },
+    {
+      "check": "gemma3_27b: summary matches stored grades",
+      "passed": true
+    },
+    {
+      "check": "gemma3_4b: complete grade IDs",
+      "passed": true
+    },
+    {
+      "check": "gemma3_4b: complete prediction IDs",
+      "passed": true
+    },
+    {
+      "check": "gemma3_4b: summary matches stored grades",
+      "passed": true
+    },
+    {
+      "check": "gpt_5: complete grade IDs",
+      "passed": true
+    },
+    {
+      "check": "gpt_5: complete prediction IDs",
+      "passed": true
+    },
+    {
+      "check": "gpt_5: summary matches stored grades",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_14b: complete grade IDs",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_14b: complete prediction IDs",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_14b: summary matches stored grades",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_3b: complete grade IDs",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_3b: complete prediction IDs",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_3b: summary matches stored grades",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_8b: complete grade IDs",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_8b: complete prediction IDs",
+      "passed": true
+    },
+    {
+      "check": "ministral_3_8b: summary matches stored grades",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "models": [
+    {
+      "model": "gemma3_12b",
+      "historical_correct": 205,
+      "historical_total": 300,
+      "historical_accuracy": 0.6833333333333333,
+      "nonvisual_correct": 205,
+      "nonvisual_total": 290,
+      "nonvisual_accuracy": 0.7068965517241379,
+      "artifact_tasks_with_referenced_files": 6,
+      "existence_only_reconciliation_correct": 211,
+      "existence_only_reconciliation_accuracy": 0.7033333333333334,
+      "artifact_diagnostics": [
+        {
+          "task_id": "mv_rad_syn_081_plot_hist_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_12b/artifacts/mv_rad_syn_081_plot_hist_bikes/num_bikes_available_histogram.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_082_plot_hist_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": false,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": false,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_12b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_bikes.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_12b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_087_plot_bar_capacity",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_12b/artifacts/mv_rad_syn_087_plot_bar_capacity/station_capacities_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_12b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_12b/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/free_bikes_by_vehicle_type.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_090_plot_box_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        }
+      ]
+    },
+    {
+      "model": "gemma3_27b",
+      "historical_correct": 189,
+      "historical_total": 300,
+      "historical_accuracy": 0.63,
+      "nonvisual_correct": 189,
+      "nonvisual_total": 290,
+      "nonvisual_accuracy": 0.6517241379310345,
+      "artifact_tasks_with_referenced_files": 9,
+      "existence_only_reconciliation_correct": 198,
+      "existence_only_reconciliation_accuracy": 0.66,
+      "artifact_diagnostics": [
+        {
+          "task_id": "mv_rad_syn_081_plot_hist_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_081_plot_hist_bikes/bikes_available_histogram.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_082_plot_hist_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_082_plot_hist_docks/docks_hist.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/capacity_vs_bikes.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_vs_docks.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_bikes.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": false,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_087_plot_bar_capacity",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_087_plot_bar_capacity/top_10_station_capacities.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/free_bike_vehicle_type_counts.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_090_plot_box_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_27b/artifacts/mv_rad_syn_090_plot_box_bikes/bikes_boxplot.png"
+          ],
+          "saved_additional_info": null
+        }
+      ]
+    },
+    {
+      "model": "gemma3_4b",
+      "historical_correct": 167,
+      "historical_total": 300,
+      "historical_accuracy": 0.5566666666666666,
+      "nonvisual_correct": 167,
+      "nonvisual_total": 290,
+      "nonvisual_accuracy": 0.5758620689655173,
+      "artifact_tasks_with_referenced_files": 5,
+      "existence_only_reconciliation_correct": 172,
+      "existence_only_reconciliation_accuracy": 0.5733333333333334,
+      "artifact_diagnostics": [
+        {
+          "task_id": "mv_rad_syn_081_plot_hist_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_4b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_hist.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_082_plot_hist_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": false,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": false,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_4b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_docks_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_4b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_stations.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_4b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_087_plot_bar_capacity",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gemma3_4b/artifacts/mv_rad_syn_087_plot_bar_capacity/station_capacity_bar.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_090_plot_box_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        }
+      ]
+    },
+    {
+      "model": "gpt_5",
+      "historical_correct": 251,
+      "historical_total": 300,
+      "historical_accuracy": 0.8366666666666667,
+      "nonvisual_correct": 251,
+      "nonvisual_total": 290,
+      "nonvisual_accuracy": 0.8655172413793103,
+      "artifact_tasks_with_referenced_files": 10,
+      "existence_only_reconciliation_correct": 261,
+      "existence_only_reconciliation_accuracy": 0.87,
+      "artifact_diagnostics": [
+        {
+          "task_id": "mv_rad_syn_081_plot_hist_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_081_plot_hist_bikes/hist_num_bikes_available_mv_rad.png"
+          ],
+          "saved_additional_info": "Filtered by region_ids: ['775']; stations plotted: 63"
+        },
+        {
+          "task_id": "mv_rad_syn_082_plot_hist_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_082_plot_hist_docks/hist_num_docks_available_mv_rad.png"
+          ],
+          "saved_additional_info": "Plotted 0 stations in region filter 'mv_rad'."
+        },
+        {
+          "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/scatter_capacity_vs_num_bikes_mv_rad.png"
+          ],
+          "saved_additional_info": "No matching region found for 'mv_rad'; plot contains 0 points. Plotted 0 points with both capacity and num_bikes_available present."
+        },
+        {
+          "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/scatter_bikes_vs_docks_mv_rad.png"
+          ],
+          "saved_additional_info": "filtered by region name/slug matching 'mv_rad' (region_ids=['775'])"
+        },
+        {
+          "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top10_bikes_mvrad.png"
+          ],
+          "saved_additional_info": "Applied region filter: True. Stations plotted: 10."
+        },
+        {
+          "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top10_num_docks_available_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_087_plot_bar_capacity",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_087_plot_bar_capacity/mv_rad_top10_capacities.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_088_plot_bar_region_totals/mv_rad_num_bikes_by_region.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/mv_rad_free_bike_status_by_vehicle_type_id.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_090_plot_box_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/gpt_5/artifacts/mv_rad_syn_090_plot_box_bikes/box_num_bikes_available_mv_rad.png"
+          ],
+          "saved_additional_info": "Stations matched: 0; Data points: 0"
+        }
+      ]
+    },
+    {
+      "model": "ministral_3_14b",
+      "historical_correct": 196,
+      "historical_total": 300,
+      "historical_accuracy": 0.6533333333333333,
+      "nonvisual_correct": 196,
+      "nonvisual_total": 290,
+      "nonvisual_accuracy": 0.6758620689655173,
+      "artifact_tasks_with_referenced_files": 8,
+      "existence_only_reconciliation_correct": 204,
+      "existence_only_reconciliation_accuracy": 0.68,
+      "artifact_diagnostics": [
+        {
+          "task_id": "mv_rad_syn_081_plot_hist_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_hist.png"
+          ],
+          "saved_additional_info": "Histogram of bikes available in mv_rad region (or all stations if region_id unavailable)"
+        },
+        {
+          "task_id": "mv_rad_syn_082_plot_hist_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_082_plot_hist_docks/docks_hist_mv_rad.png"
+          ],
+          "saved_additional_info": "Histogram of num_docks_available for stations in mv_rad region"
+        },
+        {
+          "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/mv_rad_bikes_vs_docks.png"
+          ],
+          "saved_additional_info": "Scatter plot of bikes vs docks for stations in mv_rad region"
+        },
+        {
+          "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_mv_rad_stations.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_087_plot_bar_capacity",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_087_plot_bar_capacity/mv_rad_top10_capacity.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/free_bikes_by_type.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_090_plot_box_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": "No stations found in mv_rad region"
+        }
+      ]
+    },
+    {
+      "model": "ministral_3_3b",
+      "historical_correct": 181,
+      "historical_total": 300,
+      "historical_accuracy": 0.6033333333333334,
+      "nonvisual_correct": 181,
+      "nonvisual_total": 290,
+      "nonvisual_accuracy": 0.6241379310344828,
+      "artifact_tasks_with_referenced_files": 7,
+      "existence_only_reconciliation_correct": 188,
+      "existence_only_reconciliation_accuracy": 0.6266666666666667,
+      "artifact_diagnostics": [
+        {
+          "task_id": "mv_rad_syn_081_plot_hist_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_hist.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_082_plot_hist_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_082_plot_hist_docks/mv_rad_docks_hist.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/capacity_vs_bikes.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_vs_docks_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_bikes_bar.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_mv_rad_docks.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_087_plot_bar_capacity",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_087_plot_bar_capacity/top_10_capacities.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": false,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_090_plot_box_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": "No matching stations in the dataset"
+        }
+      ]
+    },
+    {
+      "model": "ministral_3_8b",
+      "historical_correct": 169,
+      "historical_total": 300,
+      "historical_accuracy": 0.5633333333333334,
+      "nonvisual_correct": 169,
+      "nonvisual_total": 290,
+      "nonvisual_accuracy": 0.5827586206896552,
+      "artifact_tasks_with_referenced_files": 9,
+      "existence_only_reconciliation_correct": 178,
+      "existence_only_reconciliation_accuracy": 0.5933333333333334,
+      "artifact_diagnostics": [
+        {
+          "task_id": "mv_rad_syn_081_plot_hist_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_histogram.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_082_plot_hist_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_082_plot_hist_docks/mv_rad_docks_histogram.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/capacity_vs_bikes_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_vs_docks_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_stations_bikes.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_087_plot_bar_capacity",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_087_plot_bar_capacity/top_10_capacity_stations.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region_mv_rad.png"
+          ],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": false,
+          "relocated_files": [],
+          "saved_additional_info": null
+        },
+        {
+          "task_id": "mv_rad_syn_090_plot_box_bikes",
+          "historical_grade": false,
+          "historical_reason": "no_artifacts",
+          "exec_success": true,
+          "all_referenced_files_present": true,
+          "relocated_files": [
+            "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_090_plot_box_bikes/mv_rad_bikes_boxplot.png"
+          ],
+          "saved_additional_info": null
+        }
+      ]
+    }
+  ],
+  "asset_manifest": [
+    {
+      "path": "benchmarks/gbfs_bench_v1/LICENSE_DATASET.txt",
+      "bytes": 440,
+      "sha256": "5e726bf8cd997cd7cc49055241b5fcc586c48d547abb03c01515c56f33a80f3b"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/manifest.json",
+      "bytes": 1011,
+      "sha256": "97d09e276e7bac53fb2de78ea3b4a12ae4712a6f4f42191e78f8c7556c29ce2e"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/README.md",
+      "bytes": 1879,
+      "sha256": "6d447870b657b25e3b019fa4cbddf2462c26a7ba7ed8043268a69c4996053785"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/berlin_sample/en/station_information.json",
+      "bytes": 1185,
+      "sha256": "df19ef9ec7418144551f3464123d9e88f2ea75075cc6a051d8e36e29925d5cbc"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/berlin_sample/en/station_status.json",
+      "bytes": 1966,
+      "sha256": "50973f352418d8883b3a640a8ce069b565c962b5f711bdff1aca3ba444066c36"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/berlin_sample/en/system_information.json",
+      "bytes": 286,
+      "sha256": "96c46fc5769b2c272f3354457c8d49e80085d3279afeebe694d39dc297bf5260"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/berlin_sample/en/vehicle_types.json",
+      "bytes": 422,
+      "sha256": "01e346909ab8d1e9fe7a0e88266aa1f1164e81cfcae86a36ad3e96ac6f9e6a99"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/berlin_sample/gbfs.json",
+      "bytes": 536,
+      "sha256": "e2d5bebd9800052d415c6ed855d7eb33f305090881624a8b25c73d54dc4bc6e2"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/dockless_sample/en/free_bike_status.json",
+      "bytes": 2493,
+      "sha256": "99195713768e555b3cfee34443a32fba63142219a7b468915e8902b21aaedf61"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/dockless_sample/en/station_information.json",
+      "bytes": 846,
+      "sha256": "9697ec982b7e37d3acdc86cbb3bb8a2489102b76233325954e306561cb7ae8c9"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/dockless_sample/en/station_status.json",
+      "bytes": 1430,
+      "sha256": "c8f159b159a816db62fc3341638eb2fc1acda08afe49aa32299de3d4723bdf8f"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/dockless_sample/en/system_information.json",
+      "bytes": 299,
+      "sha256": "82bcbc57ee381ac2c1a82e67ea537e12a10c423f13cabf81e365ff498217fd2d"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/dockless_sample/en/vehicle_types.json",
+      "bytes": 422,
+      "sha256": "7ae4c1b83c0e2275eb9a502e309953a410dd193a460e1de003f47fe8ba73d443"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/dockless_sample/gbfs.json",
+      "bytes": 639,
+      "sha256": "e0ce715e5054ed549430568c0bd400f3be4f08c390847a1666cc0bc219b9f4aa"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/munich_sample/en/station_information.json",
+      "bytes": 1328,
+      "sha256": "3055e47f0d7ca950e4326220dcf2ea0f563358c2e347f264db4df70f18853ee9"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/munich_sample/en/station_status.json",
+      "bytes": 2233,
+      "sha256": "9cc5ba71bf00153a302a22dca5dfb0bb47d996f0d3ca5af14e0f584940879e29"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/munich_sample/en/system_information.json",
+      "bytes": 286,
+      "sha256": "cc17dbe9fd164d04b41e89eadab93aa6065c64c3a0a6dccb32157e6f7bf955b2"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/munich_sample/en/vehicle_types.json",
+      "bytes": 422,
+      "sha256": "86f4ff1143b31ae1d4325f42dbba795ee77d2695d6db0b13d4d36cb015b9f347"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/snapshots/munich_sample/gbfs.json",
+      "bytes": 536,
+      "sha256": "f003fc07036ed46f83bcb90c5c29d8ad091035ce9fed312c6797b2fa0f990959"
+    },
+    {
+      "path": "benchmarks/gbfs_bench_v1/tasks.jsonl",
+      "bytes": 45931,
+      "sha256": "7eaa782e18e82d6443c2f1c9ec9a3589a3919697361fdd3920891796f99de0b0"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/LICENSE_DATASET.txt",
+      "bytes": 139,
+      "sha256": "91fb101d6ca4f45d0498e63e091d346925a370a27cc1f5551ab9b45b17f359bf"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/manifest.json",
+      "bytes": 1095,
+      "sha256": "a46d965c28ea5e62c2a0545063dba672d7f8826904b08397e652915ef17f2ba6"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/README.md",
+      "bytes": 1228,
+      "sha256": "d05dfdcdefb5548ff047df3af9daa8c6147a90b0c86f3c92676bef07c6241d39"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/free_bike_status.json",
+      "bytes": 49883,
+      "sha256": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/gbfs.json",
+      "bytes": 554,
+      "sha256": "666365d71deefbfe365c47db90ba82c909a587cd20c22427f3fa20c1a6b39067"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/gbfs_source.json",
+      "bytes": 2788,
+      "sha256": "45dd0a2afc9abe243d3439bc961664e7b26e5d89069bc76d558935d079099913"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/manifest.json",
+      "bytes": 1093,
+      "sha256": "ed9e9a96c8dad53f2a25e97c7fb225d1546c7a7da910b0019c6a002674bf012a"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/README.md",
+      "bytes": 960,
+      "sha256": "e54eb644ef70f758c76b08df91b69a9738dd52524e723b7c489287b1ef183909"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/SHA256SUMS.txt",
+      "bytes": 1017,
+      "sha256": "746cfecb8c91b5ec097409541a05ac7a067a64b976be42baf42db5d562f8f467"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/station_information.json",
+      "bytes": 21830,
+      "sha256": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/station_status.json",
+      "bytes": 14548,
+      "sha256": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/system_hours.json",
+      "bytes": 213,
+      "sha256": "6dea17ef22b87275208e520435168405c78b10238c41da6dbdb5ce112a0f0fb1"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/system_information.json",
+      "bytes": 600,
+      "sha256": "3b71a0e42da34dc89d0ef27fb99387c2082eac6b67384558e14f5c07b0a8d0ef"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/system_pricing_plans.json",
+      "bytes": 209,
+      "sha256": "b08fe1e0da0684f667939b8b78c86f6e768a2a1e4a2f0ee9beada0077a439fb2"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/system_regions.json",
+      "bytes": 153,
+      "sha256": "496467af6f073df4038358ae57495ff659c28ceda925f5eee0678d7c374e7492"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/vehicle_types.json",
+      "bytes": 4146,
+      "sha256": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85"
+    },
+    {
+      "path": "benchmarks/gbfs_mv_rad_v1/tasks.jsonl",
+      "bytes": 122892,
+      "sha256": "80dd66e01f5f9d3b6d2460abe5d38cfa6939e7b87489f25476de5de86e9c8621"
+    },
+    {
+      "path": "outputs/config.json",
+      "bytes": 3472,
+      "sha256": "82d2a36990eb4a8c63577c3cc2df7080cfa4825d7d6a366e24e826f74ca5ae97"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/artifacts/mv_rad_syn_081_plot_hist_bikes/num_bikes_available_histogram.png",
+      "bytes": 19234,
+      "sha256": "0d5a3c042ecfd129af11f255fed41430b4673e91f86bcd9931eade5bb1f77bb3"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_bikes.png",
+      "bytes": 66321,
+      "sha256": "907044f78da363b263c2c8beba2d21c6ac17436281a2d1c99b87c9b1c319018e"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks.png",
+      "bytes": 71415,
+      "sha256": "fa3054a44dae60b104b234898693a6d75cd701e7985c2a7189e23d27ce671501"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/artifacts/mv_rad_syn_087_plot_bar_capacity/station_capacities_mv_rad.png",
+      "bytes": 41299,
+      "sha256": "a3d441e6058e0380e4d5da445d03bd4939033f6d8f992ac537b7e7f9b2c4c058"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region.png",
+      "bytes": 41495,
+      "sha256": "7f9d8b4844c4636eca98517c3585dcc52cd5616121a7b39bde34149d5eae1c22"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/free_bikes_by_vehicle_type.png",
+      "bytes": 36952,
+      "sha256": "131c49a7f6c9dd30b7a558e84be1cc53f99b28b80632e4d5434504da2da1fc57"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/model_spec.json",
+      "bytes": 277,
+      "sha256": "517161ce3b99f9a3ae4e462b0ccc4e59b8b57166c83ccc690a2f0a437ffbf36b"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/paper_artifacts/run_id.tex",
+      "bytes": 64,
+      "sha256": "b1e0682333d57233dc3cbcbf3cac5b52d8bc499659708c00dbe4601b339d8f52"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/paper_artifacts/table_cost.tex",
+      "bytes": 365,
+      "sha256": "16782b07fc7ed97b8dbdaa8d1800e1be7c8c6d2aeaea45a13a28b83167b6ce73"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/paper_artifacts/table_results.tex",
+      "bytes": 452,
+      "sha256": "dd459521a92fedda9db3e87192b5b65dfc972212797a807e6b229c24ba82ab27"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/predictions/answer_archive.jsonl",
+      "bytes": 340230,
+      "sha256": "250dae7d6fd1bc220a37dd57d1df334a3bcfef9571a4fcbfd66fb062c7a6de3b"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/predictions/grades.jsonl",
+      "bytes": 143188,
+      "sha256": "91f7d5f58e5f1512fccd31ca7742e9ded3bc30f5dd42333c6a56fb7df2691f58"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/predictions/grades_sanity.jsonl",
+      "bytes": 45434,
+      "sha256": "243122e5d3a5a89e256686f741d33925458cf24d80f1cb77ca0b800fd4895168"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/predictions/predictions.jsonl",
+      "bytes": 402655,
+      "sha256": "af880d881b5d49fd9720dd8deb20deb26f8db29f98d24d007703437de31c22a9"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/predictions/summary.json",
+      "bytes": 949,
+      "sha256": "d9021f830c638efd0cbbc2da5a60678c84458ed2bd9dfd27c6f30376fe9fba7c"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/predictions/summary_sanity.json",
+      "bytes": 481,
+      "sha256": "3f52498ebfdc02128c0b2a8413ac751054004492e942519ea8df1d5b311e8cbe"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/report.md",
+      "bytes": 558,
+      "sha256": "93da36673af50175eb6c263d25dd6ebbe7b8a4156fa77cf7305e543ea920faf6"
+    },
+    {
+      "path": "outputs/models/gemma3_12b/status.json",
+      "bytes": 234,
+      "sha256": "8b8b46282eb1e5ed9eb47c809de9a454ec6800913ce1e97dab1e739be5c9110e"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_081_plot_hist_bikes/bikes_available_histogram.png",
+      "bytes": 41283,
+      "sha256": "2a0cf85bb7302dfafc460d5602154fc60fec931d6b8714279a4cadc6188e3c6d"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_082_plot_hist_docks/docks_hist.png",
+      "bytes": 32352,
+      "sha256": "a9a6981134d91de55b167bdb89a4febe8e7460df7828decc11c06bb9ba3a6127"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/capacity_vs_bikes.png",
+      "bytes": 46812,
+      "sha256": "644278d5f97d1457498cf0b9d877cd549cec6a1ad8998cd5ad0798afa7edf873"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_vs_docks.png",
+      "bytes": 49288,
+      "sha256": "85c9f031c91c0523520d49bc5ac13e673a10dc1388d790e96fdf4f5caaccf917"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_bikes.png",
+      "bytes": 163271,
+      "sha256": "f691addbb18a7d70fff1959f25b3d877ceadf87b407b2da769e4a18b14aec3a2"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_087_plot_bar_capacity/top_10_station_capacities.png",
+      "bytes": 149570,
+      "sha256": "07618b31816e77c6f2b006b41dbf8eea832c2ffe7f31975fd7401d1febe25187"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region.png",
+      "bytes": 47443,
+      "sha256": "fc4a47223e563f5007c6acae4c107064e49009cfd0960e4afdcf04474d776f84"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/free_bike_vehicle_type_counts.png",
+      "bytes": 37986,
+      "sha256": "feb9689bbf0d43208caadbbf65ecef4703f2fdf8bab9539e126ea9df07d45570"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/artifacts/mv_rad_syn_090_plot_box_bikes/bikes_boxplot.png",
+      "bytes": 20661,
+      "sha256": "a228d1134aa0dbe78ab5923fffc439508ee33860c78d812f65dba4f23137f72a"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/model_spec.json",
+      "bytes": 277,
+      "sha256": "9e0848889beb8ede914da85039306eab6e30d2a85048d1eaa42afb36200a37a9"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/paper_artifacts/run_id.tex",
+      "bytes": 64,
+      "sha256": "cdaa00ae029db3467ba5e8c02171ddf23a7a172fd835b34de031bf5b9d8a97a4"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/paper_artifacts/table_cost.tex",
+      "bytes": 367,
+      "sha256": "1e0757e07d94a539140beb22c8ad9b50b2b12e790c6d1cc0f201faab15206607"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/paper_artifacts/table_results.tex",
+      "bytes": 452,
+      "sha256": "89fbc4459a0a3ed7286cf6d38ddd47a6a0f1a234f8b4fe0ff036dcec44d447af"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/predictions/answer_archive.jsonl",
+      "bytes": 376331,
+      "sha256": "00917bbbf9127edc718bb209b383f13fed268bd100e7243e5d08f69b6c202d66"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/predictions/grades.jsonl",
+      "bytes": 143707,
+      "sha256": "3daa59512a2676e72aa1729f0f9e63a2d80b705a08c8789ec1db9a2c2ba4cc72"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/predictions/grades_sanity.jsonl",
+      "bytes": 45901,
+      "sha256": "868bc0258daa44d1e1d3f99e24c1c2763f348579e1dcc551df972d9ff1cf2a84"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/predictions/predictions.jsonl",
+      "bytes": 440737,
+      "sha256": "bf0f9f7d913cf58da80a90bf4606d54cd478a50f0b7364475086cace952ec85f"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/predictions/summary.json",
+      "bytes": 922,
+      "sha256": "bca09f208ab40a12bed5cb047f14b61f0615629ed886ae4f577d61b48b6d5fd9"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/predictions/summary_sanity.json",
+      "bytes": 466,
+      "sha256": "978605f7a6af0bb2be0ea25e6ae19ad61fff18290c8279a6b4eac4ae0b4344ce"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/report.md",
+      "bytes": 559,
+      "sha256": "aaf2394178d310e131ce66dc331dde1bf40a08d33d3a97a484e993f3cb79987f"
+    },
+    {
+      "path": "outputs/models/gemma3_27b/status.json",
+      "bytes": 234,
+      "sha256": "7108e9cc3c9ecf2dddd51f4f3b0ae71555a843be84bbca62a2fab98955b7ff30"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_hist.png",
+      "bytes": 18177,
+      "sha256": "2bcc75e402d44c74b586133eeafe2ec99c39f049b7c25df714e9ee2b2cc2e3c9"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_docks_mv_rad.png",
+      "bytes": 44322,
+      "sha256": "54d7ff4828471fa131d048ca157bade03c18187c7fad9a59907b6db99623dfa7"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_stations.png",
+      "bytes": 115286,
+      "sha256": "976576536f15b69b01b23f7cbff4d44bb0d09090fb7a8eea6fdec0b6256557ad"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks.png",
+      "bytes": 61452,
+      "sha256": "68b88f3c39764aff02dba9696aeddcc6ca7eebcc366c0decfe87b8fe6277b728"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/artifacts/mv_rad_syn_087_plot_bar_capacity/station_capacity_bar.png",
+      "bytes": 54173,
+      "sha256": "353b9662cc0d6af11bbf5c008866d2e530c123abf6d37b507ff2dbce80abeae7"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/model_spec.json",
+      "bytes": 273,
+      "sha256": "eceeeb609dd97a7df994fe86acaa849f2f5055429edeca543ff4c1cb44337b75"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/paper_artifacts/run_id.tex",
+      "bytes": 63,
+      "sha256": "d56dea6bbf67e0c24b3be74a646b9e23688df41908d91a627b98b2140e16f8c3"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/paper_artifacts/table_cost.tex",
+      "bytes": 366,
+      "sha256": "d9895737d1cf90a8029c500acb6fb6dbb82c9d09226a36f2305a9260edc51637"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/paper_artifacts/table_results.tex",
+      "bytes": 452,
+      "sha256": "0e21f02cf13b0a364dbb1a5cb4d9862d944cb3130a265aec3987b0c8a241224c"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/predictions/answer_archive.jsonl",
+      "bytes": 365268,
+      "sha256": "3d31fbcf9e99759e41d7d0c382fb0c493b136822896ab606a9af78602ac50219"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/predictions/grades.jsonl",
+      "bytes": 142906,
+      "sha256": "3cff709e09b892222864648de5145c4921bceb06f515f150dac085dfa683aca5"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/predictions/grades_sanity.jsonl",
+      "bytes": 46113,
+      "sha256": "84e0fe262556d1eaea56b56dfb30e42fee62ca38bbdf85572e55c8d1f15c7c0d"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/predictions/predictions.jsonl",
+      "bytes": 426725,
+      "sha256": "38e5b0c78e0cb39f90def3c80298d56631b0c910f1be4248d013ff6d9b480125"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/predictions/summary.json",
+      "bytes": 943,
+      "sha256": "1812b432ce03835f5d914e7b8d4f2ddfe4750b114ce245d6941db6bfd185d9e9"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/predictions/summary_sanity.json",
+      "bytes": 480,
+      "sha256": "cdf57c571424597743ba4a612f127a800d3ef9318d9103eda279ec5527763d80"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/report.md",
+      "bytes": 555,
+      "sha256": "a63ddc8ab4331ed0abe60f8d04911e1d220bdbfffee03b299496a786968785a8"
+    },
+    {
+      "path": "outputs/models/gemma3_4b/status.json",
+      "bytes": 231,
+      "sha256": "63d2c4f83ceaf8c127927c8d5084fb56e1645fd6d6c0fcc72b947dcbfd9ad30a"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_081_plot_hist_bikes/hist_num_bikes_available_mv_rad.png",
+      "bytes": 38978,
+      "sha256": "d893b8cbc181af58f6edf13873d66fb8b79c677e0629080d49341749c9378fe7"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_082_plot_hist_docks/hist_num_docks_available_mv_rad.png",
+      "bytes": 41995,
+      "sha256": "15aadda6955db09d26866800a76fbd1190c42fe32480b76f849e206ec4572d0a"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/scatter_capacity_vs_num_bikes_mv_rad.png",
+      "bytes": 53313,
+      "sha256": "e57684bca2576135e6db564682fe021682dda1f2771c1cdef3008e984c15e98d"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/scatter_bikes_vs_docks_mv_rad.png",
+      "bytes": 80658,
+      "sha256": "a8190856459b355c3024d1a9c0b4dcaa589efa15dd01105eb329ec1b65c9d88f"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top10_bikes_mvrad.png",
+      "bytes": 96975,
+      "sha256": "bf590ef80a56fbf405a3fb00800ad35fcb7f7dbe45fd4c165553fd55a67ab686"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top10_num_docks_available_mv_rad.png",
+      "bytes": 17363,
+      "sha256": "cebf91fb6a0fc74eced595733ef8a36137027b9261006339a048039425119a63"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_087_plot_bar_capacity/mv_rad_top10_capacities.png",
+      "bytes": 183609,
+      "sha256": "28b6a20a100eb15d9e5cf3c6413dd234df78cc7c988edcb2a91c5bfbc32be522"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_088_plot_bar_region_totals/mv_rad_num_bikes_by_region.png",
+      "bytes": 41806,
+      "sha256": "65aa18e7f6bda3db74bea171f6549afddefcd53f10223af47b94e56fa4aebb8b"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/mv_rad_free_bike_status_by_vehicle_type_id.png",
+      "bytes": 44339,
+      "sha256": "f919c92633c408bfd137c66ffefcf60720923f5ad96a0156a1a0b5057dc06fc3"
+    },
+    {
+      "path": "outputs/models/gpt_5/artifacts/mv_rad_syn_090_plot_box_bikes/box_num_bikes_available_mv_rad.png",
+      "bytes": 21885,
+      "sha256": "c5b5a468bdc7ba1113ad774ce65ae1bf517b9e95138f7ffa5c09f1ccab9d69b6"
+    },
+    {
+      "path": "outputs/models/gpt_5/model_spec.json",
+      "bytes": 282,
+      "sha256": "af67fce6612dc078c70f4ef645b5b9f61087559e2214a7b9a5d42fb88d150373"
+    },
+    {
+      "path": "outputs/models/gpt_5/paper_artifacts/run_id.tex",
+      "bytes": 59,
+      "sha256": "5cc03581bf0e91debfbde7a90bb638a6d0bc15d3999731f1e34551611d31a87c"
+    },
+    {
+      "path": "outputs/models/gpt_5/paper_artifacts/table_cost.tex",
+      "bytes": 366,
+      "sha256": "7b03be96809c3eced5755ec66f71e6a65b46628d7ffe28a21e5160323ab2cbeb"
+    },
+    {
+      "path": "outputs/models/gpt_5/paper_artifacts/table_results.tex",
+      "bytes": 452,
+      "sha256": "748df6fedba680dd4f9c32a98c69c951bdeae17993a4ae8a30dbe609a95e4862"
+    },
+    {
+      "path": "outputs/models/gpt_5/predictions/answer_archive.jsonl",
+      "bytes": 878109,
+      "sha256": "a06de2d621681355b0562e7b01be592e7f934f93cf7f8dca3f03280f0b72e495"
+    },
+    {
+      "path": "outputs/models/gpt_5/predictions/grades.jsonl",
+      "bytes": 144961,
+      "sha256": "2f14e5e949784df113f354f66e66383b44d2587ca61d367e6f1398bf1ebdc63f"
+    },
+    {
+      "path": "outputs/models/gpt_5/predictions/grades_sanity.jsonl",
+      "bytes": 44889,
+      "sha256": "5262e71f239e69ec469ba475cb272c13b15ba8f78cedd29959e53fa0e3e809f7"
+    },
+    {
+      "path": "outputs/models/gpt_5/predictions/predictions.jsonl",
+      "bytes": 945124,
+      "sha256": "544a053c6e353d5c6de5c4d0127603cff50c86c5dd4418f3ddffb6e98fc62515"
+    },
+    {
+      "path": "outputs/models/gpt_5/predictions/summary.json",
+      "bytes": 920,
+      "sha256": "f182546d48fff794e05f2daab3881e2e97c66a99d5beafce21c4cf83e9a7ddaa"
+    },
+    {
+      "path": "outputs/models/gpt_5/predictions/summary_sanity.json",
+      "bytes": 479,
+      "sha256": "f689d23ef0961375216bbc1492cbeb988194cf96822204b07f79625a6b64a7a9"
+    },
+    {
+      "path": "outputs/models/gpt_5/report.md",
+      "bytes": 543,
+      "sha256": "5c0614939a90567c94ec68772dd686ab328cf5b366f42465a486a0ad41c2ee41"
+    },
+    {
+      "path": "outputs/models/gpt_5/status.json",
+      "bytes": 232,
+      "sha256": "ec550822db41336f8617e86b339cf2092cce9ba35279a04b202c8e151401b7af"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_hist.png",
+      "bytes": 42006,
+      "sha256": "9423d9bb801d0b28823253ab7cbb26d37ae63d1ffd7c20274e210ee24a841476"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_082_plot_hist_docks/docks_hist_mv_rad.png",
+      "bytes": 43298,
+      "sha256": "58e6e74adcf69654d9be37d1cce663be40036796b074175055efca19bdfbe23b"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/mv_rad_bikes_vs_docks.png",
+      "bytes": 54619,
+      "sha256": "e9f54f1bb35d6d89b160d06d95154319fd7f0e13568aaee80cbce2115e3d267b"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_mv_rad_stations.png",
+      "bytes": 108991,
+      "sha256": "c6fca1c7041d3e7aaaf4804ce3269e8e25fccec89df1fb699f631cc276c3f235"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks_mv_rad.png",
+      "bytes": 180556,
+      "sha256": "34758092431ca76cdbe87303e29802c970b034136edff322f446e207bce9bb5c"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_087_plot_bar_capacity/mv_rad_top10_capacity.png",
+      "bytes": 152364,
+      "sha256": "0089ce9074e936b011459535911fdabd5bf6ea34e1c7449ca3d65bc721d8d49d"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region.png",
+      "bytes": 49714,
+      "sha256": "db2c4ca6234afc6b9fbe521cd756448acdcf03961127ba4e33016f26422409f7"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/artifacts/mv_rad_syn_089_plot_bar_vehicle_type_counts/free_bikes_by_type.png",
+      "bytes": 43860,
+      "sha256": "09226d21e78cbbdfe21aa6a1fe3f93bb9ec4b8468745aa7b07f72990160e346b"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/model_spec.json",
+      "bytes": 292,
+      "sha256": "27001aac2b841c978a2ecca582920b9abbe8ee9364b6c3a824cf10b0e3153589"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/paper_artifacts/run_id.tex",
+      "bytes": 70,
+      "sha256": "535a1d48982fad0c357ee90b6c42bf7fd6cdabd7d5c8cf0f6873b66b0eb2740c"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/paper_artifacts/table_cost.tex",
+      "bytes": 366,
+      "sha256": "4d7ed3e38b5478c2319eea7908b1ff4ab80218f8cb974787777d658714e5e925"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/paper_artifacts/table_results.tex",
+      "bytes": 452,
+      "sha256": "956f08c2d21b7b156b75a6af2ba4a0225a7ea14c98ba818ba746b16714729e5b"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/predictions/answer_archive.jsonl",
+      "bytes": 392342,
+      "sha256": "9d2aa976c6cad3370ca35f7242ae6ae91053ec41bf7a585fa129ebcd92adf5f6"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/predictions/grades.jsonl",
+      "bytes": 144736,
+      "sha256": "b6ddf90429cb983c4708a87ec0bedb4680293f3b0044543b6732acf5db90003b"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/predictions/grades_sanity.jsonl",
+      "bytes": 45586,
+      "sha256": "98d84a73a08ab176b06117dcd182c808bd96aea07d3be2e7664e373ac9e1df9d"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/predictions/predictions.jsonl",
+      "bytes": 458257,
+      "sha256": "a73ae9f554092ed57eaa801d73a84ea0b7039718e421e6e2e61db1608dc74d3b"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/predictions/summary.json",
+      "bytes": 963,
+      "sha256": "1eb2362dfcd8342d0631dcd163fefd32502078d5059a3456b667b8e88ad8bf97"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/predictions/summary_sanity.json",
+      "bytes": 480,
+      "sha256": "30e858432b0cd556d0fb3d448bf46a3ec669fc594d02a85c814aa175e8d83290"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/report.md",
+      "bytes": 573,
+      "sha256": "b92058f6471d37a2bdf2765d9da97f8cc4f95590b58c0f15fb4ec36ddcbe0720"
+    },
+    {
+      "path": "outputs/models/ministral_3_14b/status.json",
+      "bytes": 244,
+      "sha256": "81dd450d7f0b2feb12b1ce4600ebe7cf74d616613013c200bb55eb605ccd8ec6"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_hist.png",
+      "bytes": 41903,
+      "sha256": "56c5f57b5c26ed8148c6cf06e34819d5686915724048a3497a4e563154599d97"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_082_plot_hist_docks/mv_rad_docks_hist.png",
+      "bytes": 43591,
+      "sha256": "4a453897f0b08290b8f1250786adebc174ff9a9df807ada49965d5901f669a27"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/capacity_vs_bikes.png",
+      "bytes": 70554,
+      "sha256": "1d29c395e9b6d3c79b6c28b3ca917b99bd64aebe44c789bb9d9b5030c2f2a161"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_vs_docks_mv_rad.png",
+      "bytes": 51404,
+      "sha256": "e44ba7c946e469cb335d39eeb49d5d3a5d68f4a9ae2626c832632afcf2d2d299"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_bikes_bar.png",
+      "bytes": 144346,
+      "sha256": "37b08ad935b16b239a9bd598ad2455083f8880258bb87fd416a3c2354a2133bd"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_mv_rad_docks.png",
+      "bytes": 45235,
+      "sha256": "f4230b575209998227e24b831cadceb30849e2d9d87c601e770ff6bbfe3e815b"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/artifacts/mv_rad_syn_087_plot_bar_capacity/top_10_capacities.png",
+      "bytes": 101491,
+      "sha256": "13284d9162ea84176e9b9d6394ec5e64d3b032681a9fabf795bf29b61752fc53"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/model_spec.json",
+      "bytes": 288,
+      "sha256": "08860a0fe9d6adc8d7aaeeec21bf26be81c19d37dc81d26f5e5782f07f1342bc"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/paper_artifacts/run_id.tex",
+      "bytes": 69,
+      "sha256": "5c70088ab146d81e320ef5657808a6c74b86b01d84d241c1353b40744be1a04c"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/paper_artifacts/table_cost.tex",
+      "bytes": 366,
+      "sha256": "428d59faa53e90e230beba8ed20e0d1ac82f1522f30378ab2c4a55c5ca6d164c"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/paper_artifacts/table_results.tex",
+      "bytes": 452,
+      "sha256": "b5cb5d6055086e516f452c5876da0ce5b91c123c32f628ebc66101decc5206a3"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/predictions/answer_archive.jsonl",
+      "bytes": 381283,
+      "sha256": "54af139b78fc3e6b6dbcd83f9ade1c7a0fbec538528dfa8526219d3b24e12097"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/predictions/grades.jsonl",
+      "bytes": 144512,
+      "sha256": "9ecf57a3ab52d3313f8e626b0aed1fb7c1775f8173314059b7b6cec1bdd727c0"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/predictions/grades_sanity.jsonl",
+      "bytes": 45797,
+      "sha256": "c5949c86557c3ca8c671eff78b567fb786cafcc1433ebd2097d400bdb8e5f213"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/predictions/predictions.jsonl",
+      "bytes": 445872,
+      "sha256": "7d41b06b2e810369674668ab55affc73b14d1394c349ca1d8937774875ccf543"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/predictions/summary.json",
+      "bytes": 961,
+      "sha256": "9e812c072bb0ef69d6550c66de7c55cf80b5dfe6670477ba148d7b7bf991257b"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/predictions/summary_sanity.json",
+      "bytes": 481,
+      "sha256": "3bf6f5f713b79289c49f410886e853d6a9a3a346ebf0d769c2d7a0bc897d2ad7"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/report.md",
+      "bytes": 570,
+      "sha256": "ea9e8b1f58f744c415ba868bf8b5392c36d16199a10f43bd83a6c49d07d845e3"
+    },
+    {
+      "path": "outputs/models/ministral_3_3b/status.json",
+      "bytes": 241,
+      "sha256": "13849759f0dafd5def3db001ef7eb448f839bb71084bcc72310cdff7129402bd"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_081_plot_hist_bikes/mv_rad_bikes_histogram.png",
+      "bytes": 47871,
+      "sha256": "d9cb3a280e911c223f4f21f7e9d2d36c0a1b6d02adcbc5e4c69bfacfc6bcb5e1"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_082_plot_hist_docks/mv_rad_docks_histogram.png",
+      "bytes": 40376,
+      "sha256": "ce86bce9b2214ebaeb3eb921625b7196d45e50f877d26d8eb0d488a97b4b5784"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_083_plot_scatter_capacity_bikes/capacity_vs_bikes_mv_rad.png",
+      "bytes": 54654,
+      "sha256": "bed60f0f966bb7606374ce098f622f7e253dbeecc18079183fd36a47026f93a9"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_084_plot_scatter_bikes_docks/bikes_vs_docks_mv_rad.png",
+      "bytes": 64396,
+      "sha256": "0174992ca455aa22d369ac81228e95b14f8e4fb5b37ed8faa497adfea3cd1b3e"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_085_plot_bar_top10_bikes/top_10_stations_bikes.png",
+      "bytes": 175281,
+      "sha256": "d59684532d1fb25065068525e1f2e28871cade3d2e88cade04146a3cbba83472"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_086_plot_bar_top10_docks/top_10_docks_mv_rad.png",
+      "bytes": 190351,
+      "sha256": "88c720fe91be99445477c4948115d8a9e99b6a373ba2993c3650644d511b73fc"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_087_plot_bar_capacity/top_10_capacity_stations.png",
+      "bytes": 156702,
+      "sha256": "30e4a1aaea9eaa90a8992c5832ac13067ae48a9f95d33a7198ef0ae7feafdcc7"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_088_plot_bar_region_totals/bikes_by_region_mv_rad.png",
+      "bytes": 48388,
+      "sha256": "7851e1c9f08f79339b667ef76f3be73110369f50dfafa1b2ec538f5e6d5a5a69"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/artifacts/mv_rad_syn_090_plot_box_bikes/mv_rad_bikes_boxplot.png",
+      "bytes": 36437,
+      "sha256": "0ce8ab1fd4d6e2a5b5d8dba6e403245ef20b1992c55d42d0d3fd8d630728bc2e"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/model_spec.json",
+      "bytes": 288,
+      "sha256": "d790e9be4645cd9c5ec1b0e6ecfbdd7f6c6258604828bb444960e913e4757449"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/paper_artifacts/run_id.tex",
+      "bytes": 69,
+      "sha256": "f7310cdc04d66fa546106352345f2d65cddbbb51d07efb4c91ed70eb05aeea0f"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/paper_artifacts/table_cost.tex",
+      "bytes": 366,
+      "sha256": "bfd35ba94659eb7dc1247819ce2f1496589c267a439706f3bf19b25b0d35e226"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/paper_artifacts/table_results.tex",
+      "bytes": 452,
+      "sha256": "9eabbcb9a8d97a45052f2859af4331a68c374cc99ed178a4b85a7783fe71cdd3"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/predictions/answer_archive.jsonl",
+      "bytes": 503150,
+      "sha256": "14acda945ebd56691b4264778a58f670d20f719ce6faed272a922b8a1891d38c"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/predictions/grades.jsonl",
+      "bytes": 144120,
+      "sha256": "55ec19f04141238e1b887d5e5cc56c10bb04fb77b4078107e9daf71dd11c2687"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/predictions/grades_sanity.jsonl",
+      "bytes": 46048,
+      "sha256": "0eeef26b354622a013caad34178ba00c5b01c8f06c94ab6d36ca9165873e84aa"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/predictions/predictions.jsonl",
+      "bytes": 568076,
+      "sha256": "8ac010d80bad84b48999e1a2f5e49377ce33166b09ca394d4b5fc6a97791d3b0"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/predictions/summary.json",
+      "bytes": 962,
+      "sha256": "ac69afe80f1ae93b239a766112cb6aa286bba4166b85ef70ed4ca4da0fc37a69"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/predictions/summary_sanity.json",
+      "bytes": 481,
+      "sha256": "3477374791415d2435706896ed944b6b71f4c80b4904814b892ae261b37a2e09"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/report.md",
+      "bytes": 570,
+      "sha256": "8eb5fdd366c9a23f60c582c97a1bbfa6f8427d7e4972b2718438a483dce58377"
+    },
+    {
+      "path": "outputs/models/ministral_3_8b/status.json",
+      "bytes": 241,
+      "sha256": "4956fb6d5036c900f11be1db9092aeb87aeca22aa476f2c41ded0d0e066cd000"
+    },
+    {
+      "path": "outputs/paper_artifacts/table_model_comparison.tex",
+      "bytes": 823,
+      "sha256": "308bb2c65d236422a11d01e4e14ae94416dfd8b874d118e0757dfe2b07dbb4d4"
+    },
+    {
+      "path": "outputs/paper_artifacts/table_model_cost.tex",
+      "bytes": 504,
+      "sha256": "3b643d22d9bbe215ec311fcbd8d592095a1f4622f30115bc5377568d106ebf2b"
+    },
+    {
+      "path": "outputs/shared/benchmark/tasks.jsonl",
+      "bytes": 123192,
+      "sha256": "c61f27f2c0ebd85e4859dd2eb1076d035f27876d6af8da31f42a3edbfff1c440"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/free_bike_status.json",
+      "bytes": 81209,
+      "sha256": "49315ed2682112ceea5c2d3d922c794991b46cdd4a18acda6487be6269f4fdbb"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/gbfs.json",
+      "bytes": 978,
+      "sha256": "1d78eb05fd210a7481e607dfe6ed2fe390df0c3b6278e8c7e917c0f28bc6dd4d"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/station_information.json",
+      "bytes": 32354,
+      "sha256": "566adbdec58c4d0469312bdd4203478804a8efcdae1d58451053f9f9e107bf2a"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/station_status.json",
+      "bytes": 25685,
+      "sha256": "16b320aa69db1be5e67035e1bd81033080f7e66f1701f5a80373e2182d408800"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/system_hours.json",
+      "bytes": 440,
+      "sha256": "e7fb8edba957e0217bf44678dba5cd74c31a10b48e323692e9f6101dd411a382"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/system_information.json",
+      "bytes": 787,
+      "sha256": "50e93e939b885f1e659eb7e08497baf7410c1b4a0bc5c281ed425115ab83c79a"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/system_pricing_plans.json",
+      "bytes": 341,
+      "sha256": "4b23b6905f58e80eaf549a2a108e67322c8c4514025ff5e7a5b0e6dc1ede24f2"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/system_regions.json",
+      "bytes": 268,
+      "sha256": "8f9494fe8bdc6b7bf5b16fac1cd6fcbd913df7770853bcb2d79e03965c4b72ed"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/raw/vehicle_types.json",
+      "bytes": 5241,
+      "sha256": "327b94c47816021129e349362686f17e00de4952b15203b46f96839c887afd17"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/tables/free_bike_status.csv",
+      "bytes": 20836,
+      "sha256": "0db786547f496c43c60e886a8323001322696a71ac0d3bc27a8da6a029e547b2"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/tables/station_information.csv",
+      "bytes": 12934,
+      "sha256": "74b31dec86e9ce9edf6eb9913652c4c49d39ed11a5e21a74abba9b172c8edae8"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/tables/station_status.csv",
+      "bytes": 5663,
+      "sha256": "9d33b5332b04a07f06c0a484d216a4fcd74c2ec13e2b192d5ded698b89b25a11"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/tables/system_regions.csv",
+      "bytes": 48,
+      "sha256": "c02b3c564890266017b2a20d4763967ac41601b74a04d279f34560cbc9159a54"
+    },
+    {
+      "path": "outputs/shared/snapshots/mv_rad/tables/vehicle_types.csv",
+      "bytes": 2779,
+      "sha256": "f26910b24c783bf324796fb600b21e2a4ccd40b90fb96e85c3a9cb022c0d8605"
+    },
+    {
+      "path": "outputs/suite_report.md",
+      "bytes": 843,
+      "sha256": "66ec63c868042382fef427c29c04cff84bf30b2abb4bd5e79a78a0c93eb136ac"
+    },
+    {
+      "path": "outputs/suite_summary.json",
+      "bytes": 7828,
+      "sha256": "84efe44decdc9768fe9840a3167d2035e4009a367515543298bc32a608d9c646"
+    },
+    {
+      "path": "data/few_shot_gbfs.yaml",
+      "bytes": 2185,
+      "sha256": "548ac7660d872534c73e4d68b494409dc26ac42937d1042993c5242735edee39"
+    },
+    {
+      "path": "data/toy_snapshot/en/station_information.json",
+      "bytes": 509,
+      "sha256": "ff0611323565f7b33c316ea2968d5d09f8202ddd7bb8423b47a2935c892ae831"
+    },
+    {
+      "path": "data/toy_snapshot/en/station_status.json",
+      "bytes": 735,
+      "sha256": "67cdd7c3acbfd764b41500907ac25b9fa4998c39542e76b3a4751638fb36ac9e"
+    },
+    {
+      "path": "data/toy_snapshot/en/system_information.json",
+      "bytes": 201,
+      "sha256": "bc8b9805bb2790f163c1e9c5189c8f4cb8772258f9c02f0aa39d82e9976bfe5b"
+    },
+    {
+      "path": "data/toy_snapshot/en/vehicle_types.json",
+      "bytes": 348,
+      "sha256": "84719c867fbce79fc84529396af5d74bf536d963479301f95bbb92fa24fd5a47"
+    },
+    {
+      "path": "data/toy_snapshot/gbfs.json",
+      "bytes": 527,
+      "sha256": "5c8730aad5f0d35e02378320c0b1ce149ac96729cf7d4a2755a36b2f08216cf6"
+    }
+  ]
+}

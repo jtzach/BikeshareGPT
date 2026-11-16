@@ -1,0 +1,11 @@
+{
+  "model_label": "gpt-5",
+  "provider": "openai",
+  "model_main": "gpt-5",
+  "size_label": "proprietary",
+  "state": "complete",
+  "completed_tasks": 300,
+  "total_tasks": 300,
+  "remaining_tasks": 0,
+  "message": null
+}

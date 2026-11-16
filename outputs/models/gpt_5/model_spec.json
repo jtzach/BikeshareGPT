@@ -1,0 +1,13 @@
+{
+  "name": "gpt-5",
+  "provider": "openai",
+  "model_main": "gpt-5",
+  "model_summary": "gpt-5",
+  "size_label": "proprietary",
+  "notes": null,
+  "summary_enabled": true,
+  "temperature": 0.0,
+  "max_retries": 2,
+  "base_url": null,
+  "api_key_env": "OPENAI_API_KEY"
+}

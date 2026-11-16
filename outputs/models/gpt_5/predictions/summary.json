@@ -1,0 +1,39 @@
+{
+  "run": "gpt_5",
+  "model_label": "gpt-5",
+  "provider": "openai",
+  "model_main": "gpt-5",
+  "size_label": "proprietary",
+  "num_tasks": 300,
+  "completed_tasks": 300,
+  "by_category": {
+    "semantics": {
+      "n": 100,
+      "accuracy": 1.0,
+      "exec_success_rate": 1.0,
+      "total_tokens": 161643,
+      "total_wall_time_s": 772.2385904788971
+    },
+    "retrieval": {
+      "n": 100,
+      "accuracy": 0.81,
+      "exec_success_rate": 1.0,
+      "total_tokens": 294861,
+      "total_wall_time_s": 3046.276088953018
+    },
+    "synthesis": {
+      "n": 100,
+      "accuracy": 0.7,
+      "exec_success_rate": 1.0,
+      "total_tokens": 407100,
+      "total_wall_time_s": 6137.701256513596
+    }
+  },
+  "overall": {
+    "n": 300,
+    "accuracy": 0.8366666666666667,
+    "exec_success_rate": 1.0,
+    "total_tokens": 863604,
+    "total_wall_time_s": 9956.21593594551
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "last_updated": 1771440703,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "D001",
+        "name": "City Center Hub",
+        "lat": 48.1374,
+        "lon": 11.5755,
+        "capacity": 10
+      },
+      {
+        "station_id": "D002",
+        "name": "Isar River Hub",
+        "lat": 48.1215,
+        "lon": 11.5885,
+        "capacity": 8
+      },
+      {
+        "station_id": "D003",
+        "name": "Park Hub",
+        "lat": 48.164,
+        "lon": 11.603,
+        "capacity": 6
+      },
+      {
+        "station_id": "D004",
+        "name": "University Hub",
+        "lat": 48.1501,
+        "lon": 11.5802,
+        "capacity": 12
+      },
+      {
+        "station_id": "D005",
+        "name": "West Hub",
+        "lat": 48.139,
+        "lon": 11.54,
+        "capacity": 9
+      }
+    ]
+  }
+}

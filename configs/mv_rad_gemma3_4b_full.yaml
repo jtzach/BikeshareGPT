@@ -1,0 +1,21 @@
+run:
+  name: mv_rad_gemma3_4b_full
+  output_root: outputs
+  provider: ollama
+  model_main: gemma3:4b
+  model_summary: gemma3:4b
+  model_moderation: gemma3:4b
+  summary_enabled: true
+  temperature: 0.0
+  max_retries: 2
+  timeout_seconds: 30
+  parallelism: 1
+  seed: 42
+
+feeds: []
+
+benchmark:
+  dataset_path: benchmarks/gbfs_mv_rad_v1
+  semantics: true
+  retrieval: true
+  synthesis: true

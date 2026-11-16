@@ -1,0 +1,38 @@
+run:
+  name: gbfs_benchmark
+  output_root: outputs
+  model_main: gpt-4o
+  model_summary: gpt-4o-mini
+  model_moderation: gpt-4o-mini
+  temperature: 0.0
+  max_retries: 2
+  timeout_seconds: 30
+  parallelism: 1
+  seed: 42
+
+# GBFS systems to evaluate. Add as many as you want.
+feeds:
+  - id: munich_nextbike_um
+    city: Munich
+    country: DE
+    auto_discovery_url: https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/gbfs.json
+    language: en
+
+  - id: berlin_nextbike_bn
+    city: Berlin
+    country: DE
+    auto_discovery_url: https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_bn/gbfs.json
+    language: en
+
+benchmark:
+  semantics: true
+  retrieval: true
+  synthesis: true
+
+  retrieval_tasks_per_feed: 25
+  synthesis_tasks_per_feed: 25
+
+  # Optional: download multiple snapshots spaced in time (slow; useful for trend tasks)
+  multi_snapshot: false
+  snapshots_per_feed: 2
+  snapshot_interval_seconds: 120

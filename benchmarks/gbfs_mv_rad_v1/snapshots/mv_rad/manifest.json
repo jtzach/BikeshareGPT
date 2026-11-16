@@ -1,0 +1,35 @@
+{
+  "dataset_id": "mv_rad_benchmark_ready_v1",
+  "label": "MV-Rad GBFS frozen snapshot (benchmark-ready)",
+  "system_id": "nextbike_um",
+  "language": "en",
+  "version": "2.3",
+  "source_auto_discovery_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/gbfs.json",
+  "frozen_last_updated": 1772282844,
+  "counts": {
+    "stations": 64,
+    "station_status_rows": 64,
+    "vehicle_types": 11,
+    "free_bikes": 335,
+    "regions": 2
+  },
+  "raw_files": [
+    "gbfs_source.json",
+    "system_information.json",
+    "vehicle_types.json",
+    "station_information.json",
+    "station_status.json",
+    "system_hours.json",
+    "system_regions.json",
+    "system_pricing_plans.json"
+  ],
+  "derived_files": [
+    "gbfs.json",
+    "free_bike_status.json"
+  ],
+  "notes": [
+    "This bundle is self-contained for benchmark execution.",
+    "free_bike_status.json is derived from station_status.json and station_information.json to provide richer retrieval and synthesis tasks.",
+    "gbfs.json uses local relative URLs; gbfs_source.json preserves the original source discovery document."
+  ]
+}

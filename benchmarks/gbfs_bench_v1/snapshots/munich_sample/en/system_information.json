@@ -1,0 +1,13 @@
+{
+  "last_updated": 1771440643,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "system_id": "munich_sample",
+    "language": "en",
+    "name": "Munich Bike Share",
+    "operator": "Sample Operator",
+    "url": "https://example.com/munich_sample",
+    "timezone": "Europe/Berlin"
+  }
+}

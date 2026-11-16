@@ -1,0 +1,13 @@
+{
+  "name": "ministral-3-14b",
+  "provider": "ollama",
+  "model_main": "ministral-3:14b",
+  "model_summary": "ministral-3:14b",
+  "size_label": "14B",
+  "notes": null,
+  "summary_enabled": true,
+  "temperature": 0.0,
+  "max_retries": 2,
+  "base_url": null,
+  "api_key_env": null
+}

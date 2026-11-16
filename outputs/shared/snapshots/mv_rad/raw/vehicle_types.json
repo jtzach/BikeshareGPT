@@ -1,0 +1,111 @@
+{
+  "last_updated": 1772282844,
+  "ttl": 60,
+  "data": {
+    "vehicle_types": [
+      {
+        "vehicle_type_id": "1",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/1/h500.png",
+        "name": "26 Zoll - Tourenfahrrad",
+        "_description": "- ALU Deep Wave City Bike mit Shimano Nexus   8-Gang/ Shimano ND\r\n- Rahmen mit Standard Steuerkopf, schwarz\r\n- Rücktrittbremse\r\n- Gepäckträger\r\n- Federgabel ",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "2",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/2/h500.png",
+        "name": "28 Zoll - Tourenfahrrad",
+        "_description": "- ALU Deep Wave City Bike mit Shimano Nexus   8-Gang/ Shimano ND\r\n- Rahmen mit Standard Steuerkopf, schwarz\r\n- Rücktrittbremse\r\n- Gepäckträger\r\n- Federgabel ",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "3",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/3/h500.png",
+        "name": "UsedomRad",
+        "_description": "- Modell “Comfort F” der Firma \"Nextbike\"\r\n-  Shimano 3-Gang oder 7-Gang-Nabenschaltung\r\n- Shimano Nabendynamo\r\n- sehr guter Fahrkomfort, trotz Vandalismussicherung\r\n- Korbausstattung",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "6",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/6/h500.png",
+        "name": "E-SMARTbike",
+        "_description": "- Modell \"SwissFlyer C5-Serie\"\r\n- ALU Deep WaveRahmen\r\n- Shimano 8-Gang-Nabenschaltung\r\n- Panasonic-Antrieb (25 km/h)\r\n- gefederte Gabel und Sattelstütze ",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 60000
+      },
+      {
+        "vehicle_type_id": "7",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/7/h500.png",
+        "name": "20 Zoll - Kinderfahrrad",
+        "_description": "- ATB Modell mit Deep Wave Rahmen ALU\r\n- Shimano Nexus 3-Gang, Shimano ND\r\n- Steuersatz VP, Unicrowngabel Stahl\r\n- Rücktrittbremse\r\n- Gepäckträger",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "8",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/8/h500.png",
+        "name": "24 Zoll - Kinderfahrrad",
+        "_description": "- ATB Modell mit Deep Wave Rahmen ALU\r\n- Shimano Nexus 3-Gang, Shimano ND\r\n- Steuersatz VP, Unicrowngabel Stahl\r\n- Rücktrittbremse\r\n- Gepäckträger",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "13",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/13/h500.png",
+        "name": "UsedomRad Classic",
+        "_description": "- Modell “Classic” der Firma \"Nextbike\"\r\n- Shimano 3-Gang oder 7-Gang-Nabenschaltung\r\n- Shimano Nabendynamo\r\n- sehr guter Fahrkomfort, trotz Vandalismussicherung\r\n- Korbausstattung",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "29",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/29/h500.png",
+        "name": "CARGObike",
+        "_description": "",
+        "form_factor": "cargo_bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "30",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/30/h500.png",
+        "name": "Bike with child seat",
+        "_description": "",
+        "form_factor": "bicycle",
+        "rider_capacity": 2,
+        "propulsion_type": "human"
+      },
+      {
+        "vehicle_type_id": "143",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/143/h500.png",
+        "name": "e-SMARTbike 2.0 RFID",
+        "_description": "- e-eco B frame with Framelock\r\n- aluminum basket with ad panel\r\n- e-CFC fork with charging contact and RFID chip\r\n- Rollerbrake back and front\r\n- RFID Reader \r\n",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 60000
+      },
+      {
+        "vehicle_type_id": "183",
+        "vehicle_image": "https://static.nextbike.net/app/biketypes/type/um/183/h500.png",
+        "name": "E-Bike",
+        "_description": "- Frame model \"SWAP\" with FrameLock\r\n - e-CFC DLS fork with charging contact and RFID chip\r\n - aluminum basket with ad panel\r\n - Rollerbrake back and front\r\n - RFID Reader",
+        "form_factor": "bicycle",
+        "rider_capacity": 1,
+        "propulsion_type": "electric_assist",
+        "max_range_meters": 60000
+      }
+    ]
+  },
+  "version": "2.3"
+}

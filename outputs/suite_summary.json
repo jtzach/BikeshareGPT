@@ -1,0 +1,279 @@
+{
+  "run": "mv_rad_gemma_ministral_gpt5_suite",
+  "models": [
+    {
+      "run": "gemma3_4b",
+      "model_label": "gemma3-4b",
+      "provider": "ollama",
+      "model_main": "gemma3:4b",
+      "size_label": "4B",
+      "num_tasks": 300,
+      "completed_tasks": 300,
+      "by_category": {
+        "semantics": {
+          "n": 100,
+          "accuracy": 1.0,
+          "exec_success_rate": 1.0,
+          "total_tokens": 150324,
+          "total_wall_time_s": 737.411777973175
+        },
+        "retrieval": {
+          "n": 100,
+          "accuracy": 0.48,
+          "exec_success_rate": 0.83,
+          "total_tokens": 224989,
+          "total_wall_time_s": 1016.7623767852783
+        },
+        "synthesis": {
+          "n": 100,
+          "accuracy": 0.19,
+          "exec_success_rate": 0.62,
+          "total_tokens": 325787,
+          "total_wall_time_s": 1747.5495998859406
+        }
+      },
+      "overall": {
+        "n": 300,
+        "accuracy": 0.5566666666666666,
+        "exec_success_rate": 0.8166666666666667,
+        "total_tokens": 701100,
+        "total_wall_time_s": 3501.723754644394
+      }
+    },
+    {
+      "run": "gemma3_12b",
+      "model_label": "gemma3-12b",
+      "provider": "ollama",
+      "model_main": "gemma3:12b",
+      "size_label": "12B",
+      "num_tasks": 300,
+      "completed_tasks": 300,
+      "by_category": {
+        "semantics": {
+          "n": 100,
+          "accuracy": 1.0,
+          "exec_success_rate": 1.0,
+          "total_tokens": 150345,
+          "total_wall_time_s": 479.72064661979675
+        },
+        "retrieval": {
+          "n": 100,
+          "accuracy": 0.63,
+          "exec_success_rate": 0.87,
+          "total_tokens": 193945,
+          "total_wall_time_s": 630.0524446964264
+        },
+        "synthesis": {
+          "n": 100,
+          "accuracy": 0.42,
+          "exec_success_rate": 0.75,
+          "total_tokens": 276940,
+          "total_wall_time_s": 1541.6460740566254
+        }
+      },
+      "overall": {
+        "n": 300,
+        "accuracy": 0.6833333333333333,
+        "exec_success_rate": 0.8733333333333333,
+        "total_tokens": 621230,
+        "total_wall_time_s": 2651.4191653728485
+      }
+    },
+    {
+      "run": "gemma3_27b",
+      "model_label": "gemma3-27b",
+      "provider": "ollama",
+      "model_main": "gemma3:27b",
+      "size_label": "27B",
+      "num_tasks": 300,
+      "completed_tasks": 300,
+      "by_category": {
+        "semantics": {
+          "n": 100,
+          "accuracy": 0.98,
+          "exec_success_rate": 1.0,
+          "total_tokens": 151813,
+          "total_wall_time_s": 1344.2238993644714
+        },
+        "retrieval": {
+          "n": 100,
+          "accuracy": 0.55,
+          "exec_success_rate": 0.94,
+          "total_tokens": 180678,
+          "total_wall_time_s": 1521.8932416439056
+        },
+        "synthesis": {
+          "n": 100,
+          "accuracy": 0.36,
+          "exec_success_rate": 0.67,
+          "total_tokens": 292506,
+          "total_wall_time_s": 1432.4395861625671
+        }
+      },
+      "overall": {
+        "n": 300,
+        "accuracy": 0.63,
+        "exec_success_rate": 0.87,
+        "total_tokens": 624997,
+        "total_wall_time_s": 4298.556727170944
+      }
+    },
+    {
+      "run": "ministral_3_3b",
+      "model_label": "ministral-3-3b",
+      "provider": "ollama",
+      "model_main": "ministral-3:3b",
+      "size_label": "3B",
+      "num_tasks": 300,
+      "completed_tasks": 300,
+      "by_category": {
+        "semantics": {
+          "n": 100,
+          "accuracy": 0.96,
+          "exec_success_rate": 1.0,
+          "total_tokens": 141407,
+          "total_wall_time_s": 1624.8440082073212
+        },
+        "retrieval": {
+          "n": 100,
+          "accuracy": 0.42,
+          "exec_success_rate": 0.91,
+          "total_tokens": 189411,
+          "total_wall_time_s": 1018.6629862785339
+        },
+        "synthesis": {
+          "n": 100,
+          "accuracy": 0.43,
+          "exec_success_rate": 0.95,
+          "total_tokens": 227556,
+          "total_wall_time_s": 591.9748692512512
+        }
+      },
+      "overall": {
+        "n": 300,
+        "accuracy": 0.6033333333333334,
+        "exec_success_rate": 0.9533333333333334,
+        "total_tokens": 558374,
+        "total_wall_time_s": 3235.4818637371063
+      }
+    },
+    {
+      "run": "ministral_3_8b",
+      "model_label": "ministral-3-8b",
+      "provider": "ollama",
+      "model_main": "ministral-3:8b",
+      "size_label": "8B",
+      "num_tasks": 300,
+      "completed_tasks": 300,
+      "by_category": {
+        "semantics": {
+          "n": 100,
+          "accuracy": 0.87,
+          "exec_success_rate": 0.99,
+          "total_tokens": 157153,
+          "total_wall_time_s": 368.30888509750366
+        },
+        "retrieval": {
+          "n": 100,
+          "accuracy": 0.47,
+          "exec_success_rate": 0.96,
+          "total_tokens": 180209,
+          "total_wall_time_s": 2274.536133289337
+        },
+        "synthesis": {
+          "n": 100,
+          "accuracy": 0.35,
+          "exec_success_rate": 0.82,
+          "total_tokens": 251281,
+          "total_wall_time_s": 1263.7777655124664
+        }
+      },
+      "overall": {
+        "n": 300,
+        "accuracy": 0.5633333333333334,
+        "exec_success_rate": 0.9233333333333333,
+        "total_tokens": 588643,
+        "total_wall_time_s": 3906.6227838993073
+      }
+    },
+    {
+      "run": "ministral_3_14b",
+      "model_label": "ministral-3-14b",
+      "provider": "ollama",
+      "model_main": "ministral-3:14b",
+      "size_label": "14B",
+      "num_tasks": 300,
+      "completed_tasks": 300,
+      "by_category": {
+        "semantics": {
+          "n": 100,
+          "accuracy": 1.0,
+          "exec_success_rate": 1.0,
+          "total_tokens": 135177,
+          "total_wall_time_s": 400.3465805053711
+        },
+        "retrieval": {
+          "n": 100,
+          "accuracy": 0.45,
+          "exec_success_rate": 0.99,
+          "total_tokens": 153603,
+          "total_wall_time_s": 1082.6406779289246
+        },
+        "synthesis": {
+          "n": 100,
+          "accuracy": 0.51,
+          "exec_success_rate": 0.97,
+          "total_tokens": 204969,
+          "total_wall_time_s": 1220.8109493255615
+        }
+      },
+      "overall": {
+        "n": 300,
+        "accuracy": 0.6533333333333333,
+        "exec_success_rate": 0.9866666666666667,
+        "total_tokens": 493749,
+        "total_wall_time_s": 2703.798207759857
+      }
+    },
+    {
+      "run": "gpt_5",
+      "model_label": "gpt-5",
+      "provider": "openai",
+      "model_main": "gpt-5",
+      "size_label": "proprietary",
+      "num_tasks": 300,
+      "completed_tasks": 300,
+      "by_category": {
+        "semantics": {
+          "n": 100,
+          "accuracy": 1.0,
+          "exec_success_rate": 1.0,
+          "total_tokens": 161643,
+          "total_wall_time_s": 772.2385904788971
+        },
+        "retrieval": {
+          "n": 100,
+          "accuracy": 0.81,
+          "exec_success_rate": 1.0,
+          "total_tokens": 294861,
+          "total_wall_time_s": 3046.276088953018
+        },
+        "synthesis": {
+          "n": 100,
+          "accuracy": 0.7,
+          "exec_success_rate": 1.0,
+          "total_tokens": 407100,
+          "total_wall_time_s": 6137.701256513596
+        }
+      },
+      "overall": {
+        "n": 300,
+        "accuracy": 0.8366666666666667,
+        "exec_success_rate": 1.0,
+        "total_tokens": 863604,
+        "total_wall_time_s": 9956.21593594551
+      }
+    }
+  ],
+  "skipped_models": []
+}

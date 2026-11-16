@@ -1,0 +1,13 @@
+{
+  "last_updated": 1771440671,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "system_id": "berlin_sample",
+    "language": "en",
+    "name": "Berlin Bike Share",
+    "operator": "Sample Operator",
+    "url": "https://example.com/berlin_sample",
+    "timezone": "Europe/Berlin"
+  }
+}

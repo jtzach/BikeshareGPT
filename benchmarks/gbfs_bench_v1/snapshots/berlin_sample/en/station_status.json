@@ -1,0 +1,79 @@
+{
+  "last_updated": 1771440671,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "B001",
+        "num_bikes_available": 30,
+        "num_docks_available": 0,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 0,
+        "last_reported": 1771440643,
+        "num_ebikes_available": 0
+      },
+      {
+        "station_id": "B002",
+        "num_bikes_available": 2,
+        "num_docks_available": 18,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440487,
+        "num_ebikes_available": 0
+      },
+      {
+        "station_id": "B003",
+        "num_bikes_available": 23,
+        "num_docks_available": 2,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440514,
+        "num_ebikes_available": 2
+      },
+      {
+        "station_id": "B004",
+        "num_bikes_available": 6,
+        "num_docks_available": 12,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440653,
+        "num_ebikes_available": 4
+      },
+      {
+        "station_id": "B005",
+        "num_bikes_available": 5,
+        "num_docks_available": 10,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440451,
+        "num_ebikes_available": 5
+      },
+      {
+        "station_id": "B006",
+        "num_bikes_available": 6,
+        "num_docks_available": 6,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440411,
+        "num_ebikes_available": 2
+      },
+      {
+        "station_id": "B007",
+        "num_bikes_available": 17,
+        "num_docks_available": 5,
+        "is_installed": 1,
+        "is_renting": 1,
+        "is_returning": 1,
+        "last_reported": 1771440444,
+        "num_ebikes_available": 4
+      }
+    ]
+  }
+}

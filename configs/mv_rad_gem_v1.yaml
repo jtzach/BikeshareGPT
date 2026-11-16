@@ -1,0 +1,20 @@
+run:
+  name: mv_rad_gem_v1
+  output_root: outputs
+  model_main: gpt-4o
+  model_summary: gpt-4o-mini
+  model_moderation: gpt-4o-mini
+  temperature: 0.0
+  max_retries: 2
+  timeout_seconds: 30
+  parallelism: 1
+  seed: 42
+
+# Dataset mode: no downloads and no benchmark construction.
+feeds: []
+
+benchmark:
+  dataset_path: benchmarks/gbfs_mv_rad_v1
+  semantics: true
+  retrieval: true
+  synthesis: true

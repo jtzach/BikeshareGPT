@@ -1,0 +1,26 @@
+run:
+  name: toy_offline
+  output_root: outputs
+  model_main: gpt-4o
+  model_summary: gpt-4o-mini
+  temperature: 0.0
+  max_retries: 1
+  timeout_seconds: 20
+  seed: 42
+
+feeds:
+  - id: toy_system
+    city: ToyCity
+    country: XX
+    # Local path so you can test without internet
+    snapshot_path: data/toy_snapshot/gbfs.json
+    auto_discovery_url: data/toy_snapshot/gbfs.json
+    language: en
+
+benchmark:
+  semantics: true
+  retrieval: true
+  synthesis: true
+  retrieval_tasks_per_feed: 5
+  synthesis_tasks_per_feed: 5
+  multi_snapshot: false

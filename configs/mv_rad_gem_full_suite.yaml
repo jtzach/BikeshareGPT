@@ -1,0 +1,74 @@
+run:
+  name: mv_rad_gem_full_suite
+  output_root: outputs
+  provider: ollama
+  summary_enabled: false
+  temperature: 0.0
+  max_retries: 2
+  timeout_seconds: 30
+  parallelism: 1
+  seed: 42
+
+feeds: []
+
+benchmark:
+  dataset_path: benchmarks/gbfs_mv_rad_v1
+  semantics: true
+  retrieval: true
+  synthesis: true
+
+model_suite:
+  - name: llama3.2-3b
+    provider: ollama
+    model_main: llama3.2:3b
+    size_label: 3B
+    notes: Small Llama baseline on Ollama Cloud.
+
+  - name: llama3.1-8b
+    provider: ollama
+    model_main: llama3.1:8b
+    size_label: 8B
+    notes: Mid-size Llama baseline on Ollama Cloud.
+
+  - name: llama3.3-70b
+    provider: ollama
+    model_main: llama3.3:70b
+    size_label: 70B
+    notes: Large Llama baseline on Ollama Cloud.
+
+  - name: qwen3-8b
+    provider: ollama
+    model_main: qwen3:8b
+    size_label: 8B
+    notes: Qwen 3 dense open model via Ollama Cloud.
+
+  - name: gemma3-12b
+    provider: ollama
+    model_main: gemma3:12b
+    size_label: 12B
+    notes: Gemma 3 multimodal-capable text model via Ollama Cloud.
+
+  - name: deepseek-r1-8b
+    provider: ollama
+    model_main: deepseek-r1:8b
+    size_label: 8B
+    notes: DeepSeek-R1 reasoning model via Ollama Cloud.
+
+  - name: mistral-7b
+    provider: ollama
+    model_main: mistral
+    size_label: 7B
+    notes: Mistral 7B open model via Ollama Cloud.
+
+  - name: gpt-oss-20b
+    provider: ollama
+    model_main: gpt-oss:20b
+    size_label: 20B
+    notes: OpenAI open-weight GPT-OSS model via Ollama Cloud.
+
+  - name: gpt-5
+    provider: openai
+    api_key_env: OPENAI_API_KEY
+    model_main: gpt-5
+    size_label: proprietary
+    notes: Proprietary OpenAI reference model. Auto-skipped if OPENAI_API_KEY is missing.

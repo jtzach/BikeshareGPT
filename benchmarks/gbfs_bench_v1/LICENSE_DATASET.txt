@@ -1,0 +1,10 @@
+"GBFS-Bench v1" dataset license
+
+The synthetic snapshot JSON files and the task text in this directory are released under CC0 1.0 Universal (Public Domain Dedication).
+
+You may copy, modify, distribute and use them, even for commercial purposes, all without asking permission.
+
+This license applies ONLY to the contents of:
+  benchmarks/gbfs_bench_v1/
+
+The BikeshareGPT codebase in the repository root is licensed separately (see LICENSE).

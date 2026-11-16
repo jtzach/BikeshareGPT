@@ -1,0 +1,11 @@
+{
+  "model_label": "gemma3-4b",
+  "provider": "ollama",
+  "model_main": "gemma3:4b",
+  "size_label": "4B",
+  "state": "complete",
+  "completed_tasks": 300,
+  "total_tasks": 300,
+  "remaining_tasks": 0,
+  "message": null
+}

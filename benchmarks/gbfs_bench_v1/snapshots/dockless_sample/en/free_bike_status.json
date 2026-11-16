@@ -1,0 +1,105 @@
+{
+  "last_updated": 1771440703,
+  "ttl": 60,
+  "version": "2.3",
+  "data": {
+    "bikes": [
+      {
+        "bike_id": "X000",
+        "lat": 48.13534269154058,
+        "lon": 11.58633066325276,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "ebike"
+      },
+      {
+        "bike_id": "X001",
+        "lat": 48.132038440107536,
+        "lon": 11.565048671290587,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      },
+      {
+        "bike_id": "X002",
+        "lat": 48.14591670943546,
+        "lon": 11.572198101626617,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      },
+      {
+        "bike_id": "X003",
+        "lat": 48.12770293474665,
+        "lon": 11.583817040442831,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "ebike"
+      },
+      {
+        "bike_id": "X004",
+        "lat": 48.13058799879524,
+        "lon": 11.589224912164607,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      },
+      {
+        "bike_id": "X005",
+        "lat": 48.12825578058679,
+        "lon": 11.583902294672507,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      },
+      {
+        "bike_id": "X006",
+        "lat": 48.14387141022466,
+        "lon": 11.56858295007186,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "ebike"
+      },
+      {
+        "bike_id": "X007",
+        "lat": 48.13929499031288,
+        "lon": 11.588104698586198,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      },
+      {
+        "bike_id": "X008",
+        "lat": 48.135152171712235,
+        "lon": 11.584143265646942,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      },
+      {
+        "bike_id": "X009",
+        "lat": 48.13593869771882,
+        "lon": 11.582343779191579,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "ebike"
+      },
+      {
+        "bike_id": "X010",
+        "lat": 48.13893819329211,
+        "lon": 11.589422812551764,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      },
+      {
+        "bike_id": "X011",
+        "lat": 48.1300829822181,
+        "lon": 11.571465589753714,
+        "is_reserved": 0,
+        "is_disabled": 0,
+        "vehicle_type_id": "bike"
+      }
+    ]
+  }
+}

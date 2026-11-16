@@ -1,0 +1,49 @@
+vehicle_type_id,vehicle_image,name,_description,form_factor,rider_capacity,propulsion_type,max_range_meters
+1,https://static.nextbike.net/app/biketypes/type/um/1/h500.png,26 Zoll - Tourenfahrrad,"- ALU Deep Wave City Bike mit Shimano Nexus   8-Gang/ Shimano ND
+- Rahmen mit Standard Steuerkopf, schwarz
+- Rücktrittbremse
+- Gepäckträger
+- Federgabel ",bicycle,1,human,
+2,https://static.nextbike.net/app/biketypes/type/um/2/h500.png,28 Zoll - Tourenfahrrad,"- ALU Deep Wave City Bike mit Shimano Nexus   8-Gang/ Shimano ND
+- Rahmen mit Standard Steuerkopf, schwarz
+- Rücktrittbremse
+- Gepäckträger
+- Federgabel ",bicycle,1,human,
+3,https://static.nextbike.net/app/biketypes/type/um/3/h500.png,UsedomRad,"- Modell “Comfort F” der Firma ""Nextbike""
+-  Shimano 3-Gang oder 7-Gang-Nabenschaltung
+- Shimano Nabendynamo
+- sehr guter Fahrkomfort, trotz Vandalismussicherung
+- Korbausstattung",bicycle,1,human,
+6,https://static.nextbike.net/app/biketypes/type/um/6/h500.png,E-SMARTbike,"- Modell ""SwissFlyer C5-Serie""
+- ALU Deep WaveRahmen
+- Shimano 8-Gang-Nabenschaltung
+- Panasonic-Antrieb (25 km/h)
+- gefederte Gabel und Sattelstütze ",bicycle,1,electric_assist,60000.0
+7,https://static.nextbike.net/app/biketypes/type/um/7/h500.png,20 Zoll - Kinderfahrrad,"- ATB Modell mit Deep Wave Rahmen ALU
+- Shimano Nexus 3-Gang, Shimano ND
+- Steuersatz VP, Unicrowngabel Stahl
+- Rücktrittbremse
+- Gepäckträger",bicycle,1,human,
+8,https://static.nextbike.net/app/biketypes/type/um/8/h500.png,24 Zoll - Kinderfahrrad,"- ATB Modell mit Deep Wave Rahmen ALU
+- Shimano Nexus 3-Gang, Shimano ND
+- Steuersatz VP, Unicrowngabel Stahl
+- Rücktrittbremse
+- Gepäckträger",bicycle,1,human,
+13,https://static.nextbike.net/app/biketypes/type/um/13/h500.png,UsedomRad Classic,"- Modell “Classic” der Firma ""Nextbike""
+- Shimano 3-Gang oder 7-Gang-Nabenschaltung
+- Shimano Nabendynamo
+- sehr guter Fahrkomfort, trotz Vandalismussicherung
+- Korbausstattung",bicycle,1,human,
+29,https://static.nextbike.net/app/biketypes/type/um/29/h500.png,CARGObike,,cargo_bicycle,1,human,
+30,https://static.nextbike.net/app/biketypes/type/um/30/h500.png,Bike with child seat,,bicycle,2,human,
+143,https://static.nextbike.net/app/biketypes/type/um/143/h500.png,e-SMARTbike 2.0 RFID,"- e-eco B frame with Framelock
+- aluminum basket with ad panel
+- e-CFC fork with charging contact and RFID chip
+- Rollerbrake back and front
+- RFID Reader 
+",bicycle,1,electric_assist,60000.0
+183,https://static.nextbike.net/app/biketypes/type/um/183/h500.png,E-Bike,"- Frame model ""SWAP"" with FrameLock
+ - e-CFC DLS fork with charging contact and RFID chip
+ - aluminum basket with ad panel
+ - Rollerbrake back and front
+ - RFID Reader",bicycle,1,electric_assist,60000.0

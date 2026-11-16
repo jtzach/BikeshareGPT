@@ -1,0 +1,29 @@
+{
+  "last_updated": 0,
+  "ttl": 60,
+  "data": {
+    "stations": [
+      {
+        "station_id": "S1",
+        "name": "Central Station",
+        "lat": 48.137154,
+        "lon": 11.576124,
+        "capacity": 20
+      },
+      {
+        "station_id": "S2",
+        "name": "University",
+        "lat": 48.15,
+        "lon": 11.58,
+        "capacity": 15
+      },
+      {
+        "station_id": "S3",
+        "name": "Park",
+        "lat": 48.13,
+        "lon": 11.56,
+        "capacity": 10
+      }
+    ]
+  }
+}

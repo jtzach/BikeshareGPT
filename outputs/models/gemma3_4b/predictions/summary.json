@@ -1,0 +1,39 @@
+{
+  "run": "gemma3_4b",
+  "model_label": "gemma3-4b",
+  "provider": "ollama",
+  "model_main": "gemma3:4b",
+  "size_label": "4B",
+  "num_tasks": 300,
+  "completed_tasks": 300,
+  "by_category": {
+    "semantics": {
+      "n": 100,
+      "accuracy": 1.0,
+      "exec_success_rate": 1.0,
+      "total_tokens": 150324,
+      "total_wall_time_s": 737.411777973175
+    },
+    "retrieval": {
+      "n": 100,
+      "accuracy": 0.48,
+      "exec_success_rate": 0.83,
+      "total_tokens": 224989,
+      "total_wall_time_s": 1016.7623767852783
+    },
+    "synthesis": {
+      "n": 100,
+      "accuracy": 0.19,
+      "exec_success_rate": 0.62,
+      "total_tokens": 325787,
+      "total_wall_time_s": 1747.5495998859406
+    }
+  },
+  "overall": {
+    "n": 300,
+    "accuracy": 0.5566666666666666,
+    "exec_success_rate": 0.8166666666666667,
+    "total_tokens": 701100,
+    "total_wall_time_s": 3501.723754644394
+  }
+}
