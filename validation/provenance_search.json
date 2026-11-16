@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0",
+  "investigation_date": "2026-11-16",
+  "scope": "Local older project folders and ZIP artifacts; no live feed collection or model calls.",
+  "search": {
+    "zip_archives_scanned": 41,
+    "eligible_text_locations": 2440,
+    "distinct_text_contents": 425,
+    "extensions": [
+      ".py",
+      ".ipynb",
+      ".sh",
+      ".ps1",
+      ".md",
+      ".log",
+      ".txt",
+      ".tex",
+      ".yaml",
+      ".yml"
+    ],
+    "additional_inspection": "Snapshot JSON files and manifests inspected by archive member, plus generator reproduction and derived-data comparison.",
+    "exclusions": [
+      "current preparation directory",
+      "package virtual environments",
+      "cache directories",
+      "unrelated nested US GTFS data ZIPs"
+    ],
+    "historical_download_log_found": false,
+    "historical_335_row_construction_code_found": false,
+    "complete_300_task_construction_code_found": false,
+    "independent_historical_annotation_validation_record_found": false,
+    "negative_search_caveat": "Not found within this search scope; this does not prove that the records never existed."
+  },
+  "recovered_snapshot_archive": {
+    "path": "others-bikeshare/gbfs_mv_rad_benchmark_ready_v1.zip",
+    "sha256": "5433903a656361f32cd7c3ef9217abf62f07ab57336b823634a28c142cbb9121",
+    "member_count": 13,
+    "all_members_match_released_snapshot": true,
+    "members": [
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/README.md",
+        "sha256": "e54eb644ef70f758c76b08df91b69a9738dd52524e723b7c489287b1ef183909",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/SHA256SUMS.txt",
+        "sha256": "746cfecb8c91b5ec097409541a05ac7a067a64b976be42baf42db5d562f8f467",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/free_bike_status.json",
+        "sha256": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/gbfs.json",
+        "sha256": "666365d71deefbfe365c47db90ba82c909a587cd20c22427f3fa20c1a6b39067",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/gbfs_source.json",
+        "sha256": "45dd0a2afc9abe243d3439bc961664e7b26e5d89069bc76d558935d079099913",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/manifest.json",
+        "sha256": "ed9e9a96c8dad53f2a25e97c7fb225d1546c7a7da910b0019c6a002674bf012a",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/station_information.json",
+        "sha256": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/station_status.json",
+        "sha256": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/system_hours.json",
+        "sha256": "6dea17ef22b87275208e520435168405c78b10238c41da6dbdb5ce112a0f0fb1",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/system_information.json",
+        "sha256": "3b71a0e42da34dc89d0ef27fb99387c2082eac6b67384558e14f5c07b0a8d0ef",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/system_pricing_plans.json",
+        "sha256": "b08fe1e0da0684f667939b8b78c86f6e768a2a1e4a2f0ee9beada0077a439fb2",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/system_regions.json",
+        "sha256": "496467af6f073df4038358ae57495ff659c28ceda925f5eee0678d7c374e7492",
+        "matches_released_bytes": true
+      },
+      {
+        "archive_member": "gbfs_mv_rad_benchmark_ready_v1/vehicle_types.json",
+        "sha256": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85",
+        "matches_released_bytes": true
+      }
+    ]
+  },
+  "earlier_payload_archives": [
+    {
+      "path": "others-bikeshare/gbfs_munich_snapshot.zip",
+      "sha256": "b8122116f94c459aaec3a14385d45b673ce6595a413b859d428d4cdfa096bddb",
+      "finding": "Despite its name, system_information identifies nextbike_um / MV-Rad. Old gbfs.json and station_status.json each have one extra closing brace; deleting it makes their bytes equal to released gbfs_source.json and station_status.json. This does not establish when/who repaired the payloads."
+    },
+    {
+      "path": "others-bikeshare/gbfs_munich_snapshot_updated.zip",
+      "sha256": "112666dadb00a3729c6723187b59eae10de8b811c4b26a581912c109fca8e1ee",
+      "finding": "Retains the same malformed discovery/status payloads and a different 30-row free-bike file, not the 335-row released augmentation.",
+      "free_bike_member": "gbfs_munich_snapshot/free_bike_status.json",
+      "free_bike_sha256": "5659a9e4a84c762a94e8c50302d5969f8fcbc807416c2c0a60b36acc95c7349c"
+    }
+  ],
+  "augmentation_reconstruction": {
+    "method_status": "Reverse-engineered on 2026-11-16; not recovered historical code.",
+    "scope": "Frozen MV-Rad v1 augmentation only; equality does not establish historical provenance.",
+    "input_sha256": {
+      "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/station_information.json": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38",
+      "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/station_status.json": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11",
+      "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/vehicle_types.json": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85",
+      "benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad/free_bike_status.json": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739"
+    },
+    "archived_row_count": 335,
+    "reconstructed_row_count": 335,
+    "same_order_and_records": true,
+    "whole_json_object_equal": true,
+    "mismatch_zero_based_indices": [],
+    "archived_rows_sha256_canonical_json": "52e423c7eaa5d856ed4bb5b58f0ce734b0da00451ce378bfb81f3e1cbd28668a",
+    "reconstructed_rows_sha256_canonical_json": "52e423c7eaa5d856ed4bb5b58f0ce734b0da00451ce378bfb81f3e1cbd28668a",
+    "per_station_derived_counts_equal_available_bikes": true
+  },
+  "reconstruction_script": {
+    "path": "scripts/reconstruct_derived_bikes.py",
+    "sha256": "aaeaddaaeee6b49961f490f97b5599fd54239ef4ea0a235d35b1f1f11d34f45f",
+    "historical_code_recovered": false,
+    "command": "python scripts/reconstruct_derived_bikes.py --check",
+    "verification": {
+      "mismatch_returns_nonzero": true,
+      "mismatch_identifies_changed_record": true,
+      "existing_output_refused": true
+    },
+    "inference_caveat": "The present-day inferred recipe exactly reproduces retained JSON, but multiple original programs could produce it. Creator, acquisition date, original code, seed and method outside the observed data are not established."
+  },
+  "task_construction_check": {
+    "method": "Execute released generic build_benchmark against frozen mv_rad, requesting 100 retrieval and 100 synthesis, seed 42, supplied semantics YAML; no LLM calls.",
+    "generated_counts": {
+      "semantics": 100,
+      "retrieval": 15,
+      "synthesis": 10,
+      "total": 125
+    },
+    "released_total": 300,
+    "matching_task_ids": 100,
+    "semantics_objects_equal": true,
+    "conclusion": "Semantics construction is reproducible from YAML; generic retrieval/synthesis generators do not reproduce the 200 released snapshot tasks.",
+    "source_files": [
+      {
+        "path": "bikesharegpt/benchmark/build.py",
+        "sha256": "6f483484c86ae7338a4fb772696f4ffc392437e3c276046a9ed80792c8d74a70"
+      },
+      {
+        "path": "bikesharegpt/benchmark/generators.py",
+        "sha256": "59effcf574dd5c587bc408793bec1d69813873ddc4ff87ebc1e394d1dac4f2ac"
+      },
+      {
+        "path": "bikesharegpt/benchmark/semantics_questions.yaml",
+        "sha256": "cd75cd269ee8d5303d4768b4118c550e559a34c8a784c632c460d171ad2a09a1"
+      },
+      {
+        "path": "benchmarks/gbfs_mv_rad_v1/tasks.jsonl",
+        "sha256": "80dd66e01f5f9d3b6d2460abe5d38cfa6939e7b87489f25476de5de86e9c8621"
+      }
+    ]
+  },
+  "postprocessing_documentation": {
+    "path": "SURGeLLM_gbfs_figures_source/sections/5_experiments.tex",
+    "sha256": "64554d7def45ea42113e70c32b35f1f5fe8d8060a28359362f9aa15179979a7d",
+    "finding": "Older paper text describes normalization of Windows/POSIX artifact paths during post-processing. This is documentary support for file-existence reconciliation, not recovered executable analysis code."
+  },
+  "archives": [
+    {
+      "path": "SURGeLLM_polished_paper_source_figfixed.zip",
+      "sha256": "55019d284b34749e94665a2a7d70450e3844d7b4af82a3ae793ebc72f86b7396",
+      "member_count": 44
+    },
+    {
+      "path": "SURGeLLM_paper_source_aclready.zip",
+      "sha256": "e547aac526c42b94d11c1290f432a93910a8b0fd4a19ca50f7cbad53b92875b8",
+      "member_count": 31
+    },
+    {
+      "path": "SURGeLLM_gbfs_figures_source.zip",
+      "sha256": "f349cc1ae8101073580187c7145028b57812c14b57ff93a556c68cc51c25685f",
+      "member_count": 45
+    },
+    {
+      "path": "SURGeLLM_complete_paper_source.zip",
+      "sha256": "0a24b0d5cd4d044d649d460ba22f7b7bd82629ecc4dda366dc6d66eb93ecf81d",
+      "member_count": 44
+    },
+    {
+      "path": "SURGeLLM_anonymous_paper_submission-try.zip",
+      "sha256": "8148950bc384b5a010846d107c497a4d6eb3a47994a7903b66ac802df71cc090",
+      "member_count": 34
+    },
+    {
+      "path": "others-bikeshare/TransitGPT-main.zip",
+      "sha256": "cfde2280f6ba20d518ae65055dbb120a9067483ca9fe46192c75c1056165fca9",
+      "member_count": 121
+    },
+    {
+      "path": "others-bikeshare/ImprovedTransitGPT-master.zip",
+      "sha256": "b4149cb62573d975e669e8dc649e1a73114321719521a570dd3ffededce01d3f",
+      "member_count": 58
+    },
+    {
+      "path": "others-bikeshare/ImprovedTransitGPT-master-v3.zip",
+      "sha256": "5207e2f974aac30b921c82c1d27e94af32bf5973b78f36a9d76e33c4c4b42398",
+      "member_count": 65
+    },
+    {
+      "path": "others-bikeshare/ImprovedTransitGPT-master-v2.zip",
+      "sha256": "5207e2f974aac30b921c82c1d27e94af32bf5973b78f36a9d76e33c4c4b42398",
+      "member_count": 65
+    },
+    {
+      "path": "BikeshareGPT_SURGeLLM_polished_repo_figfixed.zip",
+      "sha256": "dfd71ff114599ef27347e0321edf11be05655752fc80b6203509d89679f945ea",
+      "member_count": 445
+    },
+    {
+      "path": "BikeshareGPT_ACL_final_submission_full8_figure3_source.zip",
+      "sha256": "e10b0a661077981627fbe44e00749fc919c3ce5b76bd05c9fba8c302ed40e957",
+      "member_count": 30
+    },
+    {
+      "path": "BikeshareGPT_SURGeLLM_complete_repo_named.zip",
+      "sha256": "fb0966afa2da6cac9727abdd367531f583bb22aca2776f59c8c7efe923c718e8",
+      "member_count": 445
+    },
+    {
+      "path": "BikeshareGPT_SURGeLLM_aclready_repo.zip",
+      "sha256": "77d071f38eade77d932c50196e8071ce683ade2fe692e6068be33deb01bb7bef",
+      "member_count": 148
+    },
+    {
+      "path": "BikeshareGPT_ACL_final_fullfig3_main8_source.zip",
+      "sha256": "1d0866293d25d4429bc856ca4703202b233cab69eaae787908d00ad7a28daea4",
+      "member_count": 28
+    },
+    {
+      "path": "BikeshareGPT_ACL_ARR_MAY_2026.zip",
+      "sha256": "5c0ac946626f4daf58fa51bdf6026dfb29ff8baf4e68d7ea200f86c2f1af7769",
+      "member_count": 27
+    },
+    {
+      "path": "BikeshareGPT-repo.zip",
+      "sha256": "dbd90837688d432d9c8f9e2ee8be60a795841e679b5b592802d0f757600f1080",
+      "member_count": 431
+    },
+    {
+      "path": "10461_BikeshareGPT_LLMs_for_GB_Software.zip",
+      "sha256": "527d99331bd17b5eabbbeef615d6e8cff9b4b962e5e21b8f1f3fb020e85e0547",
+      "member_count": 248
+    },
+    {
+      "path": "10461_BikeshareGPT_LLMs_for_GB_Data.zip",
+      "sha256": "527d99331bd17b5eabbbeef615d6e8cff9b4b962e5e21b8f1f3fb020e85e0547",
+      "member_count": 248
+    },
+    {
+      "path": "BikeshareGPT_anonymous_supplementary_repo.zip",
+      "sha256": "eb6fa2b948984e6c1f328f21fe95f6b37d54857e30d81555d59ec316e3390c77",
+      "member_count": 366
+    },
+    {
+      "path": "BikeshareGPT_anonymous_supplementary_repo-7D66.zip",
+      "sha256": "527d99331bd17b5eabbbeef615d6e8cff9b4b962e5e21b8f1f3fb020e85e0547",
+      "member_count": 248
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT_GEM_repo_300tasks.zip",
+      "sha256": "7cc6b6754cef806605d9cd72c3d95010fc02416dbb952850ed1e7b24b38a44ba",
+      "member_count": 162
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT_GEM_ollama_suite_repo.zip",
+      "sha256": "d20e0bb583d4de9f56d63af330907adedc90cfa59783cd405afe34bd3bf0be71",
+      "member_count": 139
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT_GEM_mixed_resume_suite_repo.zip",
+      "sha256": "856cce4c842d8c20c9317fbed27f9cb47e4e4f4acee3befcfa66370227bb0976",
+      "member_count": 171
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT_updated.zip",
+      "sha256": "e239722f9f5f33577d5fe5d6a01f6e75b45aae892f0275d9e16c6a94e2709275",
+      "member_count": 109
+    },
+    {
+      "path": "Language_Models_as_Mobility_Agents_Evaluating_GBFS_Understanding_Retrieval_and_Code_Generation_rootflat_repo.zip",
+      "sha256": "dc7234dc08796d836c24a33e7c4cc936122405b7189cf361876c0bbc4c834eb0",
+      "member_count": 421
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT_GEM_repo_aclformatted.zip",
+      "sha256": "cc465fccfc298613e8dec2af3f0db90fbaff88d52d9cb3f961f832d3c06ecb76",
+      "member_count": 194
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT_GEM_repo_updated.zip",
+      "sha256": "48729bc4e672e8341c1b0191c25465ac226cfb5f077e507c168448aeed5613f2",
+      "member_count": 149
+    },
+    {
+      "path": "others-bikeshare/gbfs_munich_snapshot.zip",
+      "sha256": "b8122116f94c459aaec3a14385d45b673ce6595a413b859d428d4cdfa096bddb",
+      "member_count": 9
+    },
+    {
+      "path": "others-bikeshare/gbfs_munich_snapshot_updated.zip",
+      "sha256": "112666dadb00a3729c6723187b59eae10de8b811c4b26a581912c109fca8e1ee",
+      "member_count": 10
+    },
+    {
+      "path": "others-bikeshare/gbfs_mv_rad_benchmark_ready_v1.zip",
+      "sha256": "5433903a656361f32cd7c3ef9217abf62f07ab57336b823634a28c142cbb9121",
+      "member_count": 13
+    },
+    {
+      "path": "BikeshareGPT_ACL_ready_submit_reference_checked_source.zip",
+      "sha256": "3a53f069d3843d7c5d11ecb372ebc54b551798e2cc994a711b639b85dd3ce33b",
+      "member_count": 38
+    },
+    {
+      "path": "BikeshareGPT_ACL_strong_ready_submit_source.zip",
+      "sha256": "8db40e73754bcaa0ea6d0b356ab77320da5603d0b38d3110bb7c88b80a735cc1",
+      "member_count": 26
+    },
+    {
+      "path": "BikeshareGPT_repo_with_new_figures.zip",
+      "sha256": "f3d00bfb0ac11b2a208904797dad59f889f42833ed82f55ee8bf8f3c1c20d256",
+      "member_count": 443
+    },
+    {
+      "path": "BikeshareGPT_singlefile_fixed.zip",
+      "sha256": "afd6afce9e8e82b8d71ebf34a29f9bbe51bdcbd5c5eab94eb307208bf5b77276",
+      "member_count": 23
+    },
+    {
+      "path": "BikeshareGPT__LLMs_for_GBFS_Understanding__Retrieval____Code_Generation.zip",
+      "sha256": "b0a8ed2ea5bc6f3aef4da4990ccfbdb0e09d8da6195d9647527cee7bc881ee74",
+      "member_count": 29
+    },
+    {
+      "path": "Language_Models_as_Mobility_Agents_Evaluating_GBFS_Understanding__Retrieval__and_Code_Generation.zip",
+      "sha256": "e6fa85276edba7fadf8aec5ec341f7e5f23984330357531ace8805d294177ea3",
+      "member_count": 310
+    },
+    {
+      "path": "Language_Models_as_Mobility_Agents_Evaluating_GBFS_Understanding_Retrieval_and_Code_Generation_rootflat_source.zip",
+      "sha256": "d9ca9d924885bf28a44d95dcc253fd7886ea10f3b04a601902cc7ffd0411f72d",
+      "member_count": 21
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT.zip",
+      "sha256": "350936e427f9e0d61a973d2862a6ebc39cff44199e2a9b8ee051865f5b3642a1",
+      "member_count": 109
+    },
+    {
+      "path": "others-bikeshare/BikeshareGPT_GEM_mixed_resume_suite_repo/BikeshareGPT.zip",
+      "sha256": "059dec5313510f5437c835b3c6cc2fa6109d32b7c47a85e1473d3268d0ad7f6f",
+      "member_count": 356
+    },
+    {
+      "path": "GBFS-ACL-ARR-May-2026/BikeshareGPT_ACL_page_limited_source.zip",
+      "sha256": "5d459c05b52c93a063974542eb4a87f230cdcb1c5d58cff02d70d159c0863a60",
+      "member_count": 37
+    },
+    {
+      "path": "GBFS-ACL-ARR-May-2026/BikeshareGPT_ACL_final_enhanced_source.zip",
+      "sha256": "c85d6c267fb9a96ca368917e4ee762a81abc226ceed484720abf46958396a6a5",
+      "member_count": 37
+    }
+  ],
+  "remaining_author_evidence": [
+    "actual acquisition date/time and tool",
+    "original augmentation creator and source procedure",
+    "original retrieval/synthesis task construction and validation process",
+    "component-specific authored-data licensing"
+  ]
+}

@@ -23,6 +23,8 @@ Derived bike records contain constructed identifiers (for example `65937_bike_1`
 
 ## Files and schema
 
+A subsequent search of 41 archives recovered an older byte-identical snapshot but no historical construction script or acquisition log. The new `scripts/reconstruct_derived_bikes.py` independently reconstructs the complete 335-row JSON object exactly from source station/type data. The inferred coordinate and battery rules, their limited scope, and source hashes are documented in [validation/PROVENANCE.md](validation/PROVENANCE.md). Exact reconstruction does not establish the original collection or authoring history.
+
 | File or field | Meaning |
 | --- | --- |
 | `tasks.jsonl` | One JSON object per task |
@@ -51,6 +53,10 @@ The five fixed prompt examples cover station counts, maximum availability, total
 The semantics reference labels are strongly imbalanced: A=84, B=14, C=2, D=0. An always-A response scores 84% on that track without reading a question. This weakens interpretation of high semantics accuracy. The frozen labels have not been changed. A future version should randomize/balance choices, retain an explicit mapping, verify answer correctness after shuffling, and rerun all affected evaluations.
 
 ## Grading and limits
+
+The new [per-task validation](validation/README.md) supports 263 references, flags two unsupported targets and 25 formulation ambiguities, and identifies ten plotting tasks without substantive correctness references. The two unsupported targets are a missing regional capacity reported as zero and an undefined utilization stored as non-standard JSON `NaN`. The review combines source-grounded Astra adjudication and independent Python calculations; it is not independent human annotation. Corrections are proposals for a new version, not silent edits to v1.
+
+The official-schema check also identifies a missing required `timezone` field in system information (`time_zone` is present instead). The local discovery document intentionally uses relative file URLs and therefore fails URI-format checks. Eight other endpoint payloads pass their individual schemas; cross-file and conditional specification rules need separate evaluation. See [validation/schema_validation.json](validation/schema_validation.json).
 
 The submitted runner dropped top-level `artifacts` before `artifact_exists`, producing `no_artifacts` for every plot task. The updated runner routes the full result for future runs; original grades remain unchanged. The audit separately reconciles file existence, explaining the headline arithmetic without certifying semantic chart correctness. Some saved GPT-5 outputs explicitly describe zero-point plots.
 

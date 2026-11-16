@@ -48,6 +48,12 @@ An additional offline inspection checked all 511 saved records for the 73 tasks 
 
 ## Versioning and further validation
 
+The [reference validation report](validation/reference_validation.json) and [semantic evidence](validation/semantic_review_v1.json) add a new audit of all 300 items: 263 supported, two unsupported targets, 25 ambiguities, and ten plotting targets without semantic references. Run `python scripts/validate_references.py` without network access. Its Python calculations do not import the original graders or task generators; semantic judgments are frozen source-grounded Astra annotations, not Python verification of meaning or independent human review.
+
+Run `python scripts/reconstruct_derived_bikes.py --check` to reproduce all 335 derived bike records from station/type inputs. This newly inferred method matches the archived whole JSON object and does not recover original acquisition history. [Provenance evidence](validation/PROVENANCE.md) records the search scope and limitations.
+
+Optional `python scripts/validate_gbfs_schema.py` uses the pinned official schemas and the dependency in `validation/schema_requirements.txt`. It reports known legacy deviations rather than modifying payloads. Its zero exit status indicates that the audit ran, not that every payload conforms. The report separates intentional local discovery URLs from the missing required `timezone` field.
+
 Keep original inputs/scores frozen. Assign a new version to changes in tasks, references, graders, coverage, or prompts. Resume checks task IDs rather than content hashes; use a fresh run name/output directory for any changed protocol.
 
 Before journal release: document/recover derived-data construction; independently review reference answers; clarify authored-data licensing; archive a DOI/citation; retain archive, code revision, environment, and configuration together. Semantic chart grading and extra operators/timestamps should be separate improvements with new validation results.

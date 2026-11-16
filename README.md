@@ -6,6 +6,8 @@ Repository: https://github.com/jtzach/BikeshareGPT
 
 Read [DATA_CARD.md](DATA_CARD.md) for provenance, data fields, reuse, and limitations, and [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the evaluation protocol and historical score discrepancy.
 
+The [reference audit](validation/README.md) covers all 300 items: 263 are supported, two have unsupported targets, 25 are ambiguous or underspecified, and ten plotting tasks lack substantive correctness references. This is a new Astra-assisted review and independent Python recalculation, not historical or independent human validation. Original tasks and results remain unchanged; [correction proposals](validation/correction_proposals_v1_1.json) are recorded separately.
+
 ## Inspect and validate without model calls
 
 Python 3.10 or newer is sufficient for the standard-library audit:
@@ -13,6 +15,24 @@ Python 3.10 or newer is sufficient for the standard-library audit:
 ```bash
 python scripts/audit_release.py
 ```
+
+The independent reference check and the reconstructed augmentation are also offline and use the standard library:
+
+```bash
+python scripts/validate_references.py
+python scripts/reconstruct_derived_bikes.py --check
+```
+
+The reconstruction exactly reproduces all 335 derived records. It was inferred from retained data on 16 November 2026; the original acquisition logs and construction script were not recovered. See [provenance evidence](validation/PROVENANCE.md).
+
+For the additional check against pinned official GBFS 2.3 schemas:
+
+```bash
+python -m pip install -r validation/schema_requirements.txt
+python scripts/validate_gbfs_schema.py
+```
+
+Eight of ten endpoint payloads pass their individual schemas. The source system-information payload lacks required `timezone` (it uses `time_zone`); the derived local discovery document deliberately uses relative URLs that fail URI-format checks. The original discovery document passes. See [schema report](validation/schema_validation.json). Completing an audit does not mean all data pass it, and individual-schema checks do not establish complete GBFS conformance.
 
 To save a new report (existing files are never overwritten):
 
@@ -34,6 +54,7 @@ The audit verifies task counts, snapshot checksums, saved record completeness, a
 | `configs/mv_rad_gemma_ministral_gpt5_suite.yaml` | The seven-model configuration associated with the paper |
 | `benchmarks/gbfs_bench_v1/`, `data/toy_snapshot/` | Separate example bundles; not extra systems in the 300-task MV-Rad evaluation |
 | `tests/` | Offline loader, output, runner, and grading regressions |
+| `validation/` | Per-task reference evidence, correction proposals, provenance reconstruction, and official-schema checks |
 
 ## Run the seven-model configuration
 

@@ -1,0 +1,424 @@
+{
+  "proposal_version": "v1.1-draft-2026-11-16",
+  "status": "proposals_only_not_applied",
+  "source_task_sha256": "80dd66e01f5f9d3b6d2460abe5d38cfa6939e7b87489f25476de5de86e9c8621",
+  "source_release_unchanged": true,
+  "model_results_unchanged": true,
+  "not_human_validation": true,
+  "proposals": [
+    {
+      "task_id": "sem_006",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Best supplied choice omits the is_renting=true condition. A nonzero count alone does not establish current rental/return availability."
+      ],
+      "proposal": "Qualify the selected option with is_renting=true, and distinguish physical functional count from permission to rent/return.",
+      "candidate_answer_under_explicit_policy": "B",
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "sem_007",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Best supplied choice omits the is_returning=true condition. A nonzero count alone does not establish current rental/return availability."
+      ],
+      "proposal": "Qualify the selected option with is_returning=true, and distinguish physical functional count from permission to rent/return.",
+      "candidate_answer_under_explicit_policy": "A",
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "sem_054",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Best supplied choice describes a record update, whereas the specification identifies a station report to the backend; these times need not coincide."
+      ],
+      "proposal": "Describe the time the station last reported its status to the operator backend.",
+      "candidate_answer_under_explicit_policy": "A",
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_ret_099_station_max_capacity",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Capacity is absent for station 582784416; ranking covers reported capacities only."
+      ],
+      "proposal": "Specify how missing capacity values are handled; retain source missingness and distinguish unknown from zero.",
+      "candidate_answer_under_explicit_policy": "76245743",
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_003_total_capacity",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Station 582784416 has no capacity field; missing-value handling is unspecified."
+      ],
+      "proposal": "State that only reported positive capacities enter utilization; label sums as reported-capacity sums.",
+      "candidate_answer_under_explicit_policy": 700,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_010_avg_utilization",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Station 582784416 has no capacity field; missing-value handling is unspecified."
+      ],
+      "proposal": "State that only reported positive capacities enter utilization; label sums as reported-capacity sums.",
+      "candidate_answer_under_explicit_policy": 0.4643194175069638,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_011_system_occupancy",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Station 582784416 has no capacity field; missing-value handling is unspecified."
+      ],
+      "proposal": "State that only reported positive capacities enter utilization; label sums as reported-capacity sums.",
+      "candidate_answer_under_explicit_policy": 47.857142857142854,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_012_total_visible_vehicles",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "The requested sum is 670, but the term visible vehicles double-counts derived rows representing station bikes."
+      ],
+      "proposal": "Ask for the sum of two record counts without claiming unique vehicles, or ask for 335 represented station vehicles.",
+      "candidate_answer_under_explicit_policy": 670,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_023_top5_capacity_ids",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Missing capacity at station 582784416 is excluded; query does not state that policy.",
+        "No tie-breaking rule; multiple answers satisfy the requested ranking."
+      ],
+      "proposal": "Specify lexical station_id ascending as secondary key, or accept all valid tied answers.",
+      "candidate_answer_under_explicit_policy": [
+        "76245743",
+        "76246101",
+        "153213",
+        "76289539",
+        "76245875"
+      ],
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_024_top5_utilization_ids",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Missing capacity at station 582784416 is excluded; query does not state that policy.",
+        "No tie-breaking rule; multiple answers satisfy the requested ranking."
+      ],
+      "proposal": "Specify lexical station_id ascending as secondary key, or accept all valid tied answers.",
+      "candidate_answer_under_explicit_policy": [
+        "474397171",
+        "139983",
+        "255713882",
+        "31395158",
+        "414200360"
+      ],
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_025_bottom5_bikes_ids",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "No tie-breaking rule; multiple answers satisfy the requested ranking."
+      ],
+      "proposal": "Specify lexical station_id ascending as secondary key, or accept all valid tied answers.",
+      "candidate_answer_under_explicit_policy": [
+        "153092",
+        "199134",
+        "199140",
+        "414195423",
+        "448298966"
+      ],
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_026_bottom5_docks_ids",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "No tie-breaking rule; multiple answers satisfy the requested ranking."
+      ],
+      "proposal": "Specify lexical station_id ascending as secondary key, or accept all valid tied answers.",
+      "candidate_answer_under_explicit_policy": [
+        "139983",
+        "255713882",
+        "31395158",
+        "414200360",
+        "474397171"
+      ],
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_029_capacity_gt15_bikes_lt5",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Missing capacity at station 582784416 prevents deciding its eligibility; published answer excludes unknown values."
+      ],
+      "proposal": "Specify that records with missing capacity are excluded.",
+      "candidate_answer_under_explicit_policy": [
+        "550865550",
+        "76246101"
+      ],
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_035_bottom3_utilization",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Missing capacity at station 582784416 is excluded; query does not state that policy.",
+        "No tie-breaking rule; multiple answers satisfy the requested ranking."
+      ],
+      "proposal": "Specify lexical station_id ascending as secondary key, or accept all valid tied answers.",
+      "candidate_answer_under_explicit_policy": [
+        "153092",
+        "199134",
+        "199140"
+      ],
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_041_distance_128091_128093",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 1893.7659699979174,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_042_distance_139977_139983",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 2011.6933033591126,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_043_distance_153092_153213",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 17529.671394307097,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_044_distance_153216_153220",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 2750.2303120301854,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_045_distance_199129_199130",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 113228.16745057529,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_046_distance_199134_199140",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 25994.324426483752,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_047_distance_255713801_255713854",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 572.6037964714637,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_048_distance_255713882_255727865",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 82527.58165696844,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_049_distance_255731882_272373",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 110700.43427426566,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_050_distance_31395158_340786035",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "Great-circle distance requires a sphere radius; the question omits it."
+      ],
+      "proposal": "Specify sphere radius 6371000 m and absolute meter tolerance; avoid implying millimeter physical accuracy.",
+      "candidate_answer_under_explicit_policy": 42485.04195059143,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_067_region_949_total_capacity",
+      "classification": "mismatch",
+      "issues": [
+        "The sole region 949 station has missing capacity. Reference 0 mistakes an empty reported-capacity sum for known total capacity."
+      ],
+      "proposal": "Return null/unknown under an explicit missing-data policy, or explicitly ask for the sum of reported capacities.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_069_region_949_avg_utilization",
+      "classification": "mismatch",
+      "issues": [
+        "No defined utilization ratio exists; source reference is non-standard JSON NaN and the query demands a float."
+      ],
+      "proposal": "Return JSON null with an explicitly supported missing-value grader, or replace this task.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_079_station_most_cargo",
+      "classification": "ambiguous_or_underspecified",
+      "issues": [
+        "No tie-breaking rule; multiple answers satisfy the requested ranking."
+      ],
+      "proposal": "Specify lexical station_id ascending as secondary key, or accept all valid tied answers.",
+      "candidate_answer_under_explicit_policy": "139977",
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_081_plot_hist_bikes",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_082_plot_hist_docks",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed.",
+        "Plot also requires an explicit missing-capacity policy."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_085_plot_bar_top10_bikes",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed.",
+        "Top 10 plotting requires an explicit secondary ordering rule for ties."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_086_plot_bar_top10_docks",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed.",
+        "Top 10 plotting requires an explicit secondary ordering rule for ties."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_087_plot_bar_capacity",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed.",
+        "Plot also requires an explicit missing-capacity policy.",
+        "Top 10 plotting requires an explicit secondary ordering rule for ties."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_088_plot_bar_region_totals",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    },
+    {
+      "task_id": "mv_rad_syn_090_plot_box_bikes",
+      "classification": "not_verifiable",
+      "issues": [
+        "Boolean True is an artifact-existence target, not a reference plot or content rubric. No model artifact inspected or executed."
+      ],
+      "proposal": "Publish expected plot data plus a rubric for chart type, axes, units and labels; review actual images separately.",
+      "candidate_answer_under_explicit_policy": null,
+      "requires_author_adjudication": true
+    }
+  ],
+  "release_wide_proposals": [
+    "Balance semantic answer positions with a recorded seed in a new task version.",
+    "Clarify that derived vehicle rows and coordinates are augmentations, not independently observed vehicles.",
+    "Do not compare scores on corrected tasks with historical v1 scores without a separately identified evaluation."
+  ]
+}

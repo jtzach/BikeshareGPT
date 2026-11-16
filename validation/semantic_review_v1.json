@@ -1,0 +1,1134 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-11-16",
+  "reviewer": "GPT-6-Astra",
+  "not_human_validation": true,
+  "not_blinded_to_published_labels": true,
+  "scope": "All100questions and all400choices inspected; sources identify evidence, not a new automated natural-language proof.",
+  "primary_specification": "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md",
+  "source_access_date": "2026-11-16",
+  "tasks": [
+    {
+      "id": "sem_001",
+      "query_sha256": "3e6bc31445363c5c12d7944a3e17b95aecc503c32648d55ad10ec89b5d7828f7",
+      "reviewed_choice": "A",
+      "field_or_section": "feeds",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#gbfsjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_002",
+      "query_sha256": "08200866b79c9fe20bdf6ad27fbe6166f79def9d97307fc525c961793bf6a7c8",
+      "reviewed_choice": "B",
+      "field_or_section": "ttl",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#output-format"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_003",
+      "query_sha256": "bf0920a91f5de4ea5471a5fb80281cce3cc3300fec675ceabd9c9a127b4ad7e7",
+      "reviewed_choice": "A",
+      "field_or_section": "last_updated; field-types Timestamp",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#output-format"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_004",
+      "query_sha256": "8af8d7b29f65a5448528b2af3239404191aa5ff0d3e5c2ea4768164cbf6bed68",
+      "reviewed_choice": "C",
+      "field_or_section": "stations; name; lat; lon; capacity",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_005",
+      "query_sha256": "4971dd5bc494e5242a75111e6efd1ab27359adb16d705676b33509e26190b299",
+      "reviewed_choice": "A",
+      "field_or_section": "num_bikes_available; num_docks_available",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_006",
+      "query_sha256": "228b0f0481854c993ca9a673056a8da3fa4267c22de65b3cc58f2061788245c5",
+      "reviewed_choice": "B",
+      "field_or_section": "num_bikes_available; is_renting",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": [
+        "Best supplied choice omits the is_renting=true condition. A nonzero count alone does not establish current rental/return availability."
+      ],
+      "proposal": "Qualify the selected option with is_renting=true, and distinguish physical functional count from permission to rent/return."
+    },
+    {
+      "id": "sem_007",
+      "query_sha256": "ba21d59f71ca86f9f1e1b13862b3b7803689e2465455637c6e02fbac8c371c6c",
+      "reviewed_choice": "A",
+      "field_or_section": "num_docks_available; is_returning",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": [
+        "Best supplied choice omits the is_returning=true condition. A nonzero count alone does not establish current rental/return availability."
+      ],
+      "proposal": "Qualify the selected option with is_returning=true, and distinguish physical functional count from permission to rent/return."
+    },
+    {
+      "id": "sem_008",
+      "query_sha256": "38de430105b2a7aa94ee4103eb97d2afecbfde44a5b2ac1b41c02feae00d21b4",
+      "reviewed_choice": "B",
+      "field_or_section": "is_renting",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_009",
+      "query_sha256": "53e3c0ac47428e923bf0ea54af74593c909bbb18cf3288dd560cc58a5a0ca3b9",
+      "reviewed_choice": "A",
+      "field_or_section": "is_returning",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_010",
+      "query_sha256": "5c4d2d0ee7ae91531aaec1ebbd77c9521f3ac3fae6d20b13cd4d17252a26480a",
+      "reviewed_choice": "A",
+      "field_or_section": "is_installed",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_011",
+      "query_sha256": "088a433a7ea5e07831f04c4ceb4ea206dd7370783de2c0e21b1be8a4acd2aa4f",
+      "reviewed_choice": "B",
+      "field_or_section": "station_id cross-reference",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_012",
+      "query_sha256": "31ecbb452c9a4a4aa03e94def35267ef95031b245f98df84da80c3712e9f21a0",
+      "reviewed_choice": "A",
+      "field_or_section": "name; operator; timezone",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_013",
+      "query_sha256": "18f6e7bd7057a93c0e2ced4b396ba6d681f90b09d7ec90ffd998d062d6f6c943",
+      "reviewed_choice": "B",
+      "field_or_section": "HTTP endpoints; introduction; data-latency",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#file-distribution"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_014",
+      "query_sha256": "cd58bb5d621f60f7c8820ba2951a7c29d3a607dc81cf86bcd187aa90c0a0616c",
+      "reviewed_choice": "A",
+      "field_or_section": "feed scope",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_015",
+      "query_sha256": "972fb928b762736737153fa58943633ef5bb23b6a1c2e8d40bb9b4f7edd6c893",
+      "reviewed_choice": "B",
+      "field_or_section": "bike_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": [],
+      "qualification": "Identifier is unique within the feed state; not a persistent trip-linked vehicle identity."
+    },
+    {
+      "id": "sem_016",
+      "query_sha256": "50c1d45bec1dc5007ef1943acbb08ed64f294b3f4e3e0ac4e0357a9058cc9d19",
+      "reviewed_choice": "B",
+      "field_or_section": "vehicle_types",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_017",
+      "query_sha256": "57e8a2ec0d933556f216360e0fb1f8db1777de98cb250a628cf508d9f95cab70",
+      "reviewed_choice": "A",
+      "field_or_section": "form_factor",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_018",
+      "query_sha256": "43d1f33de0fa7f25a0417825b9dc24c35012d64dacf5fcf12a31902cc5c0a9ee",
+      "reviewed_choice": "A",
+      "field_or_section": "propulsion_type",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_019",
+      "query_sha256": "d1b667c4b57ddc918943416b6594c5b16dd9c43ea177b20efdb0c5a850b019d1",
+      "reviewed_choice": "A",
+      "field_or_section": "language keys",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#gbfsjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_020",
+      "query_sha256": "dea9dfb59e4bd0edabf9b0cdef93d71c313eb2f49ea260faa2c62fc0206373bc",
+      "reviewed_choice": "A",
+      "field_or_section": "GBFS current state; GTFS Schedule reference",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#introduction",
+        "https://gtfs.org/documentation/schedule/reference/"
+      ],
+      "issues": [],
+      "qualification": "Comparison is to GTFS Schedule; GTFS also has a Realtime specification."
+    },
+    {
+      "id": "sem_021",
+      "query_sha256": "3f0873a4a84348f4702a694dc5d82360a18f8c2d094836adfe5542bf53f5d7e2",
+      "reviewed_choice": "B",
+      "field_or_section": "lat; lon",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_022",
+      "query_sha256": "65a1e98dfff48048414c029ca5bcf5f5d471dd198ec3a2d550a876c7c5dbfc35",
+      "reviewed_choice": "A",
+      "field_or_section": "capacity",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_023",
+      "query_sha256": "0eb9b6b084f027a7dd05b9140fff150df9ed5bc5202acbd8cfc4a61af0b3a9b0",
+      "reviewed_choice": "A",
+      "field_or_section": "plans",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_pricing_plansjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_024",
+      "query_sha256": "e663c5acf48604e606442649be688e4c5f660d8ccefd369e5794fbeda4722b85",
+      "reviewed_choice": "A",
+      "field_or_section": "Timestamp; station_status last_reported",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#field-types"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_025",
+      "query_sha256": "fad65b7dc45e13b2e07e2328efd853f0320aa28272b32db821e9e72804220c4a",
+      "reviewed_choice": "A",
+      "field_or_section": "alerts",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_alertsjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_026",
+      "query_sha256": "6186bd7f9a70b6567caad4efca41b6e90afcf10eb2de0081708e492113275b60",
+      "reviewed_choice": "A",
+      "field_or_section": "Maintainer Role",
+      "basis": "Official governance page identifies the maintainer; all four organizations compared.",
+      "sources": [
+        "https://gbfs.org/documentation/process/#maintainer-role"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_027",
+      "query_sha256": "e4f7346cd6422c6c197552b461229780bd837851952d5c43d51df54f73dd2367",
+      "reviewed_choice": "A",
+      "field_or_section": "data",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#output-format"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_028",
+      "query_sha256": "a0688db31dbef2b2c320c91fe6ad5596aedbda70a5e0fc9527edc4cbadb3d2ab",
+      "reviewed_choice": "B",
+      "field_or_section": "name; url",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#gbfsjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_029",
+      "query_sha256": "5b28ebe3cb91aca95fed4d25b972c89028e41fbaa1cd75a8076ba5168ba24184",
+      "reviewed_choice": "A",
+      "field_or_section": "is_renting",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_030",
+      "query_sha256": "24cf2314137a2da767d5363de439661e026e048c47e6733dde54fb4e018252b5",
+      "reviewed_choice": "A",
+      "field_or_section": "num_bikes_available",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_031",
+      "query_sha256": "25779f2135b6dfad3f26f7cf5dcb16cf6a0a434fee9c11e4503cb662343d4194",
+      "reviewed_choice": "A",
+      "field_or_section": "url",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_032",
+      "query_sha256": "818f26a642e8a876d71f0a2023d92b55fbf2af5c833645ac17cfb0823bc955ae",
+      "reviewed_choice": "A",
+      "field_or_section": "ttl; data-latency",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#output-format"
+      ],
+      "issues": [],
+      "qualification": "A is the reasonable choice among the supplied distractors; ttl does not justify arbitrary stale caching beyond the refresh interval."
+    },
+    {
+      "id": "sem_033",
+      "query_sha256": "f068b9e244a41d36ffac3c0eb6dd709e99d5b9776b1296d5d98470d6a7fa77be",
+      "reviewed_choice": "A",
+      "field_or_section": "lat; lon",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_034",
+      "query_sha256": "3adfb97c1bd4e263e314b2df89fb66e837c072bad25c366f2e7bc66a8172a7c4",
+      "reviewed_choice": "B",
+      "field_or_section": "num_bikes_available; num_docks_available",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_035",
+      "query_sha256": "721f1778b4493b5bc902ab0176cb32f02c9bb874823daaeb8471a370c74b3f44",
+      "reviewed_choice": "A",
+      "field_or_section": "is_virtual_station",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_036",
+      "query_sha256": "73b10cab27628b912f7eca198a0ecfc541301f334df078569ef8a51241664cf9",
+      "reviewed_choice": "B",
+      "field_or_section": "capacity",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_037",
+      "query_sha256": "45d3c61a14147cc6757de4465003c8a8a8a98dea9ea3f454669f4d5e244c7592",
+      "reviewed_choice": "A",
+      "field_or_section": "name",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_038",
+      "query_sha256": "38444641d248e8a94b7e519f2a82fec7b54132a7d5a1ba0fc74f8a9e39d02e5d",
+      "reviewed_choice": "B",
+      "field_or_section": "timezone",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_039",
+      "query_sha256": "787c59bfd34cf02f340734196c4facb5f159a293c11e451e3720fc8b28e3c60a",
+      "reviewed_choice": "C",
+      "field_or_section": "system_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_040",
+      "query_sha256": "9b7299f93fd6478a55a94461519a26c91146584eaa02e591a0ac6d6911e5f3cc",
+      "reviewed_choice": "A",
+      "field_or_section": "plan_id; currency; price",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_pricing_plansjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_041",
+      "query_sha256": "2604164f78b51a4f14111260e43c0588b3376786bafa4806cd8ecfda7ea7348f",
+      "reviewed_choice": "A",
+      "field_or_section": "rental_hours",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_hoursjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_042",
+      "query_sha256": "38f67a87c8d06739a149aac23d6ad2f7917e3fd3fd636566599f196a832ccefe",
+      "reviewed_choice": "A",
+      "field_or_section": "region_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_043",
+      "query_sha256": "dc04de3c155228292b11f04c930a1efb51e183ac86ba4c8e42549c55d696899b",
+      "reviewed_choice": "A",
+      "field_or_section": "name",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_044",
+      "query_sha256": "12c2348c14c335abf2ea4250abf8f7c4d482f6993a0682083fae41d28bc061f7",
+      "reviewed_choice": "B",
+      "field_or_section": "vehicle_type_id cross-reference",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_045",
+      "query_sha256": "1858786b298bf3c0bbcdcba00f289f603ef04e7ce86f532cc9a1757098059a96",
+      "reviewed_choice": "A",
+      "field_or_section": "bike_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": [],
+      "qualification": "Identifier is unique within the feed state; not a persistent trip-linked vehicle identity."
+    },
+    {
+      "id": "sem_046",
+      "query_sha256": "714ffa57eb9e96819881efda707040954235b800783ee3c1f5f50ac9501ac5f0",
+      "reviewed_choice": "B",
+      "field_or_section": "lat; lon",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_047",
+      "query_sha256": "47e84dcb6f9c1f823cb9fbb3d160f751ca56e9590cebf7b6ec5bc27c7d342b51",
+      "reviewed_choice": "A",
+      "field_or_section": "propulsion_type",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_048",
+      "query_sha256": "0f5b728f1be29d55f92b0ef57fce4c2a57ba60abcbdc99eb42478ef626b9bc5b",
+      "reviewed_choice": "A",
+      "field_or_section": "form_factor",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_049",
+      "query_sha256": "3e786460695171ec2c7dee8f450e2589f339d38518e86bed8a4f84a7e8980275",
+      "reviewed_choice": "A",
+      "field_or_section": "rider_capacity",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_050",
+      "query_sha256": "4bbe36784bf1a0de36fc67f13a7b76e86c182038d6ba4f06bd744409b771fe66",
+      "reviewed_choice": "A",
+      "field_or_section": "max_range_meters",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_051",
+      "query_sha256": "bfd5ca0a5c48f1b378c26c36e3eaad6208df1af85e7d5271c8052a945fc757cc",
+      "reviewed_choice": "A",
+      "field_or_section": "en language example",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#gbfsjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_052",
+      "query_sha256": "bfeb3fc0393eb2d877048025e46c53f669d20c8400582897363732b7cc647ba8",
+      "reviewed_choice": "A",
+      "field_or_section": "version",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#output-format"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_053",
+      "query_sha256": "62c3f57ed3ac963761db5606807c40e53c71b9052ce8f6ce1f7ff0bfff0125e0",
+      "reviewed_choice": "A",
+      "field_or_section": "individual endpoints",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#file-distribution"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_054",
+      "query_sha256": "ab80bfcca57629662836531ffb7a6f65f13c1fa32b07a8bf53a4e02fbd7a26b2",
+      "reviewed_choice": "A",
+      "field_or_section": "last_reported; data-latency",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": [
+        "Best supplied choice describes a record update, whereas the specification identifies a station report to the backend; these times need not coincide."
+      ],
+      "proposal": "Describe the time the station last reported its status to the operator backend."
+    },
+    {
+      "id": "sem_055",
+      "query_sha256": "627974562c8d22b1a264913a8d486db6d6ef3956cf84579ea731525a948e1f73",
+      "reviewed_choice": "A",
+      "field_or_section": "is_renting",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_056",
+      "query_sha256": "552142294e5d5e0f7f15d8942471989d78174755242970963cd2d599cf0c5cbc",
+      "reviewed_choice": "A",
+      "field_or_section": "is_returning",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_057",
+      "query_sha256": "84b7d871a3380f6fde18db6ca144a9b17721d946a32a334e6aeb4b94865db9dc",
+      "reviewed_choice": "A",
+      "field_or_section": "is_installed",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_058",
+      "query_sha256": "a03b66458848a4a6861d2c4a3f62e2acf1d57ca5d402ad323ca10e00336548b0",
+      "reviewed_choice": "A",
+      "field_or_section": "station metadata",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_059",
+      "query_sha256": "acb8dfd30dbd5d72b471922b545a47bd09da893d9c7e717128f3db21db314a4f",
+      "reviewed_choice": "A",
+      "field_or_section": "status; data-latency",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_060",
+      "query_sha256": "d20e50a377c425245b725aba2d5b95cfe65f829df9b32e548177cc218a546be4",
+      "reviewed_choice": "A",
+      "field_or_section": "rental_uris",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_061",
+      "query_sha256": "ac58c1c4cea5c9f0245631a91c9de8fcd1a80d5558ff5b269087c16e8c8fbb60",
+      "reviewed_choice": "A",
+      "field_or_section": "currency",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_pricing_plansjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_062",
+      "query_sha256": "47bea82d1c739b40578b0d015e52a55b8a0ac79efe562e0190df9c4bac4720e2",
+      "reviewed_choice": "A",
+      "field_or_section": "price",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_pricing_plansjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_063",
+      "query_sha256": "2f0ca482c02ef458c65de668b5d2d26a300e4ae962f29dd6ca8348796ba1edb7",
+      "reviewed_choice": "A",
+      "field_or_section": "start_time; end_time",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_hoursjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_064",
+      "query_sha256": "32cb05c0836c00716ddb13e9260b331778bf42db5850e3c3c31c41c1fb36f81d",
+      "reviewed_choice": "A",
+      "field_or_section": "user_types",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_hoursjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_065",
+      "query_sha256": "932fbd70e875d831b82e1b57c988b205d00c7060a6b86cbea86600f31be35eda",
+      "reviewed_choice": "A",
+      "field_or_section": "one row per vehicle; optional for station-based vehicles",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_066",
+      "query_sha256": "4060cde30c1561ae3cd5c047b9119b7401ae9666d695a7566006c77e762e183f",
+      "reviewed_choice": "A",
+      "field_or_section": "short_name; station_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_067",
+      "query_sha256": "47b911ad0e37c65a61dc7eca5990bcb2c06eeab4867589406fb4e0d034c153c6",
+      "reviewed_choice": "A",
+      "field_or_section": "station_id cross-reference; station_information metadata",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_068",
+      "query_sha256": "c5d2a77b9c8610f52a3fefcb2bc4a7c1be00bbbc1e6a543993820462e21fec9e",
+      "reviewed_choice": "A",
+      "field_or_section": "vehicle_type_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_069",
+      "query_sha256": "ab2eed515a0b0a40b4771dac8327ebdaa0e1998f79ffd2e8c0b7acc3c587fc8b",
+      "reviewed_choice": "A",
+      "field_or_section": "public feed schemas; private passwords absent",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#files"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_070",
+      "query_sha256": "21a030593f690a6c533172b0025518b8fc62be0d8e664874de11406c51cd1344",
+      "reviewed_choice": "A",
+      "field_or_section": "operator",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_071",
+      "query_sha256": "c3fd3b363a085709313545e4caa2b032a01b4c8d0744b66a6b2525b063fd43be",
+      "reviewed_choice": "A",
+      "field_or_section": "feed_contact_email",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_072",
+      "query_sha256": "ea32a6a7fc46cb840afe17ae9cc73b8067c7d02a03769f16208f1451b3dde659",
+      "reviewed_choice": "A",
+      "field_or_section": "email",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_073",
+      "query_sha256": "359084bdfc9cf22bcdab96149248e7ebe32fb16c13023c33968e22e7705f5983",
+      "reviewed_choice": "A",
+      "field_or_section": "phone_number",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_074",
+      "query_sha256": "bcbfbdbc429b56d93f821e88ea128cb6555fc8e3c8a30006bf8d4938670e0c2d",
+      "reviewed_choice": "A",
+      "field_or_section": "regions; region_id; name",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_regionsjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_075",
+      "query_sha256": "965a62613d1d43b74ae9c11e8aaccc1e05d21d10b271963e4631538861c97ba5",
+      "reviewed_choice": "A",
+      "field_or_section": "vehicle_image",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_076",
+      "query_sha256": "0e9a5d72baf8296ff363ddc15593c00a4098918c5fbd550a1ab123b4fceed04b",
+      "reviewed_choice": "A",
+      "field_or_section": "num_docks_available",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_077",
+      "query_sha256": "309202ae0129bd9598b27ecb344f1f45c82ea55d0e0445b3d20fade5b8436055",
+      "reviewed_choice": "A",
+      "field_or_section": "ttl; file-distribution; data-latency",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#output-format"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_078",
+      "query_sha256": "15f0ec0a513abbd00309e8e3cc75bfe531bcb7c6f33b3bdbe010775a549a0ab7",
+      "reviewed_choice": "A",
+      "field_or_section": "plan_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#system_pricing_plansjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_079",
+      "query_sha256": "e357baf66b1d8a2ed37800679d0786ce153b264e6263a252c4c7b89cca5c64f4",
+      "reviewed_choice": "A",
+      "field_or_section": "propulsion_type electric_assist",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": [],
+      "qualification": "In general electric_assist combines motor assist with human propulsion; this benchmark context is bicycles."
+    },
+    {
+      "id": "sem_080",
+      "query_sha256": "8969d43496d56d68bb2224c9041fe825893c98af7a5cf85dcd88f514b9d0f3a8",
+      "reviewed_choice": "A",
+      "field_or_section": "form_factor cargo_bicycle",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_081",
+      "query_sha256": "f4250292b7af348e7b8b2db48b15599d6e7b7e0730347503049675a810a4c5d9",
+      "reviewed_choice": "A",
+      "field_or_section": "max_range_meters conditional requirement",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_082",
+      "query_sha256": "dd14dfc9531ed6254ea998e94905027d179462a3dcd0e5eb086d8818b95f8eda",
+      "reviewed_choice": "A",
+      "field_or_section": "rider_capacity",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_083",
+      "query_sha256": "13c37038810ead0bc60bd1ec8d44e843de79edc4d19bb66705e7e792e82047b4",
+      "reviewed_choice": "A",
+      "field_or_section": "license_id; SPDX",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#licensing"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_084",
+      "query_sha256": "d5c5144a20ed05cdc77e0cf0831bcc3f3884e10de5feab0e6ccd9dcf25f43aa6",
+      "reviewed_choice": "A",
+      "field_or_section": "vehicle_types",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#vehicle_typesjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_085",
+      "query_sha256": "5f29e5dc8f02e14af219a8f22c716b37b6fb8d5397e41d4aaaba2744c4322442",
+      "reviewed_choice": "A",
+      "field_or_section": "bikes array",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_086",
+      "query_sha256": "0d0a865d8d58f311db96aa2939709838b82cabe574b20be8473a0e2a2a19e2be",
+      "reviewed_choice": "A",
+      "field_or_section": "stations array",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_087",
+      "query_sha256": "4c47c21b972198cf10e2ce3ba805eeaa71423facc14c18ac9ffdc2f317a339dd",
+      "reviewed_choice": "A",
+      "field_or_section": "region_id cross-reference",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_088",
+      "query_sha256": "48236e45c23acfc7646bbae1fd12dcb9f0d7c437c47071a8933402e204079c38",
+      "reviewed_choice": "A",
+      "field_or_section": "retrieval category; mv_rad_ret_092_count_empty_stations",
+      "basis": "Project taxonomy adjudication from actual task operations and repository documentation; not a GBFS specification fact.",
+      "sources": [
+        "README.md",
+        "benchmarks/gbfs_mv_rad_v1/README.md",
+        "benchmarks/gbfs_mv_rad_v1/tasks.jsonl"
+      ],
+      "issues": [],
+      "qualification": "One-hop here means one source table; counting filtered records still requires computation."
+    },
+    {
+      "id": "sem_089",
+      "query_sha256": "47f367eef6a175274882a8224097c7a23c09dfdebaaa11c235b8b24a82045cbe",
+      "reviewed_choice": "A",
+      "field_or_section": "synthesis category; utilization ratio joins and aggregation",
+      "basis": "Project taxonomy adjudication from actual task operations and repository documentation; not a GBFS specification fact.",
+      "sources": [
+        "README.md",
+        "benchmarks/gbfs_mv_rad_v1/README.md",
+        "benchmarks/gbfs_mv_rad_v1/tasks.jsonl"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_090",
+      "query_sha256": "3397920b89fd985d10d1fe4d3f499879a8dc64a32c9be1cb791e790220185402",
+      "reviewed_choice": "A",
+      "field_or_section": "fixing inputs allows deterministic recomputation; no correctness guarantee",
+      "basis": "Methodological inference: fixed inputs permit repeat calculations; other options incorrectly assert generalization, correctness or removal of grading.",
+      "sources": [
+        "benchmarks/gbfs_mv_rad_v1/README.md"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_091",
+      "query_sha256": "6e2724682e17d67c0f67ab611e8b5447028ee1f7c2e7d58b96dc8de711b89f2c",
+      "reviewed_choice": "A",
+      "field_or_section": "is_reserved",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_092",
+      "query_sha256": "5b2aa36a2c2ed59e3187495b14f4c97c4ba40abf03666072f37c7caad96fbfd7",
+      "reviewed_choice": "A",
+      "field_or_section": "is_disabled",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_093",
+      "query_sha256": "edeaf94f166bf48f469b8fa265a463571f1147830e51b97edd4d24ce87b3cdf7",
+      "reviewed_choice": "A",
+      "field_or_section": "station_id",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_094",
+      "query_sha256": "9be7d8c0dee53d995f142810f5d35321d49c3c729db0acf80322771dbc5a8ea0",
+      "reviewed_choice": "A",
+      "field_or_section": "README benchmark categories and task category fields",
+      "basis": "Project taxonomy adjudication from actual task operations and repository documentation; not a GBFS specification fact.",
+      "sources": [
+        "README.md",
+        "benchmarks/gbfs_mv_rad_v1/README.md",
+        "benchmarks/gbfs_mv_rad_v1/tasks.jsonl"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_095",
+      "query_sha256": "ceeee82ae2e24cf507db90dce8d9c5cd35fac8e79dac0088c96c9169a30412de",
+      "reviewed_choice": "A",
+      "field_or_section": "last_updated",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#output-format"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_096",
+      "query_sha256": "f26d48be55c143d6dedbdd404cdc4c745407f4aea9663e885a24f289774d708f",
+      "reviewed_choice": "A",
+      "field_or_section": "station_information; station_status",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#files"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_097",
+      "query_sha256": "e5bbdf1bbabb1300f68fea81d889cb5adeba86bd8059515e64e1798e1736ca0d",
+      "reviewed_choice": "A",
+      "field_or_section": "vehicle_types_available",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_098",
+      "query_sha256": "97501f457385ffcf63777109c2b466a376289a6cc04118c29d4d7b08fb220c95",
+      "reviewed_choice": "A",
+      "field_or_section": "station_id; field-types ID",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#station_informationjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_099",
+      "query_sha256": "d120c338b88fd5cb735fe7e40c53d603f9530e2d41b37b43fce2499210edcdb4",
+      "reviewed_choice": "A",
+      "field_or_section": "current_fuel_percent",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    },
+    {
+      "id": "sem_100",
+      "query_sha256": "3c3cd5ba34c3102f495c6701b7918dc53d79d5fa378e6b8251c86da191f1a181",
+      "reviewed_choice": "A",
+      "field_or_section": "current_range_meters",
+      "basis": "Source-grounded comparison of all four supplied options with GBFS2.3 field/section definitions.",
+      "sources": [
+        "https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson"
+      ],
+      "issues": []
+    }
+  ]
+}

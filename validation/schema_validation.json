@@ -1,0 +1,161 @@
+{
+  "validation_date": "2026-11-16",
+  "gbfs_version": "2.3",
+  "schema_repository": "https://github.com/MobilityData/gbfs-json-schema",
+  "schema_commit": "f8d605e6ea23620891cb5f67344af1bec62c5e78",
+  "schema_directory_url": "https://github.com/MobilityData/gbfs-json-schema/tree/f8d605e6ea23620891cb5f67344af1bec62c5e78/v2.3",
+  "schema_license": "Apache-2.0 (unmodified upstream LICENSE included)",
+  "schema_hashes_sha256": {
+    "free_bike_status.json": "c11e2b0af2869a07414aa6b59d2919094f6d10f5d0ddfc203008c49cea1986af",
+    "gbfs.json": "89bc729e29674d5e99e876a41f390fbf10d3817db977c9e58700a1a9fdb4a2f4",
+    "station_information.json": "0048a8388113ef6bb37113cb83d0c0123bdddbb8fff7071d0fcf6931ed426090",
+    "station_status.json": "10ed322ab4b912fe65d1dd897acc031265c39787e1b44fe2af709dacece9c32c",
+    "system_hours.json": "ba6ce2bfa423144c76e01c60026003cf04f75173757b647cf5ab3d25208d5c83",
+    "system_information.json": "2de079814a3681da50de11f1e2f8720c46fc739c2ae53cd33d4b49461ac47888",
+    "system_pricing_plans.json": "2f15378612e42ef9a27cd2cb10eef49ba993e5e262eace63b2010052a9c58ba5",
+    "system_regions.json": "5a2102ae763b90753a864ad39fb2f546f373f74913fcd8475b558a78d4e1921d",
+    "vehicle_types.json": "aac8bb1bb4e20a5bdf2ea13020552ef337d6468feb238a0da55c5dcbc5d0cb9c"
+  },
+  "validator": "jsonschema Draft7Validator with FormatChecker",
+  "jsonschema_version": "4.25.1",
+  "validator_script_sha256": "872b3f62aafca85f2a4785d1451f750409401922c7aa1973a76fb07fd98189f6",
+  "summary": {
+    "payloads_checked": 10,
+    "schema_pass": 8,
+    "schema_fail": 2
+  },
+  "limits": [
+    "Checks each payload independently; conditional relationships across endpoints are not fully checked.",
+    "Schemas and payloads are preserved, not modified to force validation to pass.",
+    "This is a new audit, not evidence of original acquisition or historical validation."
+  ],
+  "payloads": [
+    {
+      "file": "free_bike_status.json",
+      "input_sha256": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739",
+      "schema": "free_bike_status.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    },
+    {
+      "file": "gbfs.json",
+      "input_sha256": "666365d71deefbfe365c47db90ba82c909a587cd20c22427f3fa20c1a6b39067",
+      "schema": "gbfs.json",
+      "schema_pass": false,
+      "errors": [
+        {
+          "path": "data/en/feeds/0/url",
+          "message": "'./system_information.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/1/url",
+          "message": "'./vehicle_types.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/2/url",
+          "message": "'./station_information.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/3/url",
+          "message": "'./station_status.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/4/url",
+          "message": "'./free_bike_status.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/5/url",
+          "message": "'./system_hours.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/6/url",
+          "message": "'./system_regions.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/7/url",
+          "message": "'./system_pricing_plans.json' is not a 'uri'",
+          "validator": "format"
+        }
+      ],
+      "interpretation": "Derived offline discovery intentionally uses relative URLs; URI-format failures are expected."
+    },
+    {
+      "file": "gbfs_source.json",
+      "input_sha256": "45dd0a2afc9abe243d3439bc961664e7b26e5d89069bc76d558935d079099913",
+      "schema": "gbfs.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    },
+    {
+      "file": "station_information.json",
+      "input_sha256": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38",
+      "schema": "station_information.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    },
+    {
+      "file": "station_status.json",
+      "input_sha256": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11",
+      "schema": "station_status.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    },
+    {
+      "file": "system_hours.json",
+      "input_sha256": "6dea17ef22b87275208e520435168405c78b10238c41da6dbdb5ce112a0f0fb1",
+      "schema": "system_hours.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    },
+    {
+      "file": "system_information.json",
+      "input_sha256": "3b71a0e42da34dc89d0ef27fb99387c2082eac6b67384558e14f5c07b0a8d0ef",
+      "schema": "system_information.json",
+      "schema_pass": false,
+      "errors": [
+        {
+          "path": "data",
+          "message": "'timezone' is a required property",
+          "validator": "required"
+        }
+      ],
+      "interpretation": "Missing required timezone field; source has nonstandard time_zone. Preserved unchanged."
+    },
+    {
+      "file": "system_pricing_plans.json",
+      "input_sha256": "b08fe1e0da0684f667939b8b78c86f6e768a2a1e4a2f0ee9beada0077a439fb2",
+      "schema": "system_pricing_plans.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    },
+    {
+      "file": "system_regions.json",
+      "input_sha256": "496467af6f073df4038358ae57495ff659c28ceda925f5eee0678d7c374e7492",
+      "schema": "system_regions.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    },
+    {
+      "file": "vehicle_types.json",
+      "input_sha256": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85",
+      "schema": "vehicle_types.json",
+      "schema_pass": true,
+      "errors": [],
+      "interpretation": "No individual-schema violations detected; this does not establish complete GBFS conformance."
+    }
+  ]
+}
