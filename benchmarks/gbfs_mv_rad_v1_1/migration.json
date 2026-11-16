@@ -1,0 +1,3914 @@
+{
+  "from_version": "1.0.0",
+  "to_version": "1.1.0",
+  "date": "2026-11-16",
+  "source_tasks_sha256": "80dd66e01f5f9d3b6d2460abe5d38cfa6939e7b87489f25476de5de86e9c8621",
+  "target_tasks_sha256": "653518e9dd18fce1b5f663847a83a94bb22002c57ef6f53ba11f5bdd9861690a",
+  "v1_preserved": true,
+  "historical_model_results_reused_as_v1_1_results": false,
+  "model_evaluation_status": "No new model runs or v1.1 performance claims.",
+  "retained_task_ids": [
+    "sem_001",
+    "sem_002",
+    "sem_003",
+    "sem_004",
+    "sem_005",
+    "sem_006",
+    "sem_007",
+    "sem_008",
+    "sem_009",
+    "sem_010",
+    "sem_011",
+    "sem_012",
+    "sem_013",
+    "sem_014",
+    "sem_015",
+    "sem_016",
+    "sem_017",
+    "sem_018",
+    "sem_019",
+    "sem_020",
+    "sem_021",
+    "sem_022",
+    "sem_023",
+    "sem_024",
+    "sem_025",
+    "sem_026",
+    "sem_027",
+    "sem_028",
+    "sem_029",
+    "sem_030",
+    "sem_031",
+    "sem_032",
+    "sem_033",
+    "sem_034",
+    "sem_035",
+    "sem_036",
+    "sem_037",
+    "sem_038",
+    "sem_039",
+    "sem_040",
+    "sem_041",
+    "sem_042",
+    "sem_043",
+    "sem_044",
+    "sem_045",
+    "sem_046",
+    "sem_047",
+    "sem_048",
+    "sem_049",
+    "sem_050",
+    "sem_051",
+    "sem_052",
+    "sem_053",
+    "sem_054",
+    "sem_055",
+    "sem_056",
+    "sem_057",
+    "sem_058",
+    "sem_059",
+    "sem_060",
+    "sem_061",
+    "sem_062",
+    "sem_063",
+    "sem_064",
+    "sem_065",
+    "sem_066",
+    "sem_067",
+    "sem_068",
+    "sem_069",
+    "sem_070",
+    "sem_071",
+    "sem_072",
+    "sem_073",
+    "sem_074",
+    "sem_075",
+    "sem_076",
+    "sem_077",
+    "sem_078",
+    "sem_079",
+    "sem_080",
+    "sem_081",
+    "sem_082",
+    "sem_083",
+    "sem_084",
+    "sem_085",
+    "sem_086",
+    "sem_087",
+    "sem_088",
+    "sem_089",
+    "sem_090",
+    "sem_091",
+    "sem_092",
+    "sem_093",
+    "sem_094",
+    "sem_095",
+    "sem_096",
+    "sem_097",
+    "sem_098",
+    "sem_099",
+    "sem_100",
+    "mv_rad_ret_001_system_name",
+    "mv_rad_ret_002_operator",
+    "mv_rad_ret_003_timezone",
+    "mv_rad_ret_004_phone",
+    "mv_rad_ret_005_email",
+    "mv_rad_ret_006_feed_email",
+    "mv_rad_ret_007_license",
+    "mv_rad_ret_008_system_id",
+    "mv_rad_ret_009_language",
+    "mv_rad_ret_010_url",
+    "mv_rad_ret_011_num_languages",
+    "mv_rad_ret_012_list_languages",
+    "mv_rad_ret_013_num_feeds_en",
+    "mv_rad_ret_014_list_feeds_en",
+    "mv_rad_ret_015_regions_count",
+    "mv_rad_ret_016_regions_names",
+    "mv_rad_ret_017_pricing_count",
+    "mv_rad_ret_018_pricing_plan_id",
+    "mv_rad_ret_019_pricing_currency",
+    "mv_rad_ret_020_pricing_price",
+    "mv_rad_ret_021_hours_user_types",
+    "mv_rad_ret_022_hours_days",
+    "mv_rad_ret_023_hours_start",
+    "mv_rad_ret_024_hours_end",
+    "mv_rad_ret_025_region_id_for_mv_rad",
+    "mv_rad_ret_026_region_id_for_scooter",
+    "mv_rad_ret_027_feed_has_free_bike_status",
+    "mv_rad_ret_028_feed_has_station_information",
+    "mv_rad_ret_029_feed_has_vehicle_types",
+    "mv_rad_ret_030_feed_has_system_alerts",
+    "mv_rad_ret_031_vehicle_type_count",
+    "mv_rad_ret_032_vehicle_type_ids",
+    "mv_rad_ret_033_propulsion_types",
+    "mv_rad_ret_034_form_factors",
+    "mv_rad_ret_035_electric_type_count",
+    "mv_rad_ret_036_human_type_count",
+    "mv_rad_ret_037_bicycle_type_count",
+    "mv_rad_ret_038_cargo_type_count",
+    "mv_rad_ret_039_vehicle_name_1",
+    "mv_rad_ret_040_vehicle_name_3",
+    "mv_rad_ret_041_vehicle_name_6",
+    "mv_rad_ret_042_vehicle_name_29",
+    "mv_rad_ret_043_vehicle_name_30",
+    "mv_rad_ret_044_vehicle_propulsion_6",
+    "mv_rad_ret_045_vehicle_formfactor_29",
+    "mv_rad_ret_046_vehicle_ridercap_30",
+    "mv_rad_ret_047_vehicle_maxrange_183",
+    "mv_rad_ret_048_vehicle_maxrange_143",
+    "mv_rad_ret_049_electric_type_ids",
+    "mv_rad_ret_050_human_type_ids",
+    "mv_rad_ret_051_capacity_128091",
+    "mv_rad_ret_052_capacity_128093",
+    "mv_rad_ret_053_capacity_139977",
+    "mv_rad_ret_054_capacity_139983",
+    "mv_rad_ret_055_capacity_153092",
+    "mv_rad_ret_056_capacity_153213",
+    "mv_rad_ret_057_capacity_153216",
+    "mv_rad_ret_058_capacity_153220",
+    "mv_rad_ret_059_capacity_199129",
+    "mv_rad_ret_060_capacity_199130",
+    "mv_rad_ret_061_shortname_128091",
+    "mv_rad_ret_062_shortname_128093",
+    "mv_rad_ret_063_shortname_139977",
+    "mv_rad_ret_064_shortname_139983",
+    "mv_rad_ret_065_shortname_153092",
+    "mv_rad_ret_066_shortname_153213",
+    "mv_rad_ret_067_shortname_153216",
+    "mv_rad_ret_068_shortname_153220",
+    "mv_rad_ret_069_shortname_199129",
+    "mv_rad_ret_070_shortname_199130",
+    "mv_rad_ret_071_bikes_128091",
+    "mv_rad_ret_072_bikes_128093",
+    "mv_rad_ret_073_bikes_139977",
+    "mv_rad_ret_074_bikes_139983",
+    "mv_rad_ret_075_bikes_153092",
+    "mv_rad_ret_076_bikes_153213",
+    "mv_rad_ret_077_bikes_153216",
+    "mv_rad_ret_078_bikes_153220",
+    "mv_rad_ret_079_bikes_199129",
+    "mv_rad_ret_080_bikes_199130",
+    "mv_rad_ret_081_docks_128091",
+    "mv_rad_ret_082_docks_128093",
+    "mv_rad_ret_083_docks_139977",
+    "mv_rad_ret_084_docks_139983",
+    "mv_rad_ret_085_docks_153092",
+    "mv_rad_ret_086_freecount_128091",
+    "mv_rad_ret_087_freecount_128093",
+    "mv_rad_ret_088_freecount_139977",
+    "mv_rad_ret_089_freecount_139983",
+    "mv_rad_ret_090_freecount_153092",
+    "mv_rad_ret_091_count_stations",
+    "mv_rad_ret_092_count_empty_stations",
+    "mv_rad_ret_093_count_full_stations",
+    "mv_rad_ret_094_count_virtual_stations",
+    "mv_rad_ret_095_count_region_775",
+    "mv_rad_ret_096_count_region_949",
+    "mv_rad_ret_097_station_max_bikes",
+    "mv_rad_ret_098_station_max_docks",
+    "mv_rad_ret_099_station_max_capacity",
+    "mv_rad_ret_100_bike_station_lookup",
+    "mv_rad_syn_001_total_bikes",
+    "mv_rad_syn_002_total_docks",
+    "mv_rad_syn_003_total_capacity",
+    "mv_rad_syn_004_avg_bikes",
+    "mv_rad_syn_005_median_bikes",
+    "mv_rad_syn_006_avg_docks",
+    "mv_rad_syn_007_median_docks",
+    "mv_rad_syn_008_pct_empty",
+    "mv_rad_syn_009_pct_full",
+    "mv_rad_syn_010_avg_utilization",
+    "mv_rad_syn_011_system_occupancy",
+    "mv_rad_syn_012_total_visible_vehicles",
+    "mv_rad_syn_013_total_free_bikes",
+    "mv_rad_syn_014_avg_free_per_station",
+    "mv_rad_syn_015_electric_free_bikes",
+    "mv_rad_syn_016_total_station_electric_bikes",
+    "mv_rad_syn_017_total_station_human_bikes",
+    "mv_rad_syn_018_total_station_cargo_bikes",
+    "mv_rad_syn_019_count_bikes_gt_docks",
+    "mv_rad_syn_020_count_bikes_eq_docks",
+    "mv_rad_syn_021_top5_bikes_ids",
+    "mv_rad_syn_022_top5_docks_ids",
+    "mv_rad_syn_023_top5_capacity_ids",
+    "mv_rad_syn_024_top5_utilization_ids",
+    "mv_rad_syn_025_bottom5_bikes_ids",
+    "mv_rad_syn_026_bottom5_docks_ids",
+    "mv_rad_syn_027_empty_station_ids",
+    "mv_rad_syn_028_full_station_ids",
+    "mv_rad_syn_029_capacity_gt15_bikes_lt5",
+    "mv_rad_syn_030_electric_type_ids",
+    "mv_rad_syn_031_human_type_ids",
+    "mv_rad_syn_032_region_949_station_ids",
+    "mv_rad_syn_033_top3_region775_bikes",
+    "mv_rad_syn_034_top3_by_free_rows",
+    "mv_rad_syn_035_bottom3_utilization",
+    "mv_rad_syn_036_no_free_rows_but_positive_bikes",
+    "mv_rad_syn_037_matching_free_and_station_counts",
+    "mv_rad_syn_038_multiple_vehicle_types",
+    "mv_rad_syn_039_cargo_available_station_ids",
+    "mv_rad_syn_040_electric_available_station_ids",
+    "mv_rad_syn_041_distance_128091_128093",
+    "mv_rad_syn_042_distance_139977_139983",
+    "mv_rad_syn_043_distance_153092_153213",
+    "mv_rad_syn_044_distance_153216_153220",
+    "mv_rad_syn_045_distance_199129_199130",
+    "mv_rad_syn_046_distance_199134_199140",
+    "mv_rad_syn_047_distance_255713801_255713854",
+    "mv_rad_syn_048_distance_255713882_255727865",
+    "mv_rad_syn_049_distance_255731882_272373",
+    "mv_rad_syn_050_distance_31395158_340786035",
+    "mv_rad_syn_051_within5km_128091",
+    "mv_rad_syn_052_within5km_153213",
+    "mv_rad_syn_053_within5km_199134",
+    "mv_rad_syn_054_within5km_350543",
+    "mv_rad_syn_055_within5km_474717387",
+    "mv_rad_syn_056_nearest_offset_128093",
+    "mv_rad_syn_057_nearest_offset_153216",
+    "mv_rad_syn_058_nearest_offset_255713801",
+    "mv_rad_syn_059_nearest_offset_448298966",
+    "mv_rad_syn_060_nearest_offset_550874361",
+    "mv_rad_syn_061_region_775_total_bikes",
+    "mv_rad_syn_062_region_775_total_capacity",
+    "mv_rad_syn_063_region_775_avg_bikes",
+    "mv_rad_syn_064_region_775_avg_utilization",
+    "mv_rad_syn_065_region_775_empty_pct",
+    "mv_rad_syn_066_region_949_total_bikes",
+    "mv_rad_syn_067_region_949_total_capacity",
+    "mv_rad_syn_068_region_949_avg_bikes",
+    "mv_rad_syn_069_region_949_avg_utilization",
+    "mv_rad_syn_070_region_949_empty_pct",
+    "mv_rad_syn_071_sum_rider_capacity_types",
+    "mv_rad_syn_072_avg_rider_capacity_types",
+    "mv_rad_syn_073_count_types_missing_range",
+    "mv_rad_syn_074_max_range_all_types",
+    "mv_rad_syn_075_count_types_ridercap_gt1",
+    "mv_rad_syn_076_max_distinct_vehicle_types_station",
+    "mv_rad_syn_077_station_most_electric",
+    "mv_rad_syn_078_station_most_human",
+    "mv_rad_syn_079_station_most_cargo",
+    "mv_rad_syn_080_avg_distinct_vehicle_types_station",
+    "mv_rad_syn_091_utilization_128091",
+    "mv_rad_syn_092_utilization_128093",
+    "mv_rad_syn_093_utilization_139977",
+    "mv_rad_syn_094_utilization_139983",
+    "mv_rad_syn_095_utilization_153092",
+    "mv_rad_syn_096_utilization_153213",
+    "mv_rad_syn_097_utilization_153216",
+    "mv_rad_syn_098_utilization_153220",
+    "mv_rad_syn_099_utilization_199129",
+    "mv_rad_syn_100_utilization_199130"
+  ],
+  "retired_tasks": [
+    {
+      "id": "mv_rad_syn_081_plot_hist_bikes",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_082_plot_hist_docks",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_083_plot_scatter_capacity_bikes",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_084_plot_scatter_bikes_docks",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_085_plot_bar_top10_bikes",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_086_plot_bar_top10_docks",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_087_plot_bar_capacity",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_088_plot_bar_region_totals",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_089_plot_bar_vehicle_type_counts",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    },
+    {
+      "id": "mv_rad_syn_090_plot_box_bikes",
+      "reason": "Retired from v1.1: file existence has no substantive chart-correctness target; retained only in archival v1."
+    }
+  ],
+  "changed_tasks": [
+    {
+      "id": "sem_001",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "3e6bc31445363c5c12d7944a3e17b95aecc503c32648d55ad10ec89b5d7828f7",
+      "v1_1_query_sha256": "dcf42e0aafee7868efa323fb397fb73c9f2626d5c422aaf0d1d031e19a1ade5f"
+    },
+    {
+      "id": "sem_002",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "08200866b79c9fe20bdf6ad27fbe6166f79def9d97307fc525c961793bf6a7c8",
+      "v1_1_query_sha256": "6640f0b9cf2ff4bb8602467cd3bcdb8af1db0668c09f8d2122c26b27fbc0541a"
+    },
+    {
+      "id": "sem_003",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "bf0920a91f5de4ea5471a5fb80281cce3cc3300fec675ceabd9c9a127b4ad7e7",
+      "v1_1_query_sha256": "3fe79b4afeb8c37cc9511d848a981dbb379dfabc42e03cecdd6c7ad4b0fe1a95"
+    },
+    {
+      "id": "sem_004",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "C",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "8af8d7b29f65a5448528b2af3239404191aa5ff0d3e5c2ea4768164cbf6bed68",
+      "v1_1_query_sha256": "4fea30a2317d8a60a58ece58dfdd092eecfb41a2f42f0338a9265c11d5b8fcf4"
+    },
+    {
+      "id": "sem_005",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "4971dd5bc494e5242a75111e6efd1ab27359adb16d705676b33509e26190b299",
+      "v1_1_query_sha256": "1663681aedf0c2a5105e8ebae896e2204965f21d09b292e3439a3501b6275ffa"
+    },
+    {
+      "id": "sem_006",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Clarify the GBFS field definition and its operating/timestamp condition.",
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "228b0f0481854c993ca9a673056a8da3fa4267c22de65b3cc58f2061788245c5",
+      "v1_1_query_sha256": "bcb33c98af80f43ed2fb49d3209ff677149a78005da0978b3aa43c96a14a8b63"
+    },
+    {
+      "id": "sem_007",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Clarify the GBFS field definition and its operating/timestamp condition.",
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "ba21d59f71ca86f9f1e1b13862b3b7803689e2465455637c6e02fbac8c371c6c",
+      "v1_1_query_sha256": "ee1e16de97154455c3af6be0362393bcdbc3aea1570f0f9274d2ca1a4e03bff9"
+    },
+    {
+      "id": "sem_009",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "53e3c0ac47428e923bf0ea54af74593c909bbb18cf3288dd560cc58a5a0ca3b9",
+      "v1_1_query_sha256": "f3c841068b3f7338337bd6154e70f0343096688e96fd931cfccaeb22a62d6ccd"
+    },
+    {
+      "id": "sem_010",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "5c4d2d0ee7ae91531aaec1ebbd77c9521f3ac3fae6d20b13cd4d17252a26480a",
+      "v1_1_query_sha256": "7d91e9aa23420738b17722aa28612dc503f745d2d2fbbd76207bdff249bfa0b3"
+    },
+    {
+      "id": "sem_011",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "088a433a7ea5e07831f04c4ceb4ea206dd7370783de2c0e21b1be8a4acd2aa4f",
+      "v1_1_query_sha256": "ba96f49794ab16f00c914929e75e3ddd629cfd1f1474f75150f867a5043cfa7a"
+    },
+    {
+      "id": "sem_012",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "31ecbb452c9a4a4aa03e94def35267ef95031b245f98df84da80c3712e9f21a0",
+      "v1_1_query_sha256": "b580655df76143a58111b9d5fd0dfc491e3940374435d165bedcc10c1e0417d5"
+    },
+    {
+      "id": "sem_013",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "18f6e7bd7057a93c0e2ced4b396ba6d681f90b09d7ec90ffd998d062d6f6c943",
+      "v1_1_query_sha256": "4bf0bae48a052c887983f8722fe86897e5dc36f5455b4a6b5aa17475d36adc4d"
+    },
+    {
+      "id": "sem_014",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "cd58bb5d621f60f7c8820ba2951a7c29d3a607dc81cf86bcd187aa90c0a0616c",
+      "v1_1_query_sha256": "50ac8869d35a124915eef1c3356c3ffcd597f092f91741dd57fc692763837e2a"
+    },
+    {
+      "id": "sem_015",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "972fb928b762736737153fa58943633ef5bb23b6a1c2e8d40bb9b4f7edd6c893",
+      "v1_1_query_sha256": "2b23069fb1ff5973cb6c86cf73fdd5440d5d4a53b0f5bac3a2ef904ee6a8c38a"
+    },
+    {
+      "id": "sem_016",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "50c1d45bec1dc5007ef1943acbb08ed64f294b3f4e3e0ac4e0357a9058cc9d19",
+      "v1_1_query_sha256": "e70dd12f82086f53c1121c244cbec35ddb5246e44b155d9d85574670d13d65b0"
+    },
+    {
+      "id": "sem_017",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "57e8a2ec0d933556f216360e0fb1f8db1777de98cb250a628cf508d9f95cab70",
+      "v1_1_query_sha256": "62e0e6b0807a960aeca1dab0b159917743eba80c61c90b0b697bce381c09b10a"
+    },
+    {
+      "id": "sem_018",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "43d1f33de0fa7f25a0417825b9dc24c35012d64dacf5fcf12a31902cc5c0a9ee",
+      "v1_1_query_sha256": "faf273968945c763f90b013302515b11aeb8e956523287485a8ab194814f95a4"
+    },
+    {
+      "id": "sem_019",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "d1b667c4b57ddc918943416b6594c5b16dd9c43ea177b20efdb0c5a850b019d1",
+      "v1_1_query_sha256": "e0c1a8ce73425e40ba95f3b7ab204cac8dd27539d9790cfea0a9b908b35bd4e9"
+    },
+    {
+      "id": "sem_020",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "dea9dfb59e4bd0edabf9b0cdef93d71c313eb2f49ea260faa2c62fc0206373bc",
+      "v1_1_query_sha256": "491827622836ff72a2bd97bdba836101a4de83a5d046c1638396aba1282b52be"
+    },
+    {
+      "id": "sem_021",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "3f0873a4a84348f4702a694dc5d82360a18f8c2d094836adfe5542bf53f5d7e2",
+      "v1_1_query_sha256": "4af44eb681184f25af281b21ef64b2db8bc6016477bd6f882779388baa3c22cf"
+    },
+    {
+      "id": "sem_022",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "65a1e98dfff48048414c029ca5bcf5f5d471dd198ec3a2d550a876c7c5dbfc35",
+      "v1_1_query_sha256": "2c36c54ae1cb06814b87f6d5696a1bc2ac935647d8486080210c256e625ae3c7"
+    },
+    {
+      "id": "sem_023",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "0eb9b6b084f027a7dd05b9140fff150df9ed5bc5202acbd8cfc4a61af0b3a9b0",
+      "v1_1_query_sha256": "a6deeaeffa5a3205719c6017551811951218730a74ec012b514f3a110116347a"
+    },
+    {
+      "id": "sem_024",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "e663c5acf48604e606442649be688e4c5f660d8ccefd369e5794fbeda4722b85",
+      "v1_1_query_sha256": "6b7adcaa7e96d1c31e25019de928eb71ff74c38ea2a21f94fd0ee5d43304a33a"
+    },
+    {
+      "id": "sem_025",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "fad65b7dc45e13b2e07e2328efd853f0320aa28272b32db821e9e72804220c4a",
+      "v1_1_query_sha256": "bb1f8ac81d0b67004ca6e588865c044a94c0f50051ad9da9ea77041bb2b97ff7"
+    },
+    {
+      "id": "sem_026",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "6186bd7f9a70b6567caad4efca41b6e90afcf10eb2de0081708e492113275b60",
+      "v1_1_query_sha256": "309dd032c82ae9ed36f4ca8cd69094f3a0eb27b5c0455bef4a46937fe50c012c"
+    },
+    {
+      "id": "sem_027",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "e4f7346cd6422c6c197552b461229780bd837851952d5c43d51df54f73dd2367",
+      "v1_1_query_sha256": "b498896dd4c8d25b0174c671bd92bd80c0ca28796d9b15ee5c2058782eac8df3"
+    },
+    {
+      "id": "sem_028",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "a0688db31dbef2b2c320c91fe6ad5596aedbda70a5e0fc9527edc4cbadb3d2ab",
+      "v1_1_query_sha256": "bc1bf452eea02d77af2fe9384b5874a1aac880fae8b5d77ddcecea47dd964df9"
+    },
+    {
+      "id": "sem_029",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "5b28ebe3cb91aca95fed4d25b972c89028e41fbaa1cd75a8076ba5168ba24184",
+      "v1_1_query_sha256": "62210be101736c4ef78e8ca35f7b197bc63a323253f7a9b649503406723c5a47"
+    },
+    {
+      "id": "sem_030",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "24cf2314137a2da767d5363de439661e026e048c47e6733dde54fb4e018252b5",
+      "v1_1_query_sha256": "418307da40dbe1e8aa6d4adf96bcf2098e5b92d04408b312eb778fd6f3955cbb"
+    },
+    {
+      "id": "sem_031",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "25779f2135b6dfad3f26f7cf5dcb16cf6a0a434fee9c11e4503cb662343d4194",
+      "v1_1_query_sha256": "674f1d155941f05c0a5558e739546899932fd40082578005725a3d358dca45b1"
+    },
+    {
+      "id": "sem_032",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "818f26a642e8a876d71f0a2023d92b55fbf2af5c833645ac17cfb0823bc955ae",
+      "v1_1_query_sha256": "a7d874e29ee121e091565260292141255945563c33d1a7408af929e607417237"
+    },
+    {
+      "id": "sem_033",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "f068b9e244a41d36ffac3c0eb6dd709e99d5b9776b1296d5d98470d6a7fa77be",
+      "v1_1_query_sha256": "9bc9c533bd470fbad9b5cc0977ae0b2ba6c8b06009119b48c049ac02ba0d3af3"
+    },
+    {
+      "id": "sem_034",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "3adfb97c1bd4e263e314b2df89fb66e837c072bad25c366f2e7bc66a8172a7c4",
+      "v1_1_query_sha256": "f2e7fdc31e121b6a6e5fe7d5d3e1c7811504de9af5520fdfbd1a74bc6be2e41c"
+    },
+    {
+      "id": "sem_035",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "721f1778b4493b5bc902ab0176cb32f02c9bb874823daaeb8471a370c74b3f44",
+      "v1_1_query_sha256": "fb7133ca0dd1e61f495671e06d011507435d1852e08f53d57181b16779fffbaa"
+    },
+    {
+      "id": "sem_036",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "73b10cab27628b912f7eca198a0ecfc541301f334df078569ef8a51241664cf9",
+      "v1_1_query_sha256": "e74d9a9fa586da52322c92f37fbd4047d2ee437df692e0213ae21282d1db7bda"
+    },
+    {
+      "id": "sem_037",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "45d3c61a14147cc6757de4465003c8a8a8a98dea9ea3f454669f4d5e244c7592",
+      "v1_1_query_sha256": "95e13e6863837e529b5a1dde6ddc4258a512ccdc6c10d18ae8931b430e09b432"
+    },
+    {
+      "id": "sem_038",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "38444641d248e8a94b7e519f2a82fec7b54132a7d5a1ba0fc74f8a9e39d02e5d",
+      "v1_1_query_sha256": "14bf099ef68f9b9b3f17fc7c32d3c6d6c00ed75bd35470771cdeb7899f9e92d8"
+    },
+    {
+      "id": "sem_039",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "C",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "787c59bfd34cf02f340734196c4facb5f159a293c11e451e3720fc8b28e3c60a",
+      "v1_1_query_sha256": "01da6733715b699700b4b35502ee0507b5f868f160a02242785880718ddc61fd"
+    },
+    {
+      "id": "sem_040",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "9b7299f93fd6478a55a94461519a26c91146584eaa02e591a0ac6d6911e5f3cc",
+      "v1_1_query_sha256": "353e1eff257a9e50832dc0ecd5a63b5b6ee243bf5c6e44667abcec691578ff5d"
+    },
+    {
+      "id": "sem_041",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "2604164f78b51a4f14111260e43c0588b3376786bafa4806cd8ecfda7ea7348f",
+      "v1_1_query_sha256": "8bf04e2c2c2d4c6d370cbe2388cde14380ba4784f789993d101a66d4ad874668"
+    },
+    {
+      "id": "sem_042",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "38f67a87c8d06739a149aac23d6ad2f7917e3fd3fd636566599f196a832ccefe",
+      "v1_1_query_sha256": "d743a10f3b6d486e7e81b72caa43cc150ee88af44548d810913455fc03c10046"
+    },
+    {
+      "id": "sem_043",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "dc04de3c155228292b11f04c930a1efb51e183ac86ba4c8e42549c55d696899b",
+      "v1_1_query_sha256": "45f63b9d20fcc95ec723cb71d8a5edb3c2713d5b1639390257eaf19821c20829"
+    },
+    {
+      "id": "sem_044",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "12c2348c14c335abf2ea4250abf8f7c4d482f6993a0682083fae41d28bc061f7",
+      "v1_1_query_sha256": "3a95dfb507e3357258e492c529293eee100bb6080b146e8ffa3c1eb474873cba"
+    },
+    {
+      "id": "sem_045",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "1858786b298bf3c0bbcdcba00f289f603ef04e7ce86f532cc9a1757098059a96",
+      "v1_1_query_sha256": "60f4f42e218d3bc6f0a6ea3c70bb1d43226893295a6f04fe9dd50ef866c2eef9"
+    },
+    {
+      "id": "sem_046",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "B",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "714ffa57eb9e96819881efda707040954235b800783ee3c1f5f50ac9501ac5f0",
+      "v1_1_query_sha256": "f5e22904656fe2203c3b4b67624cf90e6add6bc6a68b606d85e2468f1e7d1602"
+    },
+    {
+      "id": "sem_047",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "47e84dcb6f9c1f823cb9fbb3d160f751ca56e9590cebf7b6ec5bc27c7d342b51",
+      "v1_1_query_sha256": "ed030d041ec590b62c2d0190c46191d16283616eb1f39ffd45825e02a8b89c53"
+    },
+    {
+      "id": "sem_048",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "0f5b728f1be29d55f92b0ef57fce4c2a57ba60abcbdc99eb42478ef626b9bc5b",
+      "v1_1_query_sha256": "8f10526ffbfe71aedb8323f5238eb400ee0ee7d53cc5d2802dd9329232e8d7a1"
+    },
+    {
+      "id": "sem_049",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "3e786460695171ec2c7dee8f450e2589f339d38518e86bed8a4f84a7e8980275",
+      "v1_1_query_sha256": "04fb99b1f401d383891f2662c97b362f3f5ae5bcd060c2825d3970ebd67ddbd0"
+    },
+    {
+      "id": "sem_050",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "4bbe36784bf1a0de36fc67f13a7b76e86c182038d6ba4f06bd744409b771fe66",
+      "v1_1_query_sha256": "33918f78b2a647aad48ded38c74ccd25ad52f4960794363027a5ddd251d443e6"
+    },
+    {
+      "id": "sem_051",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "bfd5ca0a5c48f1b378c26c36e3eaad6208df1af85e7d5271c8052a945fc757cc",
+      "v1_1_query_sha256": "0ee123233b43e5e43276f2398ab277e1959d2a25ef7c576f23263f7cf8d35caf"
+    },
+    {
+      "id": "sem_052",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "bfeb3fc0393eb2d877048025e46c53f669d20c8400582897363732b7cc647ba8",
+      "v1_1_query_sha256": "39c6b97df7d93d2d5b14cf03c592b02ea017cb9d83b24de55178bf1e76e048e1"
+    },
+    {
+      "id": "sem_053",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "62c3f57ed3ac963761db5606807c40e53c71b9052ce8f6ce1f7ff0bfff0125e0",
+      "v1_1_query_sha256": "cffbfd053aa5014db4f8fd711c83c599f466d62aa0bb23aba3fe5469a222b7b9"
+    },
+    {
+      "id": "sem_054",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Clarify the GBFS field definition and its operating/timestamp condition.",
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "ab80bfcca57629662836531ffb7a6f65f13c1fa32b07a8bf53a4e02fbd7a26b2",
+      "v1_1_query_sha256": "3cbe973adbfe2d10c25b7d768dec86f81b709f59f6af535e34f31bd2f1b2cacc"
+    },
+    {
+      "id": "sem_055",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "627974562c8d22b1a264913a8d486db6d6ef3956cf84579ea731525a948e1f73",
+      "v1_1_query_sha256": "d283f27fc14ecde6005cfaeaca40b837cc2d44950001206ce371d1979db03338"
+    },
+    {
+      "id": "sem_056",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "552142294e5d5e0f7f15d8942471989d78174755242970963cd2d599cf0c5cbc",
+      "v1_1_query_sha256": "21eb1dcbb3e5d00748dff40ed8102b5813433ee422e3a4e035d0840cec4ee125"
+    },
+    {
+      "id": "sem_057",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "84b7d871a3380f6fde18db6ca144a9b17721d946a32a334e6aeb4b94865db9dc",
+      "v1_1_query_sha256": "3e7f3330088d65e253fb3b0f3d0f4d0ca0ef7078b9a1b0cb7d9be57a5adfcca3"
+    },
+    {
+      "id": "sem_058",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "a03b66458848a4a6861d2c4a3f62e2acf1d57ca5d402ad323ca10e00336548b0",
+      "v1_1_query_sha256": "4463dcd48cecd1bdc22f7c9ce18d030759c23b0dcf841530f3b0ad5021a35e43"
+    },
+    {
+      "id": "sem_059",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "acb8dfd30dbd5d72b471922b545a47bd09da893d9c7e717128f3db21db314a4f",
+      "v1_1_query_sha256": "f55fd389890c97bf5ad55424cd28b849c9e22bd86fbac8682c5c233fb562715f"
+    },
+    {
+      "id": "sem_060",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "d20e50a377c425245b725aba2d5b95cfe65f829df9b32e548177cc218a546be4",
+      "v1_1_query_sha256": "48f97897183a38dc853f35f0d1f868da491abf42d40e9dbc5cd2b61e64ee0f11"
+    },
+    {
+      "id": "sem_061",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "ac58c1c4cea5c9f0245631a91c9de8fcd1a80d5558ff5b269087c16e8c8fbb60",
+      "v1_1_query_sha256": "342146269359c6e82315f3bd71ce0fc2c16c3b7cc88eacecf16391c4a94f4824"
+    },
+    {
+      "id": "sem_062",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "47bea82d1c739b40578b0d015e52a55b8a0ac79efe562e0190df9c4bac4720e2",
+      "v1_1_query_sha256": "501da09fcf978fb66fad70f4caa31ccc2856c352c4fcaf819d45fb4dca66e747"
+    },
+    {
+      "id": "sem_063",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "2f0ca482c02ef458c65de668b5d2d26a300e4ae962f29dd6ca8348796ba1edb7",
+      "v1_1_query_sha256": "f82759f0fda5e4c650da73863b1a6eb21af805089a4dbebdd8fa2ba3e3ae379a"
+    },
+    {
+      "id": "sem_064",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "32cb05c0836c00716ddb13e9260b331778bf42db5850e3c3c31c41c1fb36f81d",
+      "v1_1_query_sha256": "da6dfc30594162f54c94143d662b46d9464df6c1a8922f18fa17867696314c08"
+    },
+    {
+      "id": "sem_065",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "932fbd70e875d831b82e1b57c988b205d00c7060a6b86cbea86600f31be35eda",
+      "v1_1_query_sha256": "16cfe7bbde0c3344f6f92c80216f97d62781c43468e972e9ca930da7217f2399"
+    },
+    {
+      "id": "sem_066",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "4060cde30c1561ae3cd5c047b9119b7401ae9666d695a7566006c77e762e183f",
+      "v1_1_query_sha256": "77cf40fee6000807295280c77183d21c11eb4ff9d1cb7257493b84ce6e892a71"
+    },
+    {
+      "id": "sem_067",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "47b911ad0e37c65a61dc7eca5990bcb2c06eeab4867589406fb4e0d034c153c6",
+      "v1_1_query_sha256": "a6d448a29aa1b16006460bc6964741c41c4e93664089e9cc418c19865480a0d1"
+    },
+    {
+      "id": "sem_068",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "c5d2a77b9c8610f52a3fefcb2bc4a7c1be00bbbc1e6a543993820462e21fec9e",
+      "v1_1_query_sha256": "720f8bbb6d1131e5476f15bbd8fc6d013e547a12a1c860b2bc1d33e35025e4c7"
+    },
+    {
+      "id": "sem_069",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "ab2eed515a0b0a40b4771dac8327ebdaa0e1998f79ffd2e8c0b7acc3c587fc8b",
+      "v1_1_query_sha256": "11c754240a8013f9aceb00cdb4ef870011492ced1280d1b0c4d90913c1591199"
+    },
+    {
+      "id": "sem_070",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "21a030593f690a6c533172b0025518b8fc62be0d8e664874de11406c51cd1344",
+      "v1_1_query_sha256": "ed59541edbc34eff0ebc668666f0c4ec78ec0943a4c43a48b1d9498f948f6511"
+    },
+    {
+      "id": "sem_071",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "c3fd3b363a085709313545e4caa2b032a01b4c8d0744b66a6b2525b063fd43be",
+      "v1_1_query_sha256": "8f24ced115f3b94c8793cb7ef1c20e776e15fafa2cdec5e4dcff56bb9ad7b28e"
+    },
+    {
+      "id": "sem_072",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "ea32a6a7fc46cb840afe17ae9cc73b8067c7d02a03769f16208f1451b3dde659",
+      "v1_1_query_sha256": "e48c3ebaec4e74e43f15dec3afdd77f55c55045c5df9208ede3749466b849852"
+    },
+    {
+      "id": "sem_073",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "359084bdfc9cf22bcdab96149248e7ebe32fb16c13023c33968e22e7705f5983",
+      "v1_1_query_sha256": "0be9ab16a9eb282a296e72ac3629cd15688883fd3d66e75ccc0a4b62c3f2bc0b"
+    },
+    {
+      "id": "sem_074",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "bcbfbdbc429b56d93f821e88ea128cb6555fc8e3c8a30006bf8d4938670e0c2d",
+      "v1_1_query_sha256": "d190ef5aa812b61ba96dee5826023d7caae34fe0c1dbad36c63d398e7ba58b6f"
+    },
+    {
+      "id": "sem_075",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "965a62613d1d43b74ae9c11e8aaccc1e05d21d10b271963e4631538861c97ba5",
+      "v1_1_query_sha256": "83de3ce2524dc90d7b326f88d6c14246f12589fc312c4070b17432042726f7ff"
+    },
+    {
+      "id": "sem_076",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "0e9a5d72baf8296ff363ddc15593c00a4098918c5fbd550a1ab123b4fceed04b",
+      "v1_1_query_sha256": "c83bd17ad7b0ffbda8052a2ebadbb32efe35a047fd88ee4e9903b414b4ab99da"
+    },
+    {
+      "id": "sem_077",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "309202ae0129bd9598b27ecb344f1f45c82ea55d0e0445b3d20fade5b8436055",
+      "v1_1_query_sha256": "2a2e468e5b0029c4010e21dda36a55cb61d469bf3f95996e435f4a8e3ce1bbd7"
+    },
+    {
+      "id": "sem_078",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "15f0ec0a513abbd00309e8e3cc75bfe531bcb7c6f33b3bdbe010775a549a0ab7",
+      "v1_1_query_sha256": "7f38b712027be938ff8ac2597b2549b79e9dc2f7807cd07b7abfb76636bd3abc"
+    },
+    {
+      "id": "sem_079",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "e357baf66b1d8a2ed37800679d0786ce153b264e6263a252c4c7b89cca5c64f4",
+      "v1_1_query_sha256": "e8b194a2ef02d9e9ad093c673c7fbc7a1f7dd45461387735ad93aab9af7594e2"
+    },
+    {
+      "id": "sem_080",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "8969d43496d56d68bb2224c9041fe825893c98af7a5cf85dcd88f514b9d0f3a8",
+      "v1_1_query_sha256": "09750d300e68813cb489b848ea5f8ffe1d110fcc842537366ffba29a38488fd7"
+    },
+    {
+      "id": "sem_081",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "f4250292b7af348e7b8b2db48b15599d6e7b7e0730347503049675a810a4c5d9",
+      "v1_1_query_sha256": "d8fb5241702d1a59282de1f8980c689c6e4eb87ef606c18c249623f3b6a5793b"
+    },
+    {
+      "id": "sem_082",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "dd14dfc9531ed6254ea998e94905027d179462a3dcd0e5eb086d8818b95f8eda",
+      "v1_1_query_sha256": "24e73cae453bb9b4b3f6b5ba72f59fb800e3e59ce281ccf93f1e3c97e31bf5e9"
+    },
+    {
+      "id": "sem_083",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "13c37038810ead0bc60bd1ec8d44e843de79edc4d19bb66705e7e792e82047b4",
+      "v1_1_query_sha256": "b5c77dfe20a6d4b3c9f8550c231f57e6d60ece66a037aec8cdfc7186ef3434aa"
+    },
+    {
+      "id": "sem_084",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "d5c5144a20ed05cdc77e0cf0831bcc3f3884e10de5feab0e6ccd9dcf25f43aa6",
+      "v1_1_query_sha256": "b313bfd1cffe86f43db51b6afd8d6b5e33ae2687fc53b784f2df9b2beef4ce3c"
+    },
+    {
+      "id": "sem_085",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "5f29e5dc8f02e14af219a8f22c716b37b6fb8d5397e41d4aaaba2744c4322442",
+      "v1_1_query_sha256": "0d36cc8aad4e41abd8b44d80ff9b2115ae72033f0bf4713fa4859c68a79ddc4d"
+    },
+    {
+      "id": "sem_086",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "0d0a865d8d58f311db96aa2939709838b82cabe574b20be8473a0e2a2a19e2be",
+      "v1_1_query_sha256": "daf9049cdf719d2888fd794e1f83a11798f7f58e383d44e7bba7e5ff0a79789c"
+    },
+    {
+      "id": "sem_087",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "4c47c21b972198cf10e2ce3ba805eeaa71423facc14c18ac9ffdc2f317a339dd",
+      "v1_1_query_sha256": "261cbc7caee94e2ec79a1e76bb1dcf92039cfafc6cb2bed6c54118b35c5b5e66"
+    },
+    {
+      "id": "sem_088",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "48236e45c23acfc7646bbae1fd12dcb9f0d7c437c47071a8933402e204079c38",
+      "v1_1_query_sha256": "0b52cd080e8a8597db1962f60ca77194819256c7e4edcf04832fa42aaf834006"
+    },
+    {
+      "id": "sem_089",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "47f367eef6a175274882a8224097c7a23c09dfdebaaa11c235b8b24a82045cbe",
+      "v1_1_query_sha256": "23c46b1c6015372f7dd2a6086384376c380899bfee231408a94414d0a92c2297"
+    },
+    {
+      "id": "sem_090",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "3397920b89fd985d10d1fe4d3f499879a8dc64a32c9be1cb791e790220185402",
+      "v1_1_query_sha256": "ba54fc06ffc4c9aa307b85d3f042a0f61c016ca7bc357af86f28dedd77bfc745"
+    },
+    {
+      "id": "sem_091",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "6e2724682e17d67c0f67ab611e8b5447028ee1f7c2e7d58b96dc8de711b89f2c",
+      "v1_1_query_sha256": "98c9e6a16f26cb44270626e9f3276c99635d5555b8b569ac539bb7381214824a"
+    },
+    {
+      "id": "sem_092",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "5b2aa36a2c2ed59e3187495b14f4c97c4ba40abf03666072f37c7caad96fbfd7",
+      "v1_1_query_sha256": "f953b0922f8bce7185dbf3d00de387e34b03c864ac46f57a13ea37a7ccb2f130"
+    },
+    {
+      "id": "sem_093",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "edeaf94f166bf48f469b8fa265a463571f1147830e51b97edd4d24ce87b3cdf7",
+      "v1_1_query_sha256": "0b02b0a6eaea1038964c1aa75eaa87c9b6640f796fed3ea332f539125e08892e"
+    },
+    {
+      "id": "sem_094",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "9be7d8c0dee53d995f142810f5d35321d49c3c729db0acf80322771dbc5a8ea0",
+      "v1_1_query_sha256": "77dddcfa2955400162d8906714101c390d62679c4cb83731b2b1804b44046c97"
+    },
+    {
+      "id": "sem_095",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "ceeee82ae2e24cf507db90dce8d9c5cd35fac8e79dac0088c96c9169a30412de",
+      "v1_1_query_sha256": "92e5acec97d77bf72be3a8861dbb48e25d9dbaca6b276c7e9e302de71d547903"
+    },
+    {
+      "id": "sem_096",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "D",
+      "v1_query_sha256": "f26d48be55c143d6dedbdd404cdc4c745407f4aea9663e885a24f289774d708f",
+      "v1_1_query_sha256": "2f75be8b92f524b7fad9bedee6919a9e46913ae5e409bb9c06eb675da956f429"
+    },
+    {
+      "id": "sem_097",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "A",
+      "v1_query_sha256": "e5bbdf1bbabb1300f68fea81d889cb5adeba86bd8059515e64e1798e1736ca0d",
+      "v1_1_query_sha256": "46910722a0fadf7b00d59159b58ac96b967004759e17b58ae9434b9f202e9d36"
+    },
+    {
+      "id": "sem_098",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "C",
+      "v1_query_sha256": "97501f457385ffcf63777109c2b466a376289a6cc04118c29d4d7b08fb220c95",
+      "v1_1_query_sha256": "a4968f4d75762726efd70fbbf85b53c0e441d3b66eabadd3371866812d42592f"
+    },
+    {
+      "id": "sem_100",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Deterministic option permutation balances answer positions across the 100 semantic items."
+      ],
+      "v1_expected": "A",
+      "v1_1_expected": "B",
+      "v1_query_sha256": "3c3cd5ba34c3102f495c6701b7918dc53d79d5fa378e6b8251c86da191f1a181",
+      "v1_1_query_sha256": "dfa599b304e9f37ee8b0b586b2bb1a524c61a02fa877c6e5d9d5270f48e6dfce"
+    },
+    {
+      "id": "mv_rad_ret_003_timezone",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Read the normalized GBFS timezone field rather than the legacy time_zone spelling."
+      ],
+      "v1_expected": "Europe/Berlin",
+      "v1_1_expected": "Europe/Berlin",
+      "v1_query_sha256": "0b5591d372bd13e98e5473fa8a15635c6588bf696a65ad3b72a9de718cf45852",
+      "v1_1_query_sha256": "9cc43d66fe4307b42cf35078d468e6f3ed2684bbe8e57b86aac747b3cfb23b02"
+    },
+    {
+      "id": "mv_rad_ret_097_station_max_bikes",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare a stable secondary ranking key."
+      ],
+      "v1_expected": "76245743",
+      "v1_1_expected": "76245743",
+      "v1_query_sha256": "b028fe4a22d6380d8b496c5b5f3a3895150615fb1050876980fef1eae1853eaa",
+      "v1_1_query_sha256": "88a2ac04d08d0fd1f16fd9abb5f11d15f2a527eb5a2c672c1c6d92bb02271972"
+    },
+    {
+      "id": "mv_rad_ret_098_station_max_docks",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare a stable secondary ranking key."
+      ],
+      "v1_expected": "76245743",
+      "v1_1_expected": "76245743",
+      "v1_query_sha256": "d9aeaeb837095f2234ca6a098df0c19fffcb18b64940f58e5adc1b389265db0f",
+      "v1_1_query_sha256": "7c7dbbada5bedda2718e0aeb89e397abc330b755c350c0c882a95be5cb7b45b1"
+    },
+    {
+      "id": "mv_rad_ret_099_station_max_capacity",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare a stable secondary ranking key.",
+        "Restrict the ranking to stations with reported capacity."
+      ],
+      "v1_expected": "76245743",
+      "v1_1_expected": "76245743",
+      "v1_query_sha256": "ecf38a610a13dd8dfb2f21122b74d0910f8bb4973f57d414259b6f14a85ebedb",
+      "v1_1_query_sha256": "a809d87a3f5aab9875efd2c68c403c61667c1e852d91964c296b14638b790bd4"
+    },
+    {
+      "id": "mv_rad_syn_003_total_capacity",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Label the value as a reported-capacity sum, not an observed total including unknown capacities."
+      ],
+      "v1_expected": 700,
+      "v1_1_expected": 700,
+      "v1_query_sha256": "c3308c32550964c706b0b38a1432f1c868fd1a211545d27ae35109a63056d635",
+      "v1_1_query_sha256": "90235414d6b0ea86194e0618fb9d8007836174b2ca2e38b7113e15bdb4058113"
+    },
+    {
+      "id": "mv_rad_syn_010_avg_utilization",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Define the positive-capacity population and missing-value policy."
+      ],
+      "v1_expected": 0.46431941750696376,
+      "v1_1_expected": 0.4643194175069638,
+      "v1_query_sha256": "88869bf99fd8bca3f07dc130abf731611f7a22f23f8b4e586f6073aa7e25ebf8",
+      "v1_1_query_sha256": "23e4a4e7f9acc9494cc6228e3c699fbcaa1cc268676b620effb59f61c82283dc"
+    },
+    {
+      "id": "mv_rad_syn_011_system_occupancy",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Use the same explicit eligible population in numerator and denominator."
+      ],
+      "v1_expected": 47.85714285714286,
+      "v1_1_expected": 47.857142857142854,
+      "v1_query_sha256": "40634f19d0a3c7de15a5c6f5b084aa1e0b92f35436278b0d3cb0a30a32f9788f",
+      "v1_1_query_sha256": "45b89f640c1c6a7cfd2c9ece9f2ad461d8223afcce06bc8baf39aa51fde0fb92"
+    },
+    {
+      "id": "mv_rad_syn_012_total_visible_vehicles",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Remove double counting of station bikes and their derived record representation."
+      ],
+      "v1_expected": 670,
+      "v1_1_expected": 335,
+      "v1_query_sha256": "31d09ae28a9d024b3ab7f9937bcc5e73bce03f715fe5a7cf6b4815ea85814e10",
+      "v1_1_query_sha256": "ca11c3dca157e457b010066971129b8a12960f976287c0ab9a3f90aae18f9ede"
+    },
+    {
+      "id": "mv_rad_syn_021_top5_bikes_ids",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": [
+        "76245743",
+        "31395158",
+        "76245875",
+        "153213",
+        "474397171"
+      ],
+      "v1_1_expected": [
+        "76245743",
+        "31395158",
+        "76245875",
+        "153213",
+        "474397171"
+      ],
+      "v1_query_sha256": "a2503e75f2c2fd1839c9fcc591d2743ffa5c6ddadb9a9e4c864ac16c92fb2bb3",
+      "v1_1_query_sha256": "1906a41c747aa735773b5b3d77785797b4c2998b4523acaacbcf1d339abb8926"
+    },
+    {
+      "id": "mv_rad_syn_022_top5_docks_ids",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": [
+        "76245743",
+        "76246101",
+        "582593655",
+        "550865550",
+        "474395971"
+      ],
+      "v1_1_expected": [
+        "76245743",
+        "76246101",
+        "582593655",
+        "550865550",
+        "474395971"
+      ],
+      "v1_query_sha256": "205cfeba3f0e9dc14302f149f6fecfdcf7e29b2d661b7ea6d5651873728d944a",
+      "v1_1_query_sha256": "96a79c0e1bf1356351aaa0870bf552c28cb379b8ffb90760cbd345c081881898"
+    },
+    {
+      "id": "mv_rad_syn_023_top5_capacity_ids",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values.",
+        "State the missing-capacity exclusion policy."
+      ],
+      "v1_expected": [
+        "76245743",
+        "76246101",
+        "153213",
+        "76289539",
+        "76245875"
+      ],
+      "v1_1_expected": [
+        "76245743",
+        "76246101",
+        "153213",
+        "76289539",
+        "76245875"
+      ],
+      "v1_query_sha256": "6e19b9d06d6f82a71f4f64131849bfb7357bafa2fe80b9869508e33f698f4d3e",
+      "v1_1_query_sha256": "9e30b526b71a13d4de8c9f5625e4b35d147a05290c217f18d5e2ca6e8a561f30"
+    },
+    {
+      "id": "mv_rad_syn_024_top5_utilization_ids",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values.",
+        "State the positive-capacity utilization population."
+      ],
+      "v1_expected": [
+        "474397171",
+        "139983",
+        "255713882",
+        "31395158",
+        "414200360"
+      ],
+      "v1_1_expected": [
+        "474397171",
+        "139983",
+        "255713882",
+        "31395158",
+        "414200360"
+      ],
+      "v1_query_sha256": "d07aacef48d3ef24d430a4929844aa022d6bcb71db8232035359368c1e1642d3",
+      "v1_1_query_sha256": "072ab505273ca592ff548f61959870b01c1d0224959ba81c1f63070b79cc526c"
+    },
+    {
+      "id": "mv_rad_syn_025_bottom5_bikes_ids",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": [
+        "153092",
+        "199134",
+        "199140",
+        "414195423",
+        "448298966"
+      ],
+      "v1_1_expected": [
+        "153092",
+        "199134",
+        "199140",
+        "414195423",
+        "448298966"
+      ],
+      "v1_query_sha256": "d3f8947b1389485f39d8cdc94f12ee985a548db530284a0a1055e0369c04f054",
+      "v1_1_query_sha256": "61bc83ab8b3a17b602adb5200b15b59f97865fdb8933a6b43dc47db5560b87b0"
+    },
+    {
+      "id": "mv_rad_syn_026_bottom5_docks_ids",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": [
+        "139983",
+        "255713882",
+        "31395158",
+        "414200360",
+        "474397171"
+      ],
+      "v1_1_expected": [
+        "139983",
+        "255713882",
+        "31395158",
+        "414200360",
+        "474397171"
+      ],
+      "v1_query_sha256": "c188e04a97e36c728058b57c5cc1023b16960bdd164a4f02c88147ff6911643b",
+      "v1_1_query_sha256": "844c0236503f137f1c157c3a59cb491a5a2088e737d8f2e101477f59065cbaa7"
+    },
+    {
+      "id": "mv_rad_syn_029_capacity_gt15_bikes_lt5",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "State the missing-capacity exclusion policy."
+      ],
+      "v1_expected": [
+        "550865550",
+        "76246101"
+      ],
+      "v1_1_expected": [
+        "550865550",
+        "76246101"
+      ],
+      "v1_query_sha256": "fce26a4d0285153265ed114e943809be75eba878be8bf0c251421d7d8d7b1028",
+      "v1_1_query_sha256": "8bd1e2c7e8d427440b33b39a01308bb03e52fcd75e86b41ba6022c73778dbc4d"
+    },
+    {
+      "id": "mv_rad_syn_033_top3_region775_bikes",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": [
+        "76245743",
+        "31395158",
+        "76245875"
+      ],
+      "v1_1_expected": [
+        "76245743",
+        "31395158",
+        "76245875"
+      ],
+      "v1_query_sha256": "cb6763e4a27a2feffbaaa9d9ee5add85422a014ff6abd9a8f97a7e6dd0ece581",
+      "v1_1_query_sha256": "ca69cf541df431a129b01cd10174844880efd63c9151350b88a2f57331a4dc68"
+    },
+    {
+      "id": "mv_rad_syn_034_top3_by_free_rows",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": [
+        "76245743",
+        "31395158",
+        "76245875"
+      ],
+      "v1_1_expected": [
+        "76245743",
+        "31395158",
+        "76245875"
+      ],
+      "v1_query_sha256": "1d97152f1c54494673dae7ed5d0d9bd198af5752c659befae6f3029404886a2e",
+      "v1_1_query_sha256": "64cabb51233edffd0ac6e6a1cafebc73d53fb2135392cade97fc16e3c27f4672"
+    },
+    {
+      "id": "mv_rad_syn_035_bottom3_utilization",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values.",
+        "State the positive-capacity utilization population."
+      ],
+      "v1_expected": [
+        "153092",
+        "199134",
+        "199140"
+      ],
+      "v1_1_expected": [
+        "153092",
+        "199134",
+        "199140"
+      ],
+      "v1_query_sha256": "b312a18b07756417b522ed208f83ae352f145c0e8767dbfe9b723b7596f0b937",
+      "v1_1_query_sha256": "c1195b20e3227b8df181d3a83ba4a596755aa0687fdca8bde0aa8d382f72ebab"
+    },
+    {
+      "id": "mv_rad_syn_041_distance_128091_128093",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 1893.7659699980754,
+      "v1_1_expected": 1893.7659699980754,
+      "v1_query_sha256": "afabf22e43c733be29f7ac6b0c6d670f19c4b5c78731ea7054bb4e2c42abcbd9",
+      "v1_1_query_sha256": "3b2479c415c1d6e2ee95cfb53a15b8f7e77d84809816481ad0d79d5113c774d4"
+    },
+    {
+      "id": "mv_rad_syn_042_distance_139977_139983",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 2011.693303359736,
+      "v1_1_expected": 2011.693303359736,
+      "v1_query_sha256": "3d92e9c22b264674ed69b17f78034cd699032439b0da4da545d4a86187394a59",
+      "v1_1_query_sha256": "a5b151935ac2d45c324d287aecfd019681275f35d809c73379ba7a0d388c2f81"
+    },
+    {
+      "id": "mv_rad_syn_043_distance_153092_153213",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 17529.671394307414,
+      "v1_1_expected": 17529.671394307414,
+      "v1_query_sha256": "83c1e53cf0f23b9f3a5ce0c33695d8bd739b66c88bceaa37d7a5ea999c0fe4cc",
+      "v1_1_query_sha256": "8f2e8214fe624456e9a62726f56ee25265cdec8565b2cb086482d81c4572ae5e"
+    },
+    {
+      "id": "mv_rad_syn_044_distance_153216_153220",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 2750.2303120300066,
+      "v1_1_expected": 2750.2303120300066,
+      "v1_query_sha256": "ea4d4c714d67f02e5e1f1211aaf9ee1bedab24834072bcb1d2509e294cd0053b",
+      "v1_1_query_sha256": "8c9270eae2f6ef767aaa7bfe6b97a39b2a19355144964e598f8ce5b0ebc3b400"
+    },
+    {
+      "id": "mv_rad_syn_045_distance_199129_199130",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 113228.16745057609,
+      "v1_1_expected": 113228.16745057609,
+      "v1_query_sha256": "788a664d97c48330dbde0ca6527df8545cb3e4fb7bbfdda1d907d5980cca00f2",
+      "v1_1_query_sha256": "d0df54f4f2f2b914760e3971bf6e0ef11c4202e2f557944be56348a3aaee1aab"
+    },
+    {
+      "id": "mv_rad_syn_046_distance_199134_199140",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 25994.32442648371,
+      "v1_1_expected": 25994.32442648371,
+      "v1_query_sha256": "2e54fcebd67fcc9b43e23a05e223e848dce287c2bba815d2ed0665e647662f55",
+      "v1_1_query_sha256": "c64e9202bb860edc49f1c75682ca34f50697cf66bc988adbd0c455c5acc4b1aa"
+    },
+    {
+      "id": "mv_rad_syn_047_distance_255713801_255713854",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 572.6037964713794,
+      "v1_1_expected": 572.6037964713794,
+      "v1_query_sha256": "03a7ce659dc7dab6dcb74a8ebfd9f0e354158abab5871320e9e98bb4a09a8323",
+      "v1_1_query_sha256": "43f24e04cfa8fa010a6117efd0815f7e3ee241c706906394ee929b40d1ca0c48"
+    },
+    {
+      "id": "mv_rad_syn_048_distance_255713882_255727865",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 82527.58165696842,
+      "v1_1_expected": 82527.58165696842,
+      "v1_query_sha256": "108fe9246cfa859f8a14772709b295c6a119330c60eb9b65ce7f89039e344f39",
+      "v1_1_query_sha256": "ac8197d7071ef845e1fdd2b204a3a7377b91450e6fb99c9b8e08e66c0e7db818"
+    },
+    {
+      "id": "mv_rad_syn_049_distance_255731882_272373",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 110700.43427426559,
+      "v1_1_expected": 110700.43427426559,
+      "v1_query_sha256": "1750d474c2736aa8ea0f207b424b875b6b5436e7e537ab8a870149c87dc916a7",
+      "v1_1_query_sha256": "688bf686d9c4af7e59d772975d50c0c11d50cc2f764fe1f154e46940bd9164b8"
+    },
+    {
+      "id": "mv_rad_syn_050_distance_31395158_340786035",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Specify the sphere radius, coordinate convention and numerical tolerance."
+      ],
+      "v1_expected": 42485.04195059106,
+      "v1_1_expected": 42485.04195059106,
+      "v1_query_sha256": "065b792775665efc22314040ef2943084c14fae6ce4601699568c81a33a52641",
+      "v1_1_query_sha256": "23cfef762ed0b15c4f475da35cff714ad372547cec513b940802b2edad5b9c31"
+    },
+    {
+      "id": "mv_rad_syn_051_within5km_128091",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": 3,
+      "v1_1_expected": 3,
+      "v1_query_sha256": "395e045381d93048ce276fefabc805d9f42113b064902905bc23e8ca69dbcdd4",
+      "v1_1_query_sha256": "819b9e8b78fd3430b6f3e91dded89196a63dbfc5b65c92f191795eb309bbc41d"
+    },
+    {
+      "id": "mv_rad_syn_052_within5km_153213",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": 3,
+      "v1_1_expected": 3,
+      "v1_query_sha256": "752ba0ceb9f4a268b4ff16eae1e2ddb90fb0ed7804ad4519ac358affa0ef930c",
+      "v1_1_query_sha256": "9a6c7c3417e6fd35283f236f3237d2fddc512ef767451f843c08017e64add440"
+    },
+    {
+      "id": "mv_rad_syn_053_within5km_199134",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": 1,
+      "v1_1_expected": 1,
+      "v1_query_sha256": "a9adee5253527a75523bcd18f9db63e9c40edf8d479a7d79e4aa424b3ced28d3",
+      "v1_1_query_sha256": "0dc16f851bb4039699782a07bedec408810b5ba30c8a78463a0ad16353758b75"
+    },
+    {
+      "id": "mv_rad_syn_054_within5km_350543",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": 3,
+      "v1_1_expected": 3,
+      "v1_query_sha256": "e49a01035bb3f5b13159c6c41705a01d550f0d77b19009422757372d63dbee82",
+      "v1_1_query_sha256": "dc6a84f0a7f233a21e20542425c86b8af9c00345f731287951559bf3af2dfd6d"
+    },
+    {
+      "id": "mv_rad_syn_055_within5km_474717387",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": 5,
+      "v1_1_expected": 5,
+      "v1_query_sha256": "6fa499a45e50432022988a9f85d8ab5963ddcd19880026def443f376255e2fd3",
+      "v1_1_query_sha256": "1601ebba0a25d264661c2ee306bf15fbfb42c3876fc841388ee156b8a87db092"
+    },
+    {
+      "id": "mv_rad_syn_056_nearest_offset_128093",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": "128093",
+      "v1_1_expected": "128093",
+      "v1_query_sha256": "5a94382837010400348c1025871e6e0fe68994bf23d197dda4542998b35943b6",
+      "v1_1_query_sha256": "026718b29bc165a89597d5e9ac4b69fda4f815a48525c048a740f2466d33fd7d"
+    },
+    {
+      "id": "mv_rad_syn_057_nearest_offset_153216",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": "153216",
+      "v1_1_expected": "153216",
+      "v1_query_sha256": "37f65b5f084eab2f09d939990e854f22c7000903e11c63ec2539953eb0d571d0",
+      "v1_1_query_sha256": "6a53a2954a38c51ea25a58e599ba98bd5614c548fade9f3551bd009e179de4f2"
+    },
+    {
+      "id": "mv_rad_syn_058_nearest_offset_255713801",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": "255713801",
+      "v1_1_expected": "255713801",
+      "v1_query_sha256": "d7827831d8a6fd18f8f2c68ddf110f3f24768cd32708c8a97cdc2aca2d3410f9",
+      "v1_1_query_sha256": "b38d89dda83226a0c289af1a68f314c14259dd9bf109d498fce0f3707b0bdac7"
+    },
+    {
+      "id": "mv_rad_syn_059_nearest_offset_448298966",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": "448298966",
+      "v1_1_expected": "448298966",
+      "v1_query_sha256": "0f19b5432182c821bfbec3b0465b1d439925f052ae58edcaa38e102da3cb01e6",
+      "v1_1_query_sha256": "e77a726228d22791048cd972ecb5fa518de78873699dd6e56b67b7acbea64058"
+    },
+    {
+      "id": "mv_rad_syn_060_nearest_offset_550874361",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare geography conventions consistently even where the old answer was not sensitive to them."
+      ],
+      "v1_expected": "550874361",
+      "v1_1_expected": "550874361",
+      "v1_query_sha256": "c1b9c7187adc7e9348dbbdcd7d9813f07041e60efe1abb0bfd6922d8f3d3f249",
+      "v1_1_query_sha256": "0d46ab61e2cc0100c887142e5bff45cc318dbcf747af037dfd0b61d962e89853"
+    },
+    {
+      "id": "mv_rad_syn_062_region_775_total_capacity",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Represent unknown total regional capacity by an explicit null target."
+      ],
+      "v1_expected": 700,
+      "v1_1_expected": 700,
+      "v1_query_sha256": "6e1985d5064cbec130821335fe900554f6ba0bce7cb21a8f1cdc4eb431e04df0",
+      "v1_1_query_sha256": "90e6b69c4f06993adbc278de2c24c469e86803274d15cbd12b9bdd12ff3ea022"
+    },
+    {
+      "id": "mv_rad_syn_064_region_775_avg_utilization",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Use an explicit empty-population null policy instead of a nonfinite number."
+      ],
+      "v1_expected": 0.4643194175069638,
+      "v1_1_expected": 0.4643194175069638,
+      "v1_query_sha256": "d9cf97b3c647f4e9983f1c0ca5bbdaa66935aed401625841f83b36f921d16726",
+      "v1_1_query_sha256": "979277f7e015e3e3d1acb6747da378a5a3eb87d301e036ba2f0b05a2cd0f7376"
+    },
+    {
+      "id": "mv_rad_syn_067_region_949_total_capacity",
+      "changed_fields": [
+        "query",
+        "expected"
+      ],
+      "reasons": [
+        "Represent unknown total regional capacity by an explicit null target."
+      ],
+      "v1_expected": 0,
+      "v1_1_expected": null,
+      "v1_query_sha256": "bcdf551d835803c149d8edcd734038623765b4df362210e3b09222a6a7755edb",
+      "v1_1_query_sha256": "48176d5d48c290e2ce9fff41b91464c9838d36d6c66cd6baa1a6bd7176990595"
+    },
+    {
+      "id": "mv_rad_syn_069_region_949_avg_utilization",
+      "changed_fields": [
+        "query",
+        "expected",
+        "grader",
+        "tolerance"
+      ],
+      "reasons": [
+        "Use an explicit empty-population null policy instead of a nonfinite number."
+      ],
+      "v1_expected": {
+        "source_nonfinite": "nan"
+      },
+      "v1_1_expected": null,
+      "v1_query_sha256": "8fb59de7bf9ae7d51dc1ca27089252b9c4ca721ce8a179e63e54e403f290a7b7",
+      "v1_1_query_sha256": "b662c9a037a6e7d541e0266225a0131ed1c795937e3adc2747f561c9076d0d68"
+    },
+    {
+      "id": "mv_rad_syn_077_station_most_electric",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": "31395158",
+      "v1_1_expected": "31395158",
+      "v1_query_sha256": "1362942e65fb6d85c79c97e59f434b606a2375a3a90686f858a88bafccd2dc76",
+      "v1_1_query_sha256": "85a2700927d0941710490e8f3c76be5c88225851161f7363c2a57dc390c766ec"
+    },
+    {
+      "id": "mv_rad_syn_078_station_most_human",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": "76245743",
+      "v1_1_expected": "76245743",
+      "v1_query_sha256": "b3da0a26829a85a0d0f8521b4c930abd8cc0931b0e6f30a0c90c293b0965734a",
+      "v1_1_query_sha256": "85d462edbe589e0b9d20008ebc9c85a9d6453c700bc4139f64e33a5bbcce5037"
+    },
+    {
+      "id": "mv_rad_syn_079_station_most_cargo",
+      "changed_fields": [
+        "query"
+      ],
+      "reasons": [
+        "Declare ascending lexical station_id for tied ranking values."
+      ],
+      "v1_expected": "139977",
+      "v1_1_expected": "139977",
+      "v1_query_sha256": "164b5da0ff161fa074e21ec01e7ec1906d8e6162d456f52f9d04698313736807",
+      "v1_1_query_sha256": "df8e9d0b7f3e47496973793c11e41158af1af0fca9af97eeda55689acedf39d5"
+    }
+  ],
+  "semantic_balance_seed": "GBFSBench-MV-Rad-v1.1-semantic-options-2026-11-16",
+  "semantic_permutations": [
+    {
+      "id": "sem_001",
+      "old_to_new": {
+        "A": "B",
+        "B": "A",
+        "C": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_002",
+      "old_to_new": {
+        "B": "C",
+        "D": "A",
+        "A": "B",
+        "C": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_003",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_004",
+      "old_to_new": {
+        "C": "C",
+        "B": "A",
+        "D": "B",
+        "A": "D"
+      },
+      "old_correct": "C",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_005",
+      "old_to_new": {
+        "A": "C",
+        "D": "A",
+        "C": "B",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_006",
+      "old_to_new": {
+        "B": "D",
+        "C": "A",
+        "D": "B",
+        "A": "C"
+      },
+      "old_correct": "B",
+      "new_correct": "D",
+      "definition_revised": true
+    },
+    {
+      "id": "sem_007",
+      "old_to_new": {
+        "A": "B",
+        "D": "A",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": true
+    },
+    {
+      "id": "sem_008",
+      "old_to_new": {
+        "B": "B",
+        "A": "A",
+        "C": "C",
+        "D": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_009",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "D": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_010",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "D": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_011",
+      "old_to_new": {
+        "B": "A",
+        "D": "B",
+        "A": "C",
+        "C": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_012",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_013",
+      "old_to_new": {
+        "B": "C",
+        "A": "A",
+        "C": "B",
+        "D": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_014",
+      "old_to_new": {
+        "A": "B",
+        "B": "A",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_015",
+      "old_to_new": {
+        "B": "A",
+        "D": "B",
+        "C": "C",
+        "A": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_016",
+      "old_to_new": {
+        "B": "D",
+        "D": "A",
+        "A": "B",
+        "C": "C"
+      },
+      "old_correct": "B",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_017",
+      "old_to_new": {
+        "A": "D",
+        "B": "A",
+        "D": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_018",
+      "old_to_new": {
+        "A": "D",
+        "C": "A",
+        "D": "B",
+        "B": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_019",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_020",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_021",
+      "old_to_new": {
+        "B": "C",
+        "D": "A",
+        "C": "B",
+        "A": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_022",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_023",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "C": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_024",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "C": "B",
+        "B": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_025",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_026",
+      "old_to_new": {
+        "A": "A",
+        "C": "B",
+        "D": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_027",
+      "old_to_new": {
+        "A": "D",
+        "C": "A",
+        "B": "B",
+        "D": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_028",
+      "old_to_new": {
+        "B": "D",
+        "D": "A",
+        "C": "B",
+        "A": "C"
+      },
+      "old_correct": "B",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_029",
+      "old_to_new": {
+        "A": "B",
+        "B": "A",
+        "C": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_030",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_031",
+      "old_to_new": {
+        "A": "C",
+        "B": "A",
+        "C": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_032",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_033",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "C": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_034",
+      "old_to_new": {
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "A": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_035",
+      "old_to_new": {
+        "A": "C",
+        "D": "A",
+        "B": "B",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_036",
+      "old_to_new": {
+        "B": "A",
+        "A": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_037",
+      "old_to_new": {
+        "A": "D",
+        "B": "A",
+        "D": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_038",
+      "old_to_new": {
+        "B": "C",
+        "A": "A",
+        "D": "B",
+        "C": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_039",
+      "old_to_new": {
+        "C": "B",
+        "A": "A",
+        "D": "C",
+        "B": "D"
+      },
+      "old_correct": "C",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_040",
+      "old_to_new": {
+        "A": "D",
+        "B": "A",
+        "C": "B",
+        "D": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_041",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_042",
+      "old_to_new": {
+        "A": "D",
+        "C": "A",
+        "B": "B",
+        "D": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_043",
+      "old_to_new": {
+        "A": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_044",
+      "old_to_new": {
+        "B": "C",
+        "A": "A",
+        "D": "B",
+        "C": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_045",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_046",
+      "old_to_new": {
+        "B": "A",
+        "C": "B",
+        "D": "C",
+        "A": "D"
+      },
+      "old_correct": "B",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_047",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_048",
+      "old_to_new": {
+        "A": "B",
+        "B": "A",
+        "C": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_049",
+      "old_to_new": {
+        "A": "C",
+        "B": "A",
+        "C": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_050",
+      "old_to_new": {
+        "A": "A",
+        "C": "B",
+        "D": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_051",
+      "old_to_new": {
+        "A": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_052",
+      "old_to_new": {
+        "A": "C",
+        "B": "A",
+        "C": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_053",
+      "old_to_new": {
+        "A": "B",
+        "B": "A",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_054",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": true
+    },
+    {
+      "id": "sem_055",
+      "old_to_new": {
+        "A": "D",
+        "C": "A",
+        "B": "B",
+        "D": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_056",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "C": "B",
+        "B": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_057",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "D": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_058",
+      "old_to_new": {
+        "A": "C",
+        "C": "A",
+        "B": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_059",
+      "old_to_new": {
+        "A": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_060",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_061",
+      "old_to_new": {
+        "A": "C",
+        "D": "A",
+        "C": "B",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_062",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_063",
+      "old_to_new": {
+        "A": "C",
+        "B": "A",
+        "D": "B",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_064",
+      "old_to_new": {
+        "A": "D",
+        "B": "A",
+        "C": "B",
+        "D": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_065",
+      "old_to_new": {
+        "A": "B",
+        "B": "A",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_066",
+      "old_to_new": {
+        "A": "C",
+        "C": "A",
+        "B": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_067",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_068",
+      "old_to_new": {
+        "A": "B",
+        "D": "A",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_069",
+      "old_to_new": {
+        "A": "D",
+        "C": "A",
+        "D": "B",
+        "B": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_070",
+      "old_to_new": {
+        "A": "A",
+        "C": "B",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_071",
+      "old_to_new": {
+        "A": "C",
+        "D": "A",
+        "B": "B",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_072",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_073",
+      "old_to_new": {
+        "A": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_074",
+      "old_to_new": {
+        "A": "B",
+        "D": "A",
+        "C": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_075",
+      "old_to_new": {
+        "A": "B",
+        "D": "A",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_076",
+      "old_to_new": {
+        "A": "A",
+        "C": "B",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_077",
+      "old_to_new": {
+        "A": "B",
+        "B": "A",
+        "C": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_078",
+      "old_to_new": {
+        "A": "C",
+        "D": "A",
+        "C": "B",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_079",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "B": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_080",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_081",
+      "old_to_new": {
+        "A": "C",
+        "D": "A",
+        "C": "B",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_082",
+      "old_to_new": {
+        "A": "A",
+        "C": "B",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_083",
+      "old_to_new": {
+        "A": "D",
+        "C": "A",
+        "B": "B",
+        "D": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_084",
+      "old_to_new": {
+        "A": "C",
+        "C": "A",
+        "B": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_085",
+      "old_to_new": {
+        "A": "D",
+        "C": "A",
+        "D": "B",
+        "B": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_086",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "B": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_087",
+      "old_to_new": {
+        "A": "B",
+        "D": "A",
+        "C": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_088",
+      "old_to_new": {
+        "A": "C",
+        "C": "A",
+        "B": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_089",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_090",
+      "old_to_new": {
+        "A": "C",
+        "C": "A",
+        "B": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_091",
+      "old_to_new": {
+        "A": "C",
+        "B": "A",
+        "C": "B",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_092",
+      "old_to_new": {
+        "A": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_093",
+      "old_to_new": {
+        "A": "B",
+        "C": "A",
+        "D": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_094",
+      "old_to_new": {
+        "A": "A",
+        "D": "B",
+        "C": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_095",
+      "old_to_new": {
+        "A": "C",
+        "B": "A",
+        "D": "B",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_096",
+      "old_to_new": {
+        "A": "D",
+        "D": "A",
+        "B": "B",
+        "C": "C"
+      },
+      "old_correct": "A",
+      "new_correct": "D",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_097",
+      "old_to_new": {
+        "A": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_098",
+      "old_to_new": {
+        "A": "C",
+        "C": "A",
+        "D": "B",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "C",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_099",
+      "old_to_new": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "A",
+      "definition_revised": false
+    },
+    {
+      "id": "sem_100",
+      "old_to_new": {
+        "A": "B",
+        "D": "A",
+        "C": "C",
+        "B": "D"
+      },
+      "old_correct": "A",
+      "new_correct": "B",
+      "definition_revised": false
+    }
+  ],
+  "task_fingerprints": {
+    "sem_001": "f7730f81a88cd13fd92e63589e3b62c237f2d57c831ef064e22011cf6ad7b0da",
+    "sem_002": "b58bc045aba068b5d370fd3e8e77a6c98f8d4a2ffa91a8ad2639ca1d6099ec5e",
+    "sem_003": "5dc16c0d997b1e91615e0cabc3f53429578ea1f77c201e3c5f4c3f76b93bf24e",
+    "sem_004": "a1a8011b6f9b9d3193b7a3c1c398e7c98acc8c0b74bad5f4c2d0532a31aa689f",
+    "sem_005": "2375701a02e0ca8ab8a228682681afab8102ae674a26a457c8c007685fe2c292",
+    "sem_006": "9482f4e84226c67165dded89c18761eb6b615f1476dbbcc8dbb4c74fd02a7e9d",
+    "sem_007": "64ac6fa1496a5e5615812119ca1246f6e6a448e9f8e5cf18576e5e06770672e1",
+    "sem_008": "dcffa24ff08602f9c3e45c2b21713fd6bd3eb74399b9a604406c4d9dcb5749f8",
+    "sem_009": "76635431a72266783f8c0e9490567fe95307fcb22465038c2ce8708ceb9f2991",
+    "sem_010": "b9d5d6eb27e670c92cfd1bd5ec2f123d3eac4c0266f97c11f29255cbb8ba9977",
+    "sem_011": "69ffc87e3b85908a8b9030c399655fd43977200c5fa91584a2de2b294fab5142",
+    "sem_012": "c7f2891719bccfb307304ce898c0d0f9cea11a22069133e159e70eb9ac56e2f5",
+    "sem_013": "e0646656a9553807f1573387624494a217f9cde60ce093fd05807e836b23fb8d",
+    "sem_014": "8700ec3da5c12802281f4d86b7f07a001f57ecd34a158093af2767b2cb879bee",
+    "sem_015": "dbec14f07e8d066150138f6168a683de527498945094b87f6a6c75942ddee43b",
+    "sem_016": "1d723be0fdba0ac1ef512b94b856588766b83308db66bbe5188fedad0cc54e63",
+    "sem_017": "8ddfd0634881cea1ecb818ff1f4ce5e8be0557a4dda6c9407ad50086fb17063d",
+    "sem_018": "0ec1f1bfbc7dfb2cc0af6d58e32e1aca1b039546e92cf44b23880dc17ace26f2",
+    "sem_019": "886d792cdbc1d9ab105f2be08e507827d505571ce68e5a05529bce8f3ab10f5d",
+    "sem_020": "7362570adc56fb5ff4ad24d00c99e932d0e2adb9ba3888b93c64ef9369461d28",
+    "sem_021": "c2be62ac76cea053d5c2af3e45831591e2d23539708be58e2803e4c370afa0aa",
+    "sem_022": "ed60639efc77bd316c589b1762c2218d74d443930616113584b2501cb2e3b0c8",
+    "sem_023": "fcdb7e7dc8c85dc63c26282da43623eb31a24a8a0252478d5a71aa53fa477b59",
+    "sem_024": "f41be5189060eae36605f862cfd0cc0d2439a49f7404d31f61e9868452210309",
+    "sem_025": "e26a608c5411c16e57f907b7788a7265fe9556c51689771b3ba6bf262ee920d8",
+    "sem_026": "ff2e7e015146efab2bf13c748da18030b9245f90554f8a5b31a9724ebc53e558",
+    "sem_027": "5f1d5e66a06045fb7f8be1b5a81b34c9fc1d78218bff67e326a4921e71e57bb3",
+    "sem_028": "f0c3f9d5546dfd50a2662548e32ca80f0a6a5b66e21db73e5da43737160408df",
+    "sem_029": "3e922b937c17dac33c518b0fd5eb1c288ecf0b7f0e08e5a10e43e55404a69a8d",
+    "sem_030": "ca0648e8581d75ef14caefad4f8562a17bd3a9fbce2c9b224e97e54d6f7cc167",
+    "sem_031": "9971f72fa0aa178718f67c377e8ded7d7b855db2306d515258495a5c1ef43c6d",
+    "sem_032": "f3642ab5c7987270bb8cb731fe08e09b1788640b377bbbf6e6a4feafc16587ce",
+    "sem_033": "a6af207e545f545cf10483559f526a18f490f9494d2e30db89bed7a84630bbaa",
+    "sem_034": "c9723c5549cb11a602db77ae7717c5bea00e48237985dbfd9eb95ef7940a0c94",
+    "sem_035": "efabd8498fcd11e195b8bfb5198afd8e8d440327a92e8f6311e872ca927d313e",
+    "sem_036": "aaa42b2105310450dc7b83952c86e1d6f1fe53a4090e7c5a6973e743b598ec5a",
+    "sem_037": "958d2b2440fe8397c36332923fea214eb26c30d9015716fe609c4378bc2c333b",
+    "sem_038": "5d2c043229bd80fb6452959cefd7b4d2ce43f3e53822928b7907d49e25a67aee",
+    "sem_039": "1170bfe6b597e58b1d827e6b644ce4cce6f6bdeaf5cc3a66bf82b75e77df3eaf",
+    "sem_040": "a668b80634bd0c4f369444fdcb26044fe50f42dc14a80f3c438802c2875d1771",
+    "sem_041": "79d370a3b502e3c41f4e514a378321b9883946acc686303dcc8bd2e37be08dbf",
+    "sem_042": "f39db86b5d54e11d799641eaeec78539024eb27689238cc903b0b1c1a4a8eead",
+    "sem_043": "c60c5ffd391d1adce3e551e15ed7e568c54e5e62c40becd3ff8c1843752831c5",
+    "sem_044": "a36552973e2f8a0fdda2572fa63e7d68c76fb9694e77fe26d2676055f53a54d9",
+    "sem_045": "3d948bf110c356e7b911698867f52eaa9a0fcfce964766c2a96ed86624739afa",
+    "sem_046": "184ab10fcaa9f65faed41b6ac913ccbe7d75dd964aa96116c7f58ccd569c6775",
+    "sem_047": "c11b123a5f6fabbec48495413d616ab4754f648964df5308d96c1bf3e043195c",
+    "sem_048": "a2bf22d56bf247c9bd64f6a52a0c68e50a46a48cd01cc3ae15db0920d8e95f2a",
+    "sem_049": "0c239ed78d22385ef198ed9223f8ad1cc0c3a189df654e609f91871eb3ade14b",
+    "sem_050": "aaf79873e762f330492aef8f56a7481ef259222f9065ea9a37a84468d223fa7d",
+    "sem_051": "c9900b7c8cb61ee773d3a1dee74c9845a7911e914c49b72a497523b5efa648d2",
+    "sem_052": "a0375ba54cf57a7b0f50fd86c33883eb75e60a0080a2aa861cfb5da7ad258182",
+    "sem_053": "f782526a01f53fce28b356d296c2e87159c3949ce6a822e71b9af72882b0ad19",
+    "sem_054": "0f57ef6ead4b4479186ed7499241ebabf7ab85105ff3c2d3980840b7bb92fa49",
+    "sem_055": "0559bafbbfef7e6e58c8ead152059e0f5d0c49fe388066c6a046dfdf116a4921",
+    "sem_056": "cb2a71d33b94012198f3bec4b6ef64cb91ed451cb88df7bfce2ed4af69754116",
+    "sem_057": "293de1f1ae1ee20c491b88c56489ed881025d624faff3a71ff6697c4904b79dc",
+    "sem_058": "76851e057706c48545d9113c7d9f4191defc5d7e352e5e1e35baab895451bf8c",
+    "sem_059": "bc755f58b8449bfbbcc3992b2d3e8555c05b426106c3a36333bc00c93f3c1fc3",
+    "sem_060": "9b213563c38809a9c7c4e1d6e891967a9d70c6352ee706f234e544da1ae2217d",
+    "sem_061": "20f901c836cc1066466deadf72b6f2c5d5a0616923a8482cb597b22cc10b2ede",
+    "sem_062": "dcb486040c51b67a18d73e46e9b377acd57953c3e14d98e394976668ba442ff2",
+    "sem_063": "979fc487cc028346381d9c3ab6a44a7da665691a4268b129c43491244f34ab72",
+    "sem_064": "c3392b0121dfc9f15eac664fc478d273d1b81838bf2e56f525ad434a7769b2cf",
+    "sem_065": "128f2cb3b10b815887410faa33ab851ba6174a095978718999702b20f38b0261",
+    "sem_066": "9972af01f09ac2e87ca6a78c4cfda26c87e081b88e82fc3a2fbe9b84eaaa6265",
+    "sem_067": "3b1449d3fbc0fedb104a55d27da9f44e73f2222ac53701ca1615c1491f9027f1",
+    "sem_068": "7527ad6bb6493f75508661d6df15aeb86f51d2ac8d6903a4b644a164d5780415",
+    "sem_069": "e8b3cd0e85a39b21d1108a23219982ef0d0e0709440217b3877e6f3131ec4f88",
+    "sem_070": "09c61a2fc72f3bd9a0a412762915e5a108f27e1855bc280f8553c21ed6770237",
+    "sem_071": "a981265612c53edf71f5d713e08164b3715bc0822cc7c7c552d26f33ddb3c455",
+    "sem_072": "a6f53bc3c5ca4be58347dcf25b96d55fa1a559d9987b374fc2e366b508653832",
+    "sem_073": "743add08d3636359af9203df116216ae3bf36f38785979ed650db076b9d674a3",
+    "sem_074": "850175d09258ba654c01797b0a4e8167c3f000aef4f1e1ca5ebcf4a81103e7f6",
+    "sem_075": "14e0f42eaa6df992312aff12221a28f11deae5d8925d023e91672c56e9b3ec95",
+    "sem_076": "04a3154a476291b871230a796405c910af4d26d4fae5ee5990a2a112780110ed",
+    "sem_077": "ee96681f8bd57e3a715b3296183ce5d918ae143ea547585f6dcb76833b58ffb5",
+    "sem_078": "6f229d3562e55188944eb1867ddd4b40fa73cdc152e096adea57e4414541e1ee",
+    "sem_079": "b200b70a226001efde9fdf79673b029b2508ff8d9b775365dd07cafc2c7ce3be",
+    "sem_080": "0cbb20bfb971b1c0c9d778571b587a4836ed7fbd1e9c223b570dd9510e2a2e6a",
+    "sem_081": "4743c328a16da7a81c73e2074b12fe5e2f23deeb97cf53b5df432ec7791bc183",
+    "sem_082": "2bce2a361a5291b5b9a19d70d14c189da3e0b40b8f1c8e30537995ee334ecf2a",
+    "sem_083": "1cd5f49082ac94ec8c4826525fb48ac2d9a0e2058d35b99ded5ff2b92da397cf",
+    "sem_084": "23ea7d33ac931acb2c6580de0280d80b9096121def7cf1f424b7f036f516c396",
+    "sem_085": "5bb3d6dd2c86d7dd809f9a349b0d05139db39f8c159d87cc8baa9935a14179a8",
+    "sem_086": "4dee3030cf62a9e59cd246da4baf1a89f704218a6dba317af4e39006dfa2e793",
+    "sem_087": "6f2139c94b3628376c7b29eb2495858963461c5473b474d1d90d38cf02aebff1",
+    "sem_088": "5d8cc777e81020fc6b8a848a898ff1905b86213d544292ce9aae50d3f3682e62",
+    "sem_089": "dc6cb4c0c47c2c5be0e6a8141bc1f3c3a025473e380b5a150111efe11f69bbad",
+    "sem_090": "521513e8c97dc95d91d77835a59d1b7aa28789b48c305b7dec70fba43c1b7788",
+    "sem_091": "e336199508728820b1eab6d3f0bc3794afd128f58cfa8197c23eafbf97016ba0",
+    "sem_092": "55613ac3ddd4005c672a0105256ed41c2682ff73e224078da608e1f9ce423e95",
+    "sem_093": "a592010fe046b1ff2c3eb54fc49a9bb07a742874ac225121f088e6e175a6104e",
+    "sem_094": "250404b17fe9a928b0f843bc85cb50b67a728a61d5fbf61531f6661ef427974b",
+    "sem_095": "e49eb0a16a04b33f50b372578170bd4e64e88a082d1d00ce3c96cf417942d6c3",
+    "sem_096": "b9eb7e4b1a7b3e23f31c1ebfdd821f27e317f9a67e223dc1675ea088102040ab",
+    "sem_097": "2bf6d13106076996aed304e48ab378fb358ed2e17c3369c540059a7ab35fbaeb",
+    "sem_098": "1dd3105634db97dc8b2586f9116a0a8ab7e6a80145f77dbf69e4ba2d16e726a3",
+    "sem_099": "96ec7885f6146ade0f53a8151af3abd7f0b154322fa027259bd052366b3c9d03",
+    "sem_100": "55e19f786cdd4c40230239b85bd18cbf126d0d6a5d6b754ee5f72bc7fd44aa44",
+    "mv_rad_ret_001_system_name": "4c39dfe33202f39e0db8d14a375087da834012ee2a6b0eaa792f4318e4ac22ef",
+    "mv_rad_ret_002_operator": "a9af3f3e14e7d970c9d5567f30f202fd8b4b2be778c1bba8dd392bd0864039f8",
+    "mv_rad_ret_003_timezone": "77bd0b82771ac08214462f74c3aa232f08985dfca3697d6ce7e2043bfd5cca32",
+    "mv_rad_ret_004_phone": "ca05f0dc537dc40f9b0314f25bd24de76bbb89a24c4ed3aa904c5dc8d46ee9c5",
+    "mv_rad_ret_005_email": "6d4122c14f7a854c67a67e25f7662fe6bb1c15e69f550f106ae2a2ce049f0c9e",
+    "mv_rad_ret_006_feed_email": "38d7db7782326169d88c77f79c45090b765aca88c12b08a63a294fff27953328",
+    "mv_rad_ret_007_license": "f66f8c2530d9cfdff05885e21df8a53724fef65eb0055c1a7bb7eb370fdbd494",
+    "mv_rad_ret_008_system_id": "599f9bb087a846b9abe1cf03dad8e063fdde67b588652ff4e6d18978294c5801",
+    "mv_rad_ret_009_language": "4cacc544ad97ae4904c91252ed05c0a43121371baeb5be094c3a70ce35a967b7",
+    "mv_rad_ret_010_url": "a078fbcd24784b74a95288e1c94376a86e7d84d2e44d00afc35b683c84f1548c",
+    "mv_rad_ret_011_num_languages": "73bfc6c0a942254e1eee8779dfc15fc6ecfc8441f665f7b837aa3e7fe6b0530c",
+    "mv_rad_ret_012_list_languages": "4e9efca5912d96b6e714070706a23aa568ac763bb4a1dc7066357768d182e4dd",
+    "mv_rad_ret_013_num_feeds_en": "07f73142db1d3c5c6a50028852e70a9a43b411743dd300b2162304b8b2c5c8cb",
+    "mv_rad_ret_014_list_feeds_en": "8eb0e59ecd95c56ae02ec0e6fe053f892626b13343d40499e058d233229c9fdf",
+    "mv_rad_ret_015_regions_count": "cc1f188ff4524cf487fc883231f9bf754b9fbd8d66bc7aa228a0c9c15a62e38f",
+    "mv_rad_ret_016_regions_names": "cac8b03f6bd7e64103060132e6d79267ed5f95b8f52deedbaacbb70d8a005121",
+    "mv_rad_ret_017_pricing_count": "04ba662e0f2faade82b7e8abb1b3f661d3e92a3d440c899c8712d53b0849ece6",
+    "mv_rad_ret_018_pricing_plan_id": "627cece4c1378436fb8f78cf4df3ccabafad74b405c3c488a1eeb35e7bf0e7ee",
+    "mv_rad_ret_019_pricing_currency": "96c996fb153c2c78c7e8d23687980c1772b08b9678d161e96d9b825499b4417a",
+    "mv_rad_ret_020_pricing_price": "aa4384677d979592263cf33bb1325524dd8d6f2d510e16a4b6e7c00f8de31d7c",
+    "mv_rad_ret_021_hours_user_types": "b6a322468bba3120bd02c159adbc19b639e8f39d32b5820c03390030a565c064",
+    "mv_rad_ret_022_hours_days": "5d4ea0557d58815da65b526c758a44a54b40dcaf24c76866172d7d206b3ba03a",
+    "mv_rad_ret_023_hours_start": "3b9c08c44ca0ca11b4ebfe7e6149d1c8e22cb4afbacec1ebc9622d28572df175",
+    "mv_rad_ret_024_hours_end": "14faefd18cd1e2696b075efd91a65133c333e1733a96b6f562178c7b11ff0669",
+    "mv_rad_ret_025_region_id_for_mv_rad": "41e5e2cb12aaa8bee0a9b8c53df2fe10a321b89df2b17114240c19127d40ba83",
+    "mv_rad_ret_026_region_id_for_scooter": "8f0a49c7671f29d2df626ccba8129809963d13bbbcee48544691336b307bd093",
+    "mv_rad_ret_027_feed_has_free_bike_status": "70907720091e3d5a4b4d1bce78aeef42d541362ec006d18efd6d33a843dba163",
+    "mv_rad_ret_028_feed_has_station_information": "d3e059935e9fa8171e82b52870e5d728b7a1a00a627b7223e9a0fdc34f972101",
+    "mv_rad_ret_029_feed_has_vehicle_types": "b8865146b77e6c5f8599e164f2731fed7bdaf0cbb00052dfbd5581012c6c7bf4",
+    "mv_rad_ret_030_feed_has_system_alerts": "9e0ddd55d366ab8fa4a7525d5ae15d19f9651e04dfde615dec770122513139ba",
+    "mv_rad_ret_031_vehicle_type_count": "f182bf0f286639cced2cc25a63e1e3a29e40c0be8b4fa0e692657a6ec970fa35",
+    "mv_rad_ret_032_vehicle_type_ids": "c00a323cc00b6271f2601c8922527ea6267b14d6a754baf884089f9f39474531",
+    "mv_rad_ret_033_propulsion_types": "06e025bf5d5bc9873595d700292fffb6dd1dccaed1ed146f43af67cced870218",
+    "mv_rad_ret_034_form_factors": "8f193f0b50a9bda9a210bc863cf79403e3fd12314f31f47cba61ed681438c511",
+    "mv_rad_ret_035_electric_type_count": "d173448e2002a965851b6d0608fe308dfb0ddf64d0ff626a8ee863f359211fc3",
+    "mv_rad_ret_036_human_type_count": "a84415041f6cd43df0e180d6e37e3d2816ac3fb1b60bad99ec39441c7934366e",
+    "mv_rad_ret_037_bicycle_type_count": "cc9092e2b3c7979898d79b55ff67a9551b3b5eb959ca22c6353e3496b71bce18",
+    "mv_rad_ret_038_cargo_type_count": "8a313ca1ab5e7e8df68d39cf53578620a0defef2520ef15c74ca47c33a7c8314",
+    "mv_rad_ret_039_vehicle_name_1": "342adb96d7abe9f68b85d02eb48a66abc8ebc8c3f48af869de03d1f1f018b219",
+    "mv_rad_ret_040_vehicle_name_3": "c9d46d0d47726321f27cc54279c0d80eabfa482ce7597b2b805073764327ef2d",
+    "mv_rad_ret_041_vehicle_name_6": "15c2478cb8edff5a9bf988518a90160d1eea26a0fd62919cfa830551fffbb66c",
+    "mv_rad_ret_042_vehicle_name_29": "8581444d9a2aad94200551ef9fa0d9a4a6d374b225e051cc2749f2be4cf6729d",
+    "mv_rad_ret_043_vehicle_name_30": "dfcec6f02c958a5de39a64215599bdefe6ad12b06d005fbdd530163f29f15817",
+    "mv_rad_ret_044_vehicle_propulsion_6": "482f7ac8f59690e8836e7876db6eea4a668935aec8275f0beb2b043317e2a5a5",
+    "mv_rad_ret_045_vehicle_formfactor_29": "e5259e6cd3c4964bdeeb04d38868fac0ef466c89b923621e95f44191f5dfe302",
+    "mv_rad_ret_046_vehicle_ridercap_30": "07d73e98fa4f2c4c1968d96c7599eacd7b2d676643d8f32e83991e324a15dcbb",
+    "mv_rad_ret_047_vehicle_maxrange_183": "fd8535f45d0bc9d37050dbbe5f7accc0c57cc2e53eff45f608f8dbdf640a1eb6",
+    "mv_rad_ret_048_vehicle_maxrange_143": "d75bbfa5eb2bffa94897a627c1f563ae4238939ae19bfb9d2c465736de6ac061",
+    "mv_rad_ret_049_electric_type_ids": "1a594d3be630042434ebc0a93cfc185194bb2dc0a66bb119626a959ca3427db4",
+    "mv_rad_ret_050_human_type_ids": "2a0b87930226fb2223b3474b04ad302ccea6470c21eac51b481865aa7c8982f0",
+    "mv_rad_ret_051_capacity_128091": "8f10041b934f3c7ec94233bb9e48befd5b8b30858374fa2f2b8958918695cf98",
+    "mv_rad_ret_052_capacity_128093": "64cf15b9ba98036d56eb76e782c6718a621c019183f8a859babb68f386624488",
+    "mv_rad_ret_053_capacity_139977": "69f47011ea07c820d288bf64c1e598db7da57404bbe78c9e982f872e6989e20a",
+    "mv_rad_ret_054_capacity_139983": "605bad98eb07df40dda0dec5c6b685e6a652d07143a590c3446c6981a0f940a8",
+    "mv_rad_ret_055_capacity_153092": "f6391e29ed1a7e66d21a9c10f6efc78c4839b05fdef4b9d34f6ca658d88e9f80",
+    "mv_rad_ret_056_capacity_153213": "019087d42b8daa9230a2c95daffcfbfe2bcb008b1210ba2863b0bda46109fd32",
+    "mv_rad_ret_057_capacity_153216": "11d46490b80d6a6de04dcd5c19f69b94be303f61f3329daf826c5f90c467aa35",
+    "mv_rad_ret_058_capacity_153220": "206799dea494812b32aaf9901060ac914f71a0ff6c2422ee93d6a412606efe47",
+    "mv_rad_ret_059_capacity_199129": "b410fe591d52c063050282a16ad130cc1f3f4e9588aaa9be872b53e5ba70ae99",
+    "mv_rad_ret_060_capacity_199130": "0144c81a9a910b43b5abe4c59c8203b0e33ed0b7d8e8b3eec93c5984baa199b9",
+    "mv_rad_ret_061_shortname_128091": "a6f6b0ba9dade9c0fc7848f526b15d0174d8a841f8d4e562e197429466dadd36",
+    "mv_rad_ret_062_shortname_128093": "2b73505d272736c542d486e68e125500d24fa594212a6ddc8e084d3621a658ac",
+    "mv_rad_ret_063_shortname_139977": "91c1a838fa59d4e2ae00907297d84f6a92813065e300f5b8f9b502eaa4d92575",
+    "mv_rad_ret_064_shortname_139983": "f04d545824238cbfb3d5c5fe81f7eb7866efe867743676095d88447dc759f5bd",
+    "mv_rad_ret_065_shortname_153092": "a29d41d7ed5dbd912a61ca14eaecc887f335f9f3eae51f4751d83c99a2ccf6cc",
+    "mv_rad_ret_066_shortname_153213": "e377291ea3a3371871e41a0fc8cd3b242a57bed6292181554b8bff00a201e083",
+    "mv_rad_ret_067_shortname_153216": "1ce2b86f3f8d23066ec2f1991ba8ae708d76765417180bfc2117df57883dcc71",
+    "mv_rad_ret_068_shortname_153220": "2e63eef7e3d1d14b7731413b6dd4ca855233926879d91ca8608484b3bbcdebe0",
+    "mv_rad_ret_069_shortname_199129": "00b8676a638d13875b2b8ae15c22a5376fb2ef7fbac33e54c634a96194d18de2",
+    "mv_rad_ret_070_shortname_199130": "a43e510bc4fff8a20c18e2cda92be467569bfc20d5f96ab1100ac814376930f6",
+    "mv_rad_ret_071_bikes_128091": "19970f5d965fa98f42f1cf155049183624639b5890889dee96573fad2d87bf88",
+    "mv_rad_ret_072_bikes_128093": "e7ffc7f8c467bfe012767ff570dec418632d5b19e1ff50a7814ee12957e9d925",
+    "mv_rad_ret_073_bikes_139977": "9e6958fab39484921ff38d9025903bb8efb47fb4cb76738a071c28c113b97b8e",
+    "mv_rad_ret_074_bikes_139983": "5c2e2ec185feebe9ff62843e28d096fa0180cb7bb8f4c17221462dec2e029b00",
+    "mv_rad_ret_075_bikes_153092": "e9536bfef04c22a7465db4b273fa32eab780559e91c5ad951edcc7ed91a49533",
+    "mv_rad_ret_076_bikes_153213": "a21dcab465a0d6d45c96ab3ca72059b6bc2517e5ade556440c59b3126cb29e0c",
+    "mv_rad_ret_077_bikes_153216": "db2278e9ecca9db8870f7f588aefce9ae2136f15abe9ef00d76242a5097c94db",
+    "mv_rad_ret_078_bikes_153220": "845106e6651befba49c1d8d497b6936bdb6e602f6c992bd4ea3cab76eb988e20",
+    "mv_rad_ret_079_bikes_199129": "906c27e48398785bacd67239073f244b14d35d85b9bee7c7cd701dc10ed0bdc6",
+    "mv_rad_ret_080_bikes_199130": "e7d203a60b791a58dca1b16e88c067a39211e08facb04ead6e9d3a80a6c78b35",
+    "mv_rad_ret_081_docks_128091": "461ee3c1bcd03fa359ad1f9ada9f902872e7b116b51574b2e4c1b4c10d8728a8",
+    "mv_rad_ret_082_docks_128093": "5ebd413309d183e7ccd9101b33829042e1b6f0d79f7f0bfae3d08b28f59814b5",
+    "mv_rad_ret_083_docks_139977": "c377ca5781a02ff96c5406458844f74bd3bcaf7def084f0c7bb141d6800ff012",
+    "mv_rad_ret_084_docks_139983": "1716a7336dbe80dc10907f77cd8060ca1bf46af9c3fb966ca4d4ad802500361c",
+    "mv_rad_ret_085_docks_153092": "97c74bac1c4c81341b25b5e1baaa91292275c73e08c2efb399a23c559dab7233",
+    "mv_rad_ret_086_freecount_128091": "a75a6f13586dc990bbc5f220b3b4dcc89165bfc5550d5529dd9ef619e9f76871",
+    "mv_rad_ret_087_freecount_128093": "75e0a9821ae46851e5eb089e8ba12d43206a459e4cbbfb99ef234b2a3fdc88f7",
+    "mv_rad_ret_088_freecount_139977": "ca7ccfb4553e6f1dfb98b423e71a37018ccac242cbe77558f1dbb082189ecc56",
+    "mv_rad_ret_089_freecount_139983": "cb297de1bddaca0d2401c86b706e44924db7c001ff8c329d87df56d7336ef597",
+    "mv_rad_ret_090_freecount_153092": "0f6a41a9c05d017afce35acd10c61563255146cc556ed0a03e9cca2321fec608",
+    "mv_rad_ret_091_count_stations": "13dfd386e16b3a981d598dc7db5398d2d88c213bed6b53f4e5075dac357c1bc2",
+    "mv_rad_ret_092_count_empty_stations": "5f5f551eebb12934273b7bdfe94ca5cf6e26062c89d310ec7e463911670959c5",
+    "mv_rad_ret_093_count_full_stations": "a3d7c029afcb67ace588d4aacee6b6b828bc0c95818c55b862b8d6d82fab9265",
+    "mv_rad_ret_094_count_virtual_stations": "8f5749bde8041cc4ca9ba972408f3b646a6f0276076e784e97d50576a2179297",
+    "mv_rad_ret_095_count_region_775": "b0d8bb3cbdc959f4d08a464b3f597c6ba2be85782dfbdc4f6145e433f8d6eecf",
+    "mv_rad_ret_096_count_region_949": "3b2078cedac7983ebff58d024d76a659e2be6f6a51eec4a4746ff795a95588fd",
+    "mv_rad_ret_097_station_max_bikes": "5f19910c2da97e8f68a08bdcf8f177c3e722bc0b16820f1ae5cce6a60ce5d5bc",
+    "mv_rad_ret_098_station_max_docks": "0f83fbce45faf2ffbc75b7f5100b0f2d525b057994e7799ebb62ccd58f890c40",
+    "mv_rad_ret_099_station_max_capacity": "1af92881e493825fdad1ac40139afd22f3981f98af8fc2f36fc7aff8efe79e2f",
+    "mv_rad_ret_100_bike_station_lookup": "37552b5edd65ce976f4a9c5716e3c3ca70a7c38b4f0ad350171403e862aedaad",
+    "mv_rad_syn_001_total_bikes": "cd7c8425c96e3f96f6af45e98d29a8c4638885dc0bd314cbbee9844eb6460663",
+    "mv_rad_syn_002_total_docks": "4082aed4ddb1aa66b3fd5f85e37d3d073d19d2471cca5762b34c6d32a2b112dd",
+    "mv_rad_syn_003_total_capacity": "d14ba12a3d64ad286a0fc519a57aeb282ed5c7fc12c7bd555f5770c31239fa54",
+    "mv_rad_syn_004_avg_bikes": "4e3378c389290f626fb92693003b095dd3ce8f5e613f805fb5959a45cbdff6b3",
+    "mv_rad_syn_005_median_bikes": "021e8ab06f07a5d910e1fcd6b5af81773c1a76df5daa1a44a372ec0eb749bcd6",
+    "mv_rad_syn_006_avg_docks": "3152e97957097b090cde301ed6d4f6893a5e09711db0a7423fad23866c194b34",
+    "mv_rad_syn_007_median_docks": "e53b651753a47b88bd9d34f203404023d3a6372ad5a280ba6683dd59b9da2d2c",
+    "mv_rad_syn_008_pct_empty": "7e9509ffc6f5bfa89a373cdfa241b87103e3ce6785fedb0ec70f77e22135026f",
+    "mv_rad_syn_009_pct_full": "a5cd51d4408fbc3f5f30afc013b5b6cef02065966f37b3eee997b811e36b6920",
+    "mv_rad_syn_010_avg_utilization": "c74c2b45364903e64cb752da4341cabda3e83b5445f4f78370ec9a4f615fc67b",
+    "mv_rad_syn_011_system_occupancy": "ca1d5acea08d02070b5ebc435d34289fe0fd26502524f67f88687c56a7682cdf",
+    "mv_rad_syn_012_total_visible_vehicles": "e21d568589876d2c6828727e63d3c76658991297829163f4aa048075e24afacb",
+    "mv_rad_syn_013_total_free_bikes": "b159051aef4892c294fd2b1fa8eb27c77adf965ff9d35f943be36921d9e26a60",
+    "mv_rad_syn_014_avg_free_per_station": "1d09461fb7242e7ab5a1ef0408d571242cddb063a2f278d3f55fac59d7c551da",
+    "mv_rad_syn_015_electric_free_bikes": "7102a93d98ce84c40beafa19baade4cb3e719f3e62d2915300ae2436910cbf10",
+    "mv_rad_syn_016_total_station_electric_bikes": "6ac8aec1ba59d533759781c481ce3e992e3b4ab21ea6dbfcb0aa27bd4725878d",
+    "mv_rad_syn_017_total_station_human_bikes": "804b6f315acdd911bad9e785675f126edc1499b668111f0e813411d3fd163e67",
+    "mv_rad_syn_018_total_station_cargo_bikes": "d84fadf662c726728a47a080f7b72d80e23245c8c590a08ce6a60358785f7137",
+    "mv_rad_syn_019_count_bikes_gt_docks": "c6fd2f7e1e3bc6e10e859f290cd351df63278d9225c4b1084bd0f2a5e13c52b4",
+    "mv_rad_syn_020_count_bikes_eq_docks": "fe44a5f61549aa778648da0518e5ec915324e51b8f31f8a84557565771e0eafe",
+    "mv_rad_syn_021_top5_bikes_ids": "7cbf934e7ae704712e47f5248c4e788cf6076756c63eff8088a2b794a6bc2bf2",
+    "mv_rad_syn_022_top5_docks_ids": "f0495559305566e5df2626024f12e5268bfb91b8b417a243368a13ca11ce12fd",
+    "mv_rad_syn_023_top5_capacity_ids": "b9a19084f28d692a5fb8070b8feeb39cd35607cb644a6f9d9ab6428e8086dae1",
+    "mv_rad_syn_024_top5_utilization_ids": "67a4a92e25947d57e529af37d1a77d6c3e9527eb1ad8f60b37806afecc795581",
+    "mv_rad_syn_025_bottom5_bikes_ids": "fe8342b2c8018e8339a803c509e5ac3ea7222ae87542c3a2ac0e5c26a694dad4",
+    "mv_rad_syn_026_bottom5_docks_ids": "906502c288448dd2ff8c6a29924e07d61bdf3aeb3772cdce8b255f672a7612fb",
+    "mv_rad_syn_027_empty_station_ids": "9f593c669331457c50961b0de048960f00e858ae443447ca4820cb3a5c7f7827",
+    "mv_rad_syn_028_full_station_ids": "bdc7e54f8abd94db33a32e190cc3a3efa66c57af82a49836214f6fcb01e9e38a",
+    "mv_rad_syn_029_capacity_gt15_bikes_lt5": "5842a9f536d1df6577816721670f40d7103bb52a22c29623691812bfd9f96b81",
+    "mv_rad_syn_030_electric_type_ids": "831235f79b5311c060e5b443470e717f2a766d17334992c642e53a37d3aed9e9",
+    "mv_rad_syn_031_human_type_ids": "3819b9785f65a52b4991006ca4be1a718875c99d11b488730f18d9fcaf0e6698",
+    "mv_rad_syn_032_region_949_station_ids": "f3a16e8fba8e7e1f6dc48ff3445facbcd83455e8bf90f1034bbe1ae55fd19e26",
+    "mv_rad_syn_033_top3_region775_bikes": "f0cf896dc844d9d095008679d511507b44d11b7c197d5ef46b3db42557270e44",
+    "mv_rad_syn_034_top3_by_free_rows": "eb1d20561a169d3e89b3f8ce915557a93810cab206f7067bda1af107ef6c6413",
+    "mv_rad_syn_035_bottom3_utilization": "c92f542c920c700ee1b16c4e5f9adc433fa64f2572b0082fa09017abfd23cf68",
+    "mv_rad_syn_036_no_free_rows_but_positive_bikes": "33a9e9519d5d78beb9af849b898800d19595fa6228033cbbe12a18a9c805012c",
+    "mv_rad_syn_037_matching_free_and_station_counts": "37fea0aea5535c69fc073d395d126b7877b99385ff528c36fd2f6ded2a452e71",
+    "mv_rad_syn_038_multiple_vehicle_types": "c7478ec92470e6f21538a8dd7f0f779230f76956d57e4b0deb1f95f4024b5a12",
+    "mv_rad_syn_039_cargo_available_station_ids": "c1b4904d375742eebdda9914f070c117a7e9aa41adf74430cf1b5fac6f1fe182",
+    "mv_rad_syn_040_electric_available_station_ids": "71047aa9568629639686264fee37e1d98d87f97b59440527c70d471485d3a306",
+    "mv_rad_syn_041_distance_128091_128093": "56bb4a08d94664765e3b8b45b23d99a18e7b41a0eb5fd2f89e63f9da127bfdd4",
+    "mv_rad_syn_042_distance_139977_139983": "0d6bf2279477db274c79dd32c38c43c4a8372ee28ce0a3d46341493bb1363981",
+    "mv_rad_syn_043_distance_153092_153213": "e03460f8c3299ab6b4b19e00df96c1653d6325752606afc8a121ae5c6f98d894",
+    "mv_rad_syn_044_distance_153216_153220": "1c525e0749d20f5bfbae9a65c9cbf2b863841ce95453a079e05211673d06b598",
+    "mv_rad_syn_045_distance_199129_199130": "adb382072b77ebeb1b504fabc9a79bcf3d0d26e146519d7977ebd748bcd1c7aa",
+    "mv_rad_syn_046_distance_199134_199140": "9d8235269cffac96bd8561705ad4e1ae62d79a679e91e2df2c76047dfdf17715",
+    "mv_rad_syn_047_distance_255713801_255713854": "368d6631cd001d75e7b3c5d72573389f81ec9da80e1a3c152ddbc376a9ac6f6e",
+    "mv_rad_syn_048_distance_255713882_255727865": "7d5c0a67b2fd9ee25deb58f9a627051b044890a42d18e4eb93510335c3e34550",
+    "mv_rad_syn_049_distance_255731882_272373": "99d7dc449e9a22a1cf313cd583d802a39f60e7263253d7ec2adef9c28c1c9a03",
+    "mv_rad_syn_050_distance_31395158_340786035": "4c28cc35962330ad2ab9230039ffffddcc108467b1df6d4b8b261b6487ed238f",
+    "mv_rad_syn_051_within5km_128091": "35763c4282e75c001ed543c7d655dc5488da9a5f2765a456e913e097611a54c3",
+    "mv_rad_syn_052_within5km_153213": "8fe71bf3d503131c66f94c9b0c5c4bb11490968f85ae04298523ba8828fcfabf",
+    "mv_rad_syn_053_within5km_199134": "fbe012a2c363c32e14fdff981c21948943528725b749e6b3c1dd3bd660a2a7cd",
+    "mv_rad_syn_054_within5km_350543": "4cad152b4c7a6839f3c184e65d474c6f2a0d452e14450ce3b5076f277be48eb7",
+    "mv_rad_syn_055_within5km_474717387": "9d1461f6d5c78fc6bd43069013caca39773bb4c698bc8f4f9ff8c1a6cc3f9404",
+    "mv_rad_syn_056_nearest_offset_128093": "8e3af18be007034834dd58b5d96dd67bff345ca55b111d86f35d4c51fd88b431",
+    "mv_rad_syn_057_nearest_offset_153216": "0e67985e38e8deda3a90abbbb0c1c6d84a0a54901fc822abc425424fa49a2ab7",
+    "mv_rad_syn_058_nearest_offset_255713801": "fb3b6037059aa4dc97909382b8a125481baf4cc5f64266aab7c5a2b2629fb640",
+    "mv_rad_syn_059_nearest_offset_448298966": "017a9c6982b5ef0373af7779984d91fc6b0ccb6b5aeffce3d1584aa7b70242bf",
+    "mv_rad_syn_060_nearest_offset_550874361": "f006cacac244a561e4ccab93313eaf29fb1e18aaf5b52e8117aa24016e4a6b70",
+    "mv_rad_syn_061_region_775_total_bikes": "6c5f46161d850bdb22b68a5ac039f3694d2a99a3ff5a54e651c12937a743e3ca",
+    "mv_rad_syn_062_region_775_total_capacity": "15bb5611a0ffed57016c60074e746a16dfec876ce4eb70526c67e51c1b42f432",
+    "mv_rad_syn_063_region_775_avg_bikes": "b2f5a936b3aff0ef71d5c02790ab63b4da7f9d0c79208ce0ff2b48ebef464c15",
+    "mv_rad_syn_064_region_775_avg_utilization": "ea5112d0f5a31f38ba31ca0beb8e0c30fe7321c2b2bb0a05690f711971a3cf1c",
+    "mv_rad_syn_065_region_775_empty_pct": "a3d3a2464839a364813ca4ef4e03a36b6fa89197545cb245ce6dcc123b06364e",
+    "mv_rad_syn_066_region_949_total_bikes": "9d89852d8f6f0c411b906dc4533d460004ad51f239e5ab5627c521fdf59fc7ef",
+    "mv_rad_syn_067_region_949_total_capacity": "99cdd1e5d8632f628581f32378abb58470055ecf6068615525d854e524344ec7",
+    "mv_rad_syn_068_region_949_avg_bikes": "86012ae1900f635352d223f493621776e53c2289a50bdb7be44ecf3ac1c5e594",
+    "mv_rad_syn_069_region_949_avg_utilization": "d5a09bd734b2546d77f2ce9922658b9476e20177acae2ed27d8d885e82100c60",
+    "mv_rad_syn_070_region_949_empty_pct": "3009f7ce5b3f9995e93462e22f0afcaf084fb8894e448725280b278cb730f78f",
+    "mv_rad_syn_071_sum_rider_capacity_types": "cc181799fc6d4dfd49bd6e966a7fc0be1b5a554d95b7b704547e1fd6a0c13544",
+    "mv_rad_syn_072_avg_rider_capacity_types": "35d43f9f1e8aaa605f17d2133770f097ec7d0fa09e2812d3f52aa60311d7bf59",
+    "mv_rad_syn_073_count_types_missing_range": "8aeab7901ac3d04fd01bcfacb9b03f244ba436d511a8294a300ff15cc3f82d82",
+    "mv_rad_syn_074_max_range_all_types": "ef0721b7b44ca3f7f88b69532c92e806b90a8717637980690dceaa1183f48794",
+    "mv_rad_syn_075_count_types_ridercap_gt1": "a5aa5f657d24014a2f5d686d3b796dd6f204dbe5e8a3a883b32ba63e28b9f8cf",
+    "mv_rad_syn_076_max_distinct_vehicle_types_station": "2c81b35c9fe543e775a404fb349064976792674ee44d4aa0aaa0839f2fe066a1",
+    "mv_rad_syn_077_station_most_electric": "9301eecab2233d48f0ebdbfdf84e1d53d4d53411efe65f1a19188cef2e2a0e41",
+    "mv_rad_syn_078_station_most_human": "bb75214886354e49f5895aabcbe3db17049c0e83ce4bdb40768c110fdaefdbee",
+    "mv_rad_syn_079_station_most_cargo": "46a2b73a0bd93520464f67806d3e74898ef3451c0ba58ffdca4bbcbcdc66b4ca",
+    "mv_rad_syn_080_avg_distinct_vehicle_types_station": "c31b2636fb7d644b0ebe731593cecdb7fe4de8d4d7c539f868dea77b8b3f3b24",
+    "mv_rad_syn_091_utilization_128091": "7a582742f8a5dbb47cca2c27a501421a44b4869bbf516850ee20b4942dd18cd2",
+    "mv_rad_syn_092_utilization_128093": "be1bf9708d35496ff82712f1f4c019940c798d93c589c9dece769e1749e1eeff",
+    "mv_rad_syn_093_utilization_139977": "0d8660434f5dca3aceb4361dc0d551640930b0c0893f4f6cf031a3dc969b152b",
+    "mv_rad_syn_094_utilization_139983": "95bedd88346fe0ca95346b5fe8033bc66e60e9444e8ef52b9ddaf7f4921c1029",
+    "mv_rad_syn_095_utilization_153092": "62e34435dfccfda761983a2cb22365f240b84b9e479fe6d008add53881d85358",
+    "mv_rad_syn_096_utilization_153213": "5a24a14336534ef5bf999c31e581e9305353553fe28897f08e2f845b0083f2ea",
+    "mv_rad_syn_097_utilization_153216": "c5b4c56f01e23943095ec4dc88e6ddca194f5b3655b1b73f293710a152d23147",
+    "mv_rad_syn_098_utilization_153220": "3031a50942af132d04e1fdbf6edb3e45a8346643369371a50c94b46226677182",
+    "mv_rad_syn_099_utilization_199129": "88b5b8925451d2033dcc95ea4fb013f496e5de891c0a444159a10db96bb3c86a",
+    "mv_rad_syn_100_utilization_199130": "e6829521ca039dd592de505de0ba0cfbfefb29e8238d88c1ddacdb85a3af786a"
+  },
+  "original_source_files_sha256": {
+    "LICENSE_DATASET.txt": "91fb101d6ca4f45d0498e63e091d346925a370a27cc1f5551ab9b45b17f359bf",
+    "manifest.json": "a46d965c28ea5e62c2a0545063dba672d7f8826904b08397e652915ef17f2ba6",
+    "README.md": "d05dfdcdefb5548ff047df3af9daa8c6147a90b0c86f3c92676bef07c6241d39",
+    "snapshots/mv_rad/free_bike_status.json": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739",
+    "snapshots/mv_rad/gbfs.json": "666365d71deefbfe365c47db90ba82c909a587cd20c22427f3fa20c1a6b39067",
+    "snapshots/mv_rad/gbfs_source.json": "45dd0a2afc9abe243d3439bc961664e7b26e5d89069bc76d558935d079099913",
+    "snapshots/mv_rad/manifest.json": "ed9e9a96c8dad53f2a25e97c7fb225d1546c7a7da910b0019c6a002674bf012a",
+    "snapshots/mv_rad/README.md": "e54eb644ef70f758c76b08df91b69a9738dd52524e723b7c489287b1ef183909",
+    "snapshots/mv_rad/SHA256SUMS.txt": "746cfecb8c91b5ec097409541a05ac7a067a64b976be42baf42db5d562f8f467",
+    "snapshots/mv_rad/station_information.json": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38",
+    "snapshots/mv_rad/station_status.json": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11",
+    "snapshots/mv_rad/system_hours.json": "6dea17ef22b87275208e520435168405c78b10238c41da6dbdb5ce112a0f0fb1",
+    "snapshots/mv_rad/system_information.json": "3b71a0e42da34dc89d0ef27fb99387c2082eac6b67384558e14f5c07b0a8d0ef",
+    "snapshots/mv_rad/system_pricing_plans.json": "b08fe1e0da0684f667939b8b78c86f6e768a2a1e4a2f0ee9beada0077a439fb2",
+    "snapshots/mv_rad/system_regions.json": "496467af6f073df4038358ae57495ff659c28ceda925f5eee0678d7c374e7492",
+    "snapshots/mv_rad/vehicle_types.json": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85",
+    "tasks.jsonl": "80dd66e01f5f9d3b6d2460abe5d38cfa6939e7b87489f25476de5de86e9c8621"
+  }
+}

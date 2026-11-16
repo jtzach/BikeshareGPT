@@ -1,0 +1,54 @@
+{
+  "dataset_id": "mv_rad_benchmark_ready_v1_1",
+  "label": "MV-Rad v1.1 normalized benchmark snapshot",
+  "system_id": "nextbike_um",
+  "language": "en",
+  "version": "2.3",
+  "source_auto_discovery_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/gbfs.json",
+  "frozen_last_updated": 1772282844,
+  "counts": {
+    "stations": 64,
+    "station_status_rows": 64,
+    "vehicle_types": 11,
+    "free_bikes": 335,
+    "regions": 2
+  },
+  "raw_files": [
+    "gbfs_source.json",
+    "vehicle_types.json",
+    "station_information.json",
+    "station_status.json",
+    "system_hours.json",
+    "system_regions.json",
+    "system_pricing_plans.json"
+  ],
+  "derived_files": [
+    "gbfs.json",
+    "free_bike_status.json"
+  ],
+  "notes": [
+    "This bundle is self-contained for benchmark execution.",
+    "free_bike_status.json is derived from station_status.json and station_information.json to provide richer retrieval and synthesis tasks.",
+    "gbfs.json uses local relative URLs; gbfs_source.json preserves the original source discovery document.",
+    "v1.1 renames the original system_information time_zone key to timezone; source bytes remain in the v1 directory."
+  ],
+  "dataset_version": "1.1.0",
+  "source_snapshot_sha256": {
+    "free_bike_status.json": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739",
+    "gbfs.json": "666365d71deefbfe365c47db90ba82c909a587cd20c22427f3fa20c1a6b39067",
+    "gbfs_source.json": "45dd0a2afc9abe243d3439bc961664e7b26e5d89069bc76d558935d079099913",
+    "manifest.json": "ed9e9a96c8dad53f2a25e97c7fb225d1546c7a7da910b0019c6a002674bf012a",
+    "README.md": "e54eb644ef70f758c76b08df91b69a9738dd52524e723b7c489287b1ef183909",
+    "SHA256SUMS.txt": "746cfecb8c91b5ec097409541a05ac7a067a64b976be42baf42db5d562f8f467",
+    "station_information.json": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38",
+    "station_status.json": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11",
+    "system_hours.json": "6dea17ef22b87275208e520435168405c78b10238c41da6dbdb5ce112a0f0fb1",
+    "system_information.json": "3b71a0e42da34dc89d0ef27fb99387c2082eac6b67384558e14f5c07b0a8d0ef",
+    "system_pricing_plans.json": "b08fe1e0da0684f667939b8b78c86f6e768a2a1e4a2f0ee9beada0077a439fb2",
+    "system_regions.json": "496467af6f073df4038358ae57495ff659c28ceda925f5eee0678d7c374e7492",
+    "vehicle_types.json": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85"
+  },
+  "normalized_files": [
+    "system_information.json"
+  ]
+}

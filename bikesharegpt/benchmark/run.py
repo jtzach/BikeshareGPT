@@ -10,7 +10,7 @@ from rich import print
 from rich.progress import track
 
 from bikesharegpt.benchmark.build import build_benchmark
-from bikesharegpt.benchmark.evaluate import grade_task
+from bikesharegpt.benchmark.evaluate import Grade, grade_task
 from bikesharegpt.benchmark.task import Task
 from bikesharegpt.config import AppConfig, ModelSpec
 from bikesharegpt.gbfs.downloader import download_multi_snapshot, download_snapshot
@@ -137,6 +137,15 @@ def _run_gpt5_sanity_adjudication(answer_archive_rows: List[Dict[str, Any]]) -> 
     if not answer_archive_rows:
         return [], None
 
+    # Optional secondary adjudication must be explicitly enabled. It is never
+    # part of the primary deterministic score or an offline validation run.
+    try:
+        configured_max_checks = max(0, int(os.getenv("BSGPT_SANITY_MAX_CHECKS", "0")))
+    except ValueError:
+        configured_max_checks = 0
+    if configured_max_checks == 0:
+        return [], None
+
     try:
         llm = make_chat_client(provider="openai", api_key_env="OPENAI_API_KEY", base_url=None)
     except Exception as e:
@@ -156,7 +165,7 @@ def _run_gpt5_sanity_adjudication(answer_archive_rows: List[Dict[str, Any]]) -> 
     changed_to_correct = 0
     total_tokens = 0
     total_time_s = 0.0
-    max_checks = 20
+    max_checks = configured_max_checks
     try:
         max_checks = int(os.getenv("BSGPT_SANITY_MAX_CHECKS", str(max_checks)))
     except Exception:
@@ -513,7 +522,7 @@ def _run_one_model(
 
     existing_pred_map = _dedupe_rows(pred_path)
     existing_grade_map = _dedupe_rows(grade_path)
-    completed_ids = set(existing_grade_map.keys())
+    completed_ids = set(existing_grade_map.keys()) & {task.id for task in tasks}
 
     if completed_ids:
         print(
@@ -598,7 +607,7 @@ def _run_one_model(
                 model_label=model_spec.name,
                 provider=model_spec.provider,
                 size_label=model_spec.size_label,
-                few_shot_path=str(Path(__file__).resolve().parents[2] / "data" / "few_shot_gbfs.yaml"),
+                few_shot_path=cfg.run.few_shot_path or str(Path(__file__).resolve().parents[2] / "data" / "few_shot_gbfs.yaml"),
             )
             pred_dict = pred.to_dict()
             existing_pred_map[task.id] = pred_dict
@@ -612,7 +621,7 @@ def _run_one_model(
             else:
                 predicted_answer = pred.result_obj
 
-            g = grade_task(task, predicted_answer, task_output_dir=str(task_dir))
+            g = _grade_prediction(task, pred, predicted_answer, task_dir)
             existing_grade_map[task.id] = {
                 "task_id": task.id,
                 "category": task.category,
@@ -724,11 +733,24 @@ def _export_suite_summary(suite_dir: Path, model_dirs: List[Path], skipped_model
     export_suite_artifacts(suite_dir)
 
 
+def _grade_prediction(task: Task, prediction, answer: Any, task_dir: Path) -> Grade:
+    """A missing/failed result is not an intentional unknown-value answer."""
+    if task.expected is None and task.grader == "exact":
+        if not prediction.exec_success:
+            return Grade(False, "null_requires_successful_execution", None, answer)
+        if not isinstance(prediction.result_obj, dict) or "answer" not in prediction.result_obj:
+            return Grade(False, "null_requires_explicit_answer", None, answer)
+    return grade_task(task, answer, task_output_dir=str(task_dir))
+
+
 def run_benchmark(cfg: AppConfig) -> Path:
     """Run the benchmark once or as a multi-model suite."""
     out_root = Path(cfg.run.output_root)
     suite_dir = out_root / cfg.run.name
     ensure_dir(suite_dir)
+    # Check before overwriting saved inputs/configuration or contacting a model.
+    from bikesharegpt.benchmark.identity import guard_run_identity
+    guard_run_identity(cfg, suite_dir)
     write_json(suite_dir / "config.json", cfg.model_dump())
 
     model_suite = _resolve_model_suite(cfg)

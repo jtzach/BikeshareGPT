@@ -10,13 +10,13 @@ set -euo pipefail
 #
 # Usage:
 #   1) cp .env.example .env  (and set OLLAMA_API_KEY)
-#   2) ./run.sh              (defaults to configs/mv_rad_gemma_ministral_gpt5_suite.yaml)
+#   2) ./run.sh              (defaults to configs/mv_rad_v1_1_suite.yaml)
 #   3) python scripts/audit_release.py  (offline audit, no model calls)
 #      ./run.sh configs/toy.yaml uses local data but still calls a model API
 #   4) ./run.sh configs/mv_rad_gem_v1.yaml  (single-model OpenAI-compatible run)
 #   5) ./run.sh configs/default.yaml  (live download mode)
 
-CONFIG_PATH=${1:-configs/mv_rad_gemma_ministral_gpt5_suite.yaml}
+CONFIG_PATH=${1:-configs/mv_rad_v1_1_suite.yaml}
 
 if [ ! -f .env ]; then
   echo "[ERROR] .env not found. Create one from .env.example and set OLLAMA_API_KEY (and OPENAI_API_KEY if you want GPT-5 in the full suite)." >&2

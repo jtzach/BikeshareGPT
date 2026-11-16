@@ -1,0 +1,21 @@
+{
+  "version": "1.1.0",
+  "date": "2026-11-16",
+  "source_release": "../gbfs_mv_rad_v1",
+  "acquisition_date": null,
+  "transforms": [
+    {
+      "file": "system_information.json",
+      "operation": "rename /data/time_zone to /data/timezone",
+      "value_preserved": "Europe/Berlin",
+      "reason": "GBFS 2.3 required field name",
+      "source_sha256": "3b71a0e42da34dc89d0ef27fb99387c2082eac6b67384558e14f5c07b0a8d0ef",
+      "normalized_sha256": "d59749cbfba5296088ce392e9226d0b14ed26c23f2da9624a45fd9457d0ce513"
+    }
+  ],
+  "limits": [
+    "Normalization is not new acquisition or recovery of historical provenance.",
+    "Derived free-bike coordinates and battery values remain derived, not observed.",
+    "Relative discovery URLs intentionally support local offline execution."
+  ]
+}

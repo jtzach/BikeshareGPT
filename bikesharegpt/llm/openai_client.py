@@ -115,6 +115,16 @@ class OpenAIChat:
         raise RuntimeError(f"All API attempts failed for model '{model}': {last_error}")
 
 
+def resolve_base_url(provider: str, base_url: Optional[str] = None) -> str:
+    """Resolve the effective endpoint without reading or requiring credentials."""
+    provider = provider.lower().strip()
+    if provider == "openai":
+        return base_url or os.getenv("OPENAI_BASE_URL") or "https://api.openai.com/v1"
+    if provider == "ollama":
+        return base_url or os.getenv("OLLAMA_BASE_URL") or "https://ollama.com/v1"
+    raise RuntimeError(f"Unsupported provider: {provider}")
+
+
 def resolve_provider_settings(
     *,
     provider: str,
@@ -131,7 +141,7 @@ def resolve_provider_settings(
     if provider == "openai":
         env_name = api_key_env or "OPENAI_API_KEY"
         api_key = os.getenv(env_name)
-        resolved_base = base_url or os.getenv("OPENAI_BASE_URL")
+        resolved_base = resolve_base_url(provider, base_url)
         if not api_key:
             raise RuntimeError(
                 f"{env_name} is missing. Put it in .env or environment variables to use the OpenAI backend."
@@ -141,7 +151,7 @@ def resolve_provider_settings(
     if provider == "ollama":
         env_name = api_key_env or "OLLAMA_API_KEY"
         api_key = os.getenv(env_name)
-        resolved_base = base_url or os.getenv("OLLAMA_BASE_URL") or "https://ollama.com/v1"
+        resolved_base = resolve_base_url(provider, base_url)
         if not api_key:
             raise RuntimeError(
                 f"{env_name} is missing. Put it in .env or environment variables to use the Ollama backend."

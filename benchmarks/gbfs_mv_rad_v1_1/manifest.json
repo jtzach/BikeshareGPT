@@ -1,0 +1,59 @@
+{
+  "name": "GBFSBench MV-Rad v1.1",
+  "version": "1.1.0",
+  "description": "Corrected 290-task release with explicit missingness, ranking, distance and semantic contracts; visualization tasks retired.",
+  "system": {
+    "system_id": "mv_rad",
+    "source_system_id": "nextbike_um",
+    "label": "MV-Rad / Nextbike feed id nextbike_um",
+    "gbfs_version": "2.3",
+    "language": "en",
+    "source_auto_discovery_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_um/gbfs.json",
+    "frozen_last_updated": 1772282844,
+    "notes": [
+      "The benchmark is evaluated on a frozen single-system snapshot.",
+      "free_bike_status.json is included as a derived augmentation preserved in the bundled snapshot.",
+      "v1.1 normalizes system_information.time_zone to timezone; see snapshot normalization.json."
+    ],
+    "counts": {
+      "stations": 64,
+      "station_status_rows": 64,
+      "vehicle_types": 11,
+      "free_bike_rows": 335,
+      "regions": 2
+    }
+  },
+  "tasks": {
+    "total": 290,
+    "counts_by_category": {
+      "semantics": 100,
+      "retrieval": 100,
+      "synthesis": 90
+    },
+    "counts_by_grader": {
+      "exact": 244,
+      "set": 10,
+      "numeric": 36
+    },
+    "semantic_answer_positions": {
+      "B": 25,
+      "C": 25,
+      "D": 25,
+      "A": 25
+    },
+    "sha256": "653518e9dd18fce1b5f663847a83a94bb22002c57ef6f53ba11f5bdd9861690a"
+  },
+  "license": "See LICENSE_DATASET.txt. Code is covered by the repo license.",
+  "release_date": "2026-11-16",
+  "source_release": "../gbfs_mv_rad_v1",
+  "source_tasks_sha256": "80dd66e01f5f9d3b6d2460abe5d38cfa6939e7b87489f25476de5de86e9c8621",
+  "migration": "migration.json",
+  "validation_report": "validation_report.json",
+  "model_evaluation_status": "not_run_for_v1_1",
+  "grading_contract": {
+    "expected_null": "Only an explicitly returned answer:null matches; missing result, missing answer, exception, string null and NaN must fail.",
+    "numeric_tolerance": "Absolute tolerance recorded per task; no relative tolerance.",
+    "exact_integer": "Integral numeric equality, not truncation of fractional values.",
+    "task_identity": "version plus task fingerprint; never resume changed tasks by ID alone."
+  }
+}

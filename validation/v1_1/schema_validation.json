@@ -1,0 +1,136 @@
+{
+  "dataset_version": "1.1.0",
+  "validation_date": "2026-11-16",
+  "official_schema_commit": "f8d605e6ea23620891cb5f67344af1bec62c5e78",
+  "validator": "jsonschema Draft7Validator with FormatChecker",
+  "scope": "Individual-file schemas, not a complete cross-file specification validator.",
+  "summary": {
+    "payloads": 10,
+    "schema_pass": 9,
+    "expected_local_discovery_deviations": 1,
+    "unexpected_failures": 0
+  },
+  "payloads": [
+    {
+      "file": "free_bike_status.json",
+      "sha256": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739",
+      "schema_sha256": "c11e2b0af2869a07414aa6b59d2919094f6d10f5d0ddfc203008c49cea1986af",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "gbfs.json",
+      "sha256": "666365d71deefbfe365c47db90ba82c909a587cd20c22427f3fa20c1a6b39067",
+      "schema_sha256": "89bc729e29674d5e99e876a41f390fbf10d3817db977c9e58700a1a9fdb4a2f4",
+      "schema_pass": false,
+      "expected_offline_url_deviation": true,
+      "errors": [
+        {
+          "path": "data/en/feeds/0/url",
+          "message": "'./system_information.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/1/url",
+          "message": "'./vehicle_types.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/2/url",
+          "message": "'./station_information.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/3/url",
+          "message": "'./station_status.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/4/url",
+          "message": "'./free_bike_status.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/5/url",
+          "message": "'./system_hours.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/6/url",
+          "message": "'./system_regions.json' is not a 'uri'",
+          "validator": "format"
+        },
+        {
+          "path": "data/en/feeds/7/url",
+          "message": "'./system_pricing_plans.json' is not a 'uri'",
+          "validator": "format"
+        }
+      ]
+    },
+    {
+      "file": "gbfs_source.json",
+      "sha256": "45dd0a2afc9abe243d3439bc961664e7b26e5d89069bc76d558935d079099913",
+      "schema_sha256": "89bc729e29674d5e99e876a41f390fbf10d3817db977c9e58700a1a9fdb4a2f4",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "station_information.json",
+      "sha256": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38",
+      "schema_sha256": "0048a8388113ef6bb37113cb83d0c0123bdddbb8fff7071d0fcf6931ed426090",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "station_status.json",
+      "sha256": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11",
+      "schema_sha256": "10ed322ab4b912fe65d1dd897acc031265c39787e1b44fe2af709dacece9c32c",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "system_hours.json",
+      "sha256": "6dea17ef22b87275208e520435168405c78b10238c41da6dbdb5ce112a0f0fb1",
+      "schema_sha256": "ba6ce2bfa423144c76e01c60026003cf04f75173757b647cf5ab3d25208d5c83",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "system_information.json",
+      "sha256": "d59749cbfba5296088ce392e9226d0b14ed26c23f2da9624a45fd9457d0ce513",
+      "schema_sha256": "2de079814a3681da50de11f1e2f8720c46fc739c2ae53cd33d4b49461ac47888",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "system_pricing_plans.json",
+      "sha256": "b08fe1e0da0684f667939b8b78c86f6e768a2a1e4a2f0ee9beada0077a439fb2",
+      "schema_sha256": "2f15378612e42ef9a27cd2cb10eef49ba993e5e262eace63b2010052a9c58ba5",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "system_regions.json",
+      "sha256": "496467af6f073df4038358ae57495ff659c28ceda925f5eee0678d7c374e7492",
+      "schema_sha256": "5a2102ae763b90753a864ad39fb2f546f373f74913fcd8475b558a78d4e1921d",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    },
+    {
+      "file": "vehicle_types.json",
+      "sha256": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85",
+      "schema_sha256": "aac8bb1bb4e20a5bdf2ea13020552ef337d6468feb238a0da55c5dcbc5d0cb9c",
+      "schema_pass": true,
+      "expected_offline_url_deviation": false,
+      "errors": []
+    }
+  ]
+}

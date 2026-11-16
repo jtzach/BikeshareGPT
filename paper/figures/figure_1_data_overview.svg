@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.4pt" height="324pt" viewBox="0 0 518.4 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>make_paper_figures.py</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 518.4 324 
+L 518.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 28.512 131.1552 
+L 150.43968 131.1552 
+L 150.43968 67.2624 
+L 28.512 67.2624 
+z
+" clip-path="url(#pf86ee249eb)" style="fill: #f1f5f7; stroke: #8e9aa2; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 28.512 186.2352 
+L 150.43968 186.2352 
+L 150.43968 142.1712 
+L 28.512 142.1712 
+z
+" clip-path="url(#pf86ee249eb)" style="fill: #f1f5f7; stroke: #8e9aa2; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 188.54208 155.3904 
+L 282.528 155.3904 
+L 282.528 84.888 
+L 188.54208 84.888 
+z
+" clip-path="url(#pf86ee249eb)" style="fill: #e7f1ef; stroke: #8e9aa2; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 150.43968 106.92 
+Q 169.49088 106.92 187.144538 106.92 
+" clip-path="url(#pf86ee249eb)" style="fill: none; stroke: #245973; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 182.744538 104.72 
+L 187.144538 106.92 
+L 182.744538 109.12 
+z
+" clip-path="url(#pf86ee249eb)" style="fill: #245973; stroke: #245973; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 150.43968 168.6096 
+Q 169.49088 153.1872 187.455847 138.644131 
+" clip-path="url(#pf86ee249eb)" style="fill: none; stroke: #245973; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 182.651734 139.702665 
+L 187.455847 138.644131 
+L 185.420206 143.122542 
+z
+" clip-path="url(#pf86ee249eb)" style="fill: #245973; stroke: #245973; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 28.512 255.636 
+L 278.559 255.636 
+L 278.559 242.4168 
+L 28.512 242.4168 
+z
+" clip-path="url(#pf86ee249eb)" style="fill: #245973"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 278.559 255.636 
+L 282.528 255.636 
+L 282.528 242.4168 
+L 278.559 242.4168 
+z
+" clip-path="url(#pf86ee249eb)" style="fill: #b66d2b"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(60.880465 95.305784)">64 stations</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(41.102856 108.796129)">metadata + status</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(47.117895 160.300184)">11 vehicle types</text>
+    <text style="font-size: 10.3px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(65.594324 173.790529)">2 regions</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(198.622306 115.97093)">335 derived</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(197.150196 130.378095)">bike records</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(205.308165 177.955331)">Expansion of</text>
+    <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; fill: #182d3b" transform="translate(202.159165 188.481275)">station counts</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #53616a" x="155.52" y="220.765762" transform="rotate(-0 155.52 220.765762)">Constructed positions and optional battery values</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3b" x="28.512" y="234.7056" transform="rotate(-0 28.512 234.7056)">Capacity reporting</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3b" x="28.512" y="276.225684" transform="rotate(-0 28.512 276.225684)">63 reported</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.7px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #b66d2b" x="282.528" y="276.225684" transform="rotate(-0 282.528 276.225684)">1 missing</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_9">
+    <path d="M 342.144 249.48 
+L 497.664 249.48 
+L 497.664 74.52 
+L 342.144 74.52 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 342.144 124.316308 
+L 476.212966 124.316308 
+L 476.212966 94.707692 
+L 342.144 94.707692 
+z
+" clip-path="url(#p7d662c7585)" style="fill: #245973"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 342.144 178.150154 
+L 476.212966 178.150154 
+L 476.212966 148.541538 
+L 342.144 148.541538 
+z
+" clip-path="url(#p7d662c7585)" style="fill: #287f80"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 342.144 231.984 
+L 462.806069 231.984 
+L 462.806069 202.375385 
+L 342.144 202.375385 
+z
+" clip-path="url(#p7d662c7585)" style="fill: #b66d2b"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mbde846945d" d="M 0 0 
+L 0 3.5 
+" style="stroke: #53616a; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mbde846945d" x="342.144" y="249.48" style="fill: #53616a; stroke: #53616a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #53616a" x="342.144" y="263.698516" transform="rotate(-0 342.144 263.698516)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mbde846945d" x="409.178483" y="249.48" style="fill: #53616a; stroke: #53616a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #53616a" x="409.178483" y="263.698516" transform="rotate(-0 409.178483 263.698516)">50</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mbde846945d" x="476.212966" y="249.48" style="fill: #53616a; stroke: #53616a; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #53616a" x="476.212966" y="263.698516" transform="rotate(-0 476.212966 263.698516)">100</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182d3b" x="419.904" y="277.652578" transform="rotate(-0 419.904 277.652578)">Number of tasks</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4"/>
+     <g id="text_13">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #53616a" x="338.644" y="113.121258" transform="rotate(-0 338.644 113.121258)">Semantics</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5"/>
+     <g id="text_14">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #53616a" x="338.644" y="166.955104" transform="rotate(-0 338.644 166.955104)">Retrieval</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6"/>
+     <g id="text_15">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #53616a" x="338.644" y="220.78895" transform="rotate(-0 338.644 220.78895)">Synthesis</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_13">
+    <path d="M 342.144 249.48 
+L 497.664 249.48 
+" style="fill: none; stroke: #8e9aa2; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3b" x="480.235034" y="112.409344" transform="rotate(-0 480.235034 112.409344)">100</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3b" x="480.235034" y="166.24319" transform="rotate(-0 480.235034 166.24319)">100</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3b" x="466.828138" y="220.077036" transform="rotate(-0 466.828138 220.077036)">90</text>
+   </g>
+  </g>
+  <g id="text_19">
+   <text style="font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3b" x="28.512" y="25.92" transform="rotate(-0 28.512 25.92)">A  Snapshot and augmentation</text>
+  </g>
+  <g id="text_20">
+   <text style="font-weight: 700; font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182d3b" x="342.144" y="25.92" transform="rotate(-0 342.144 25.92)">B  Corrected v1.1 tasks</text>
+  </g>
+  <g id="text_21">
+   <text style="font-weight: 700; font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182d3b" x="419.904" y="48.6" transform="rotate(-0 419.904 48.6)">290 active tasks</text>
+  </g>
+  <g id="text_22">
+   <text style="font-size: 9.3px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53616a" x="28.512" y="312.66" transform="rotate(-0 28.512 312.66)">v1 is retained in full; its 10 artifact-existence tasks are excluded from active v1.1.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf86ee249eb">
+   <rect x="28.512" y="51.84" width="254.016" height="220.32"/>
+  </clipPath>
+  <clipPath id="p7d662c7585">
+   <rect x="342.144" y="74.52" width="155.52" height="174.96"/>
+  </clipPath>
+ </defs>
+</svg>

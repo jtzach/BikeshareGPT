@@ -18,6 +18,9 @@ class Grade:
     predicted: Any = None
 
 
+GRADING_PROTOCOL_VERSION = "1.1.0"
+
+
 def _is_number(x: Any) -> bool:
     return isinstance(x, (int, float)) and not isinstance(x, bool)
 
@@ -40,7 +43,8 @@ def _normalize_exact(predicted: Any, expected: Any) -> Any:
         px = _extract_numeric(predicted)
         if px is not None:
             if isinstance(expected, int):
-                return int(px)
+                # Exact integer answers must not silently truncate 64.9 to 64.
+                return int(px) if px.is_integer() else px
             return float(px)
 
     if isinstance(expected, str):
@@ -67,12 +71,14 @@ def _normalize_exact(predicted: Any, expected: Any) -> Any:
 
 def _extract_numeric(x: Any) -> Optional[float]:
     if _is_number(x):
-        return float(x)
+        value = float(x)
+        return value if math.isfinite(value) else None
     if isinstance(x, str):
-        m = re.search(r"-?\d+(?:\.\d+)?", x.replace(",", ""))
+        m = re.search(r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?", x.replace(",", ""))
         if m:
             try:
-                return float(m.group(0))
+                value = float(m.group(0))
+                return value if math.isfinite(value) else None
             except Exception:
                 return None
     return None
@@ -98,6 +104,8 @@ def _coerce_iterable(x: Any) -> list[str]:
 
 def _deep_equal(a: Any, b: Any) -> bool:
     # cheap deep equality with numeric tolerance handled elsewhere
+    if isinstance(a, bool) != isinstance(b, bool) and (_is_number(a) or _is_number(b)):
+        return False
     return a == b
 
 
@@ -131,6 +139,8 @@ def grade_task(task: Task, predicted: Any, *, task_output_dir: Optional[str] = N
         tol = task.tolerance or 0.0
         # Case 1: scalar numeric
         if _is_number(expected):
+            if not math.isfinite(float(expected)):
+                return Grade(False, reason="invalid_numeric_target", expected=expected, predicted=predicted)
             px = _extract_numeric(predicted)
             if px is None:
                 return Grade(False, reason="pred_not_numeric", expected=expected, predicted=predicted)
@@ -142,6 +152,8 @@ def grade_task(task: Task, predicted: Any, *, task_output_dir: Optional[str] = N
             # name exact (case-insensitive)
             exp_name = expected.get("name")
             pred_name = predicted.get("name")
+            if exp_name is not None and pred_name is None:
+                return Grade(False, reason="missing_name", expected=expected, predicted=predicted)
             if exp_name is not None and pred_name is not None:
                 if _normalize_str(exp_name) != _normalize_str(pred_name):
                     return Grade(False, reason="name_mismatch", expected=expected, predicted=predicted)

@@ -11,7 +11,7 @@ app = typer.Typer(add_completion=False, help="BikeshareGPT: GBFS benchmark runne
 
 
 @app.command()
-def run(config: str = typer.Option("configs/mv_rad_gemma_ministral_gpt5_suite.yaml", "--config", "-c", help="Path to YAML config.")):
+def run(config: str = typer.Option("configs/mv_rad_v1_1_suite.yaml", "--config", "-c", help="Path to YAML config.")):
     load_dotenv()
     cfg = load_config(config)
     print(f"[bold]BikeshareGPT[/bold] | run={cfg.run.name} | feeds={len(cfg.feeds)}")

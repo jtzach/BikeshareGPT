@@ -1,0 +1,59 @@
+examples:
+- user: How many stations are in the system?
+  code: '```python
+
+    n = int(feed.station_information.shape[0])
+
+    result = {"answer": n}
+
+    ```
+
+    '
+- user: Which station currently has the most bikes available?
+  code: "```python\ndf = feed.merged_stations()\n# Filter stations that are renting\
+    \ (if the field exists)\nif \"is_renting\" in df.columns:\n    df = df[df[\"is_renting\"\
+    ] == 1]\nidx = df[\"num_bikes_available\"].astype(float).idxmax()\nrow = df.loc[idx]\n\
+    result = {\n    \"answer\": {\n        \"station_id\": str(row.get(\"station_id\"\
+    )),\n        \"name\": str(row.get(\"name\")),\n        \"num_bikes_available\"\
+    : int(row.get(\"num_bikes_available\")) if row.get(\"num_bikes_available\") is\
+    \ not None else None,\n    },\n    \"additional_info\": \"Max bikes among renting\
+    \ stations\",\n}\n```\n"
+- user: What is the total number of bikes available right now across all stations?
+  code: '```python
+
+    df = feed.station_status
+
+    total = int(df["num_bikes_available"].fillna(0).astype(float).sum())
+
+    result = {"answer": total}
+
+    ```
+
+    '
+- user: Find the nearest station to (48.1371, 11.5754) and report its name and distance
+    in meters.
+  code: "```python\nfrom bikesharegpt.gbfs.geo import nearest_point\n\ninfo = feed.station_information\n\
+    coords = list(zip(info[\"lat\"].astype(float), info[\"lon\"].astype(float)))\n\
+    i, d = nearest_point(48.1371, 11.5754, coords)\nrow = info.iloc[i]\nresult = {\n\
+    \    \"answer\": {\"name\": str(row.get(\"name\")), \"distance_m\": float(d)},\n\
+    \    \"additional_info\": \"Nearest by haversine distance\",\n}\n```\n"
+- user: What is the average reported station capacity? Use only non-missing, positive
+    capacities. If none are reported, return null.
+  code: '```python
+
+    import pandas as pd
+
+    info = feed.station_information
+
+    capacity = pd.to_numeric(info[''capacity''], errors=''coerce'') if ''capacity''
+    in info else pd.Series(dtype=float)
+
+    capacity = capacity[capacity.notna() & (capacity > 0)]
+
+    answer = float(capacity.mean()) if not capacity.empty else None
+
+    result = {"answer": answer}
+
+    ```
+
+    '

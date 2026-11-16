@@ -1,0 +1,27 @@
+{
+  "last_updated": 1772282844,
+  "ttl": 60,
+  "data": {
+    "system_id": "nextbike_um",
+    "language": "en",
+    "name": "MV-Rad",
+    "operator": "UsedomRad GmbH, Hauptstraße 8, 17459 Ückeritz",
+    "url": "https://mv-rad.de/",
+    "phone_number": "+49 171 9402288",
+    "email": "info@mv-rad.de",
+    "feed_contact_email": "gbfs@nextbike.net",
+    "license_id": "CC0-1.0",
+    "rental_apps": {
+      "android": {
+        "store_uri": "https://play.google.com/store/apps/details?id=net.nextbike.mvrad",
+        "discovery_uri": "https://app.nextbike.net/"
+      },
+      "ios": {
+        "store_uri": "https://apps.apple.com/app/id1618226530",
+        "discovery_uri": "nextbike://"
+      }
+    },
+    "timezone": "Europe/Berlin"
+  },
+  "version": "2.3"
+}

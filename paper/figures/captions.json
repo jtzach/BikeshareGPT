@@ -1,0 +1,88 @@
+{
+  "release": "GBFSBench MV-Rad v1.1",
+  "purpose": "Explanatory manuscript figures, not visualization benchmark tasks or model-produced plots.",
+  "method": "Deterministic Python/Matplotlib generation from versioned snapshot and task files; no network or model calls.",
+  "sources_sha256": {
+    "benchmarks/gbfs_mv_rad_v1_1/tasks.jsonl": "653518e9dd18fce1b5f663847a83a94bb22002c57ef6f53ba11f5bdd9861690a",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/free_bike_status.json": "0de1fc164cfe05c8f957666b0d049b4bdbb936ebfa1dc093c04d3494de0bf739",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/gbfs.json": "666365d71deefbfe365c47db90ba82c909a587cd20c22427f3fa20c1a6b39067",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/gbfs_source.json": "45dd0a2afc9abe243d3439bc961664e7b26e5d89069bc76d558935d079099913",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/manifest.json": "f16392abc1ae13adba76dbce2d402bb28cd7ae0cd0c052da9c18d75ffbd129f2",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/normalization.json": "1e9a2ca0af1d891796742b4af87347038891ec4460920571564d1e77e4c227f3",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/station_information.json": "c0bcd171c6ed4d8ec0a34bf470cd769f204b9763ea5ae9e0d63ca57c783e0a38",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/station_status.json": "5c18101d0ac730cc82e515608c598ca154f7c47d3c46ec12d14d56331e585c11",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/system_hours.json": "6dea17ef22b87275208e520435168405c78b10238c41da6dbdb5ce112a0f0fb1",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/system_information.json": "d59749cbfba5296088ce392e9226d0b14ed26c23f2da9624a45fd9457d0ce513",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/system_pricing_plans.json": "b08fe1e0da0684f667939b8b78c86f6e768a2a1e4a2f0ee9beada0077a439fb2",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/system_regions.json": "496467af6f073df4038358ae57495ff659c28ceda925f5eee0678d7c374e7492",
+    "benchmarks/gbfs_mv_rad_v1_1/snapshots/mv_rad/vehicle_types.json": "169f369c76f257dbf2dce9c17cae7e6adf5c87218c84d2b823811ee5022acc85",
+    "bikesharegpt/pipeline.py": "1a38762cf8d998ca4a6a3f108f43670dae2758880b0afc89bbe21920f5e4a7be",
+    "benchmarks/gbfs_mv_rad_v1/tasks.jsonl": "80dd66e01f5f9d3b6d2460abe5d38cfa6939e7b87489f25476de5de86e9c8621",
+    "outputs/models/gemma3_12b/predictions/predictions.jsonl": "af880d881b5d49fd9720dd8deb20deb26f8db29f98d24d007703437de31c22a9",
+    "outputs/models/gemma3_27b/predictions/predictions.jsonl": "bf0f9f7d913cf58da80a90bf4606d54cd478a50f0b7364475086cace952ec85f",
+    "outputs/models/gemma3_4b/predictions/predictions.jsonl": "38e5b0c78e0cb39f90def3c80298d56631b0c910f1be4248d013ff6d9b480125",
+    "outputs/models/gpt_5/predictions/predictions.jsonl": "544a053c6e353d5c6de5c4d0127603cff50c86c5dd4418f3ddffb6e98fc62515",
+    "outputs/models/ministral_3_14b/predictions/predictions.jsonl": "a73ae9f554092ed57eaa801d73a84ea0b7039718e421e6e2e61db1608dc74d3b",
+    "outputs/models/ministral_3_3b/predictions/predictions.jsonl": "7d41b06b2e810369674668ab55affc73b14d1394c349ca1d8937774875ccf543",
+    "outputs/models/ministral_3_8b/predictions/predictions.jsonl": "8ac010d80bad84b48999e1a2f5e49377ce33166b09ca394d4b5fc6a97791d3b0"
+  },
+  "script_sha256": "55e36c4eb15518aa423d038b8db683947cc7d49337548971a7f38797e2b9ca2c",
+  "statistics": {
+    "stations": 64,
+    "station_status_rows": 64,
+    "reported_capacity": 63,
+    "missing_capacity": 1,
+    "vehicle_types": 11,
+    "regions": 2,
+    "derived_bikes": 335,
+    "total_station_bikes": 335,
+    "zero_bike_stations": 14,
+    "task_counts": {
+      "semantics": 100,
+      "retrieval": 100,
+      "synthesis": 90
+    },
+    "semantics_label_counts": {
+      "A": 25,
+      "B": 25,
+      "C": 25,
+      "D": 25
+    },
+    "historical_tasks": 300,
+    "historical_models": 7,
+    "historical_prediction_records": 2100,
+    "bike_count_groups": {
+      "0": 14,
+      "1–4": 21,
+      "5–9": 22,
+      "10–19": 6,
+      "20–39": 1
+    }
+  },
+  "figures": [
+    {
+      "number": 1,
+      "filename": "figure_1_data_overview.png",
+      "width_inches": 7.2,
+      "height_inches": 4.5,
+      "caption": "Data composition and corrected task coverage. (A) The frozen bundle contains 64 station metadata and 64 station-status records, 11 vehicle types and two regions. Capacity is reported for 63 stations and missing for one. The 335 derived bike records expand station counts and contain constructed positions and, where applicable, battery values; they are not an independent set of observed vehicles. (B) The active v1.1 benchmark contains 100 semantics, 100 retrieval and 90 synthesis tasks. The ten artifact-existence tasks remain in the preserved v1 release and are excluded from v1.1.",
+      "alt_text": "Diagram connecting station records and vehicle types to 335 derived bike records; capacity bar shows 63 reported and one missing; task bars show 100, 100 and 90."
+    },
+    {
+      "number": 2,
+      "filename": "figure_2_station_snapshot.png",
+      "width_inches": 7.2,
+      "height_inches": 4.9,
+      "caption": "Station locations and availability in the retained MV-Rad snapshot. (A) All 64 stations are plotted at their station-information coordinates; colour encodes bikes available in station status, and the ring marks the station without reported capacity. The latitude/longitude aspect ratio is adjusted using the mean latitude. No basemap or derived bike positions are shown. (B) Counts of stations in explicit bike-availability groups sum to 64: 14 report zero bikes, 21 report 1–4, 22 report 5–9, six report 10–19 and one reports 20–39. The total is 335 available station bikes. Endpoint update timestamps refer to 28 February 2026 and do not establish the acquisition time.",
+      "alt_text": "Longitude/latitude scatter of 64 stations coloured by bikes available and a categorical frequency chart showing 14, 21, 22, six and one stations in the five availability groups."
+    },
+    {
+      "number": 3,
+      "filename": "figure_3_framework.png",
+      "width_inches": 7.2,
+      "height_inches": 5.4,
+      "caption": "BikeshareGPT evaluation framework. Each versioned task is combined with a fixed system prompt and five fixed few-shot examples. Generated Python runs in a subprocess with a 30-second timeout; runtime errors or missing code can trigger at most two repair requests. Each retry contains the original task/prompt and latest error rather than a full conversation history. If no code is returned, parsed text may be retained and graded after the retries; execution success and answer correctness are recorded separately. In v1.1, explicit-null targets additionally require successful execution and an explicit answer field. Optional natural-language summaries do not determine primary grades. Saved records retain the final attempt, not all intermediate conversations. The archived seven-model study used 300 v1 tasks; the corrected 290-task v1.1 release has not been newly evaluated on those models. The executor is timeout-controlled, not an operating-system security sandbox.",
+      "alt_text": "Workflow from task/prompt and snapshot to model generation, extraction/execution or text fallback, bounded error-feedback loop, independent primary grading and optional summary, followed by saved records."
+    }
+  ]
+}

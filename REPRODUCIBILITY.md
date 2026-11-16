@@ -1,22 +1,32 @@
-# Reproduction and historical-result audit
+# Evaluation protocol and historical-result audit
 
-Repository: https://github.com/jtzach/BikeshareGPT
+The current protocol uses `configs/mv_rad_v1_1_suite.yaml`, the 290-task corrected bundle and `data/few_shot_gbfs_v1_1.yaml`. The original configurations, examples, 300 tasks and historical outputs remain unchanged. No new model-performance evaluation has been run on v1.1.
+
+## Framework
+
+The loader exposes the frozen GBFS arrays as pandas tables. Each task receives the fixed system prompt in `bikesharegpt/llm/prompts.py` and five fixed examples. The model is asked for Python defining a JSON-serializable result with an answer key. v1.1 replaces the old histogram example with a calculation over reported positive capacities and an explicit empty-population null rule.
+
+The executor is a Python subprocess with a 30-second timeout. Execution errors or missing code can trigger two repair retries, for up to three main pipeline requests. Each retry sends the original task/prompt plus the latest error, not the full previous conversation or code. Successful execution ends repair even if the answer is wrong. The adapter may try an alternate API route after a failed request, so pipeline-request count is not necessarily HTTP-attempt count.
+
+When no code is returned, the framework can retain parsed text as an answer. Non-null answers can therefore be correct without successful execution; these outcomes are recorded separately. Explicit-null targets in v1.1 require successful execution and an explicit answer key. Missing results, exceptions, string null and NaN do not earn null credit.
+
+Grading protocol 1.1.0 rejects fractional integer truncation, Boolean counts and nonfinite numeric targets. Numeric tasks use declared absolute tolerances; set tasks ignore order. Ten plotting tasks are absent from v1.1. The legacy artifact rule remains for historical inspection, not as a new chart-quality metric.
+
+An optional summary does not determine the primary grade. Optional GPT-5 sanity adjudication is off by default and runs only if `BSGPT_SANITY_MAX_CHECKS` is positive; its output is secondary to deterministic scoring.
+
+## Configuration and resume
+
+The seven-model suite retains Gemma 3 (4B/12B/27B), Ministral 3 (3B/8B/14B) and GPT-5 aliases. Configuration records temperature 0, seed 42, parallelism 1, timeout 30 seconds and two retries. The GPT-5 adapter omits temperature despite the shared setting. Seed 42 does not establish deterministic provider sampling.
+
+A run's `run_identity.json` fingerprints task/snapshot contents, configuration, prompt examples, package Python code, recorded dependency versions, Python version and effective provider endpoints. Endpoints are hashed to avoid storing environment-derived URL credentials. Changed fingerprints and unverified legacy directories are rejected before rewriting saved inputs or making model requests. Live-feed runs require fresh directories; use frozen inputs for resumable evaluation.
+
+New v1.1 outputs normally go to `outputs/mv_rad_v1_1_gemma_ministral_gpt5_suite/`. Keep the source revision, configuration, fingerprint and provider details with any new results. `requirements.txt` contains lower bounds rather than a historical lockfile, and mutable provider aliases cannot guarantee exact reproduction.
 
 ## Preserved submission
 
-This repository was prepared from the submitted Software ZIP. Benchmark data, original outputs, and license files are unchanged. The Data and Software ZIPs are byte-identical (SHA-256 `527d99331bd17b5eabbbeef615d6e8cff9b4b962e5e21b8f1f3fb020e85e0547`). The submitted Bash script is retained with its default configuration updated to the seven-model suite.
+The repository was prepared from the submitted Software ZIP. The Data and Software ZIPs have identical SHA-256 `527d99331bd17b5eabbbeef615d6e8cff9b4b962e5e21b8f1f3fb020e85e0547`. Original data, outputs and licenses remain preserved. The launcher default now selects v1.1; the original seven-model configuration is still `configs/mv_rad_gemma_ministral_gpt5_suite.yaml`.
 
-## Evaluation protocol
-
-Use `configs/mv_rad_gemma_ministral_gpt5_suite.yaml`: Gemma 3 (4B/12B/27B), Ministral 3 (3B/8B/14B), GPT-5; configured temperature 0, seed 42, timeout 30 seconds, and at most two repair retries (up to three main calls). Seed 42 is a configuration value, not evidence of deterministic provider sampling. Inspect archived `model_spec.json` and `outputs/config.json` for the historical resolved setup.
-
-The GPT-5 adapter omits the temperature parameter from its API request, despite the common configuration value. Do not interpret the configuration as proof that every provider used temperature zero.
-
-The exact system prompt is `bikesharegpt/llm/prompts.py`; five fixed examples are in `data/few_shot_gbfs.yaml`. Every model receives the same examples. Each retry sends the latest execution error in a fresh main request; it does not send the complete prior conversation or previous generated code. Successful execution stops repair even when an answer is wrong. This is bounded execution repair, not an open-ended agent. An optional natural-language summary is not the deterministic graded output.
-
-The runner also contains optional GPT-5 sanity adjudication of selected failures. Set environment variable `BSGPT_SANITY_MAX_CHECKS=0` to disable additional adjudication calls during a benchmark run; primary scores are deterministic grades. Rerunning a completed model can otherwise invoke finalization again.
-
-`requirements.txt` gives lower bounds, not a locked historical environment. Provider model aliases/revisions, hardware/service setup, and exact dependency versions need author-supplied records for full provenance. These historical details have not been inferred or invented.
+The following results belong exclusively to v1. Even its nonvisual 290-item subset differs from v1.1 because the corrected questions, answer positions, inputs and grading changed.
 
 ## Original scores and file-existence reconciliation
 
@@ -38,22 +48,21 @@ The fix and absolute output paths apply to future runs. The audit relocates hist
 
 GPT-5's saved `additional_info` reports zero stations/points for `mv_rad_syn_082_plot_hist_docks`, `mv_rad_syn_083_plot_scatter_capacity_bikes`, and `mv_rad_syn_090_plot_box_bikes`. Files count under existence-only scoring even when the underlying plotted dataset is empty.
 
-## Offline audit
 
-Run `python scripts/audit_release.py`. Its report checks counts, original checksums, saved input equality, all 300 prediction/grade IDs for each model, original summary arithmetic, per-task artifact diagnostics, and SHA-256 hashes for data/results assets. It uses no network and executes no model code. Frozen output: `audit/release_audit.json`.
+## Offline verification
 
-Passing establishes structural integrity and accounting consistency, not correct ground truth, valid charts, complete provenance, or broad generalization.
+`python scripts/audit_release.py` checks original counts, checksums, saved input equality, all prediction/grade IDs, original summary arithmetic and artifact diagnostics without executing model code. Its frozen report is [audit/release_audit.json](audit/release_audit.json).
 
-An additional offline inspection checked all 511 saved records for the 73 tasks using integer `exact` references. No accepted fractional numeric answer differed from its reference. The implementation nevertheless coerces extracted numbers with `int` (for example, 64.9 can be accepted for 64). Treat this as an evaluator limitation for future outputs, and version any stricter rule separately rather than overwriting frozen scores.
+`python scripts/validate_references.py` retains the original finding: 263 supported references, two unsupported targets, 25 ambiguous formulations and ten plots lacking substantive references. The [original validation](validation/README.md) is not rewritten by v1.1.
 
-## Versioning and further validation
+For the corrected release, run `python scripts/build_v1_1.py --check`, `python scripts/validate_v1_1.py` and `python -m pytest -q tests`. The recorded results are 19 generated files matching, 290/290 reference matches, 369/369 dataset checks and 47 passing tests. Semantic evidence is source-grounded model-assisted review, not independent human annotation.
 
-The [reference validation report](validation/reference_validation.json) and [semantic evidence](validation/semantic_review_v1.json) add a new audit of all 300 items: 263 supported, two unsupported targets, 25 ambiguities, and ten plotting targets without semantic references. Run `python scripts/validate_references.py` without network access. Its Python calculations do not import the original graders or task generators; semantic judgments are frozen source-grounded Astra annotations, not Python verification of meaning or independent human review.
+`python scripts/reconstruct_derived_bikes.py --check` exactly reproduces the 335 derived rows. It is a newly inferred reconstruction, not a historical acquisition record. See [provenance evidence](validation/PROVENANCE.md).
 
-Run `python scripts/reconstruct_derived_bikes.py --check` to reproduce all 335 derived bike records from station/type inputs. This newly inferred method matches the archived whole JSON object and does not recover original acquisition history. [Provenance evidence](validation/PROVENANCE.md) records the search scope and limitations.
+With the dependency from `validation/schema_requirements.txt`, `python scripts/validate_v1_1_schema.py` reports nine individual payloads passing, one intentional local relative-URL deviation and zero unexpected failures. The original schema audit remains separately available and retains the additional missing-timezone finding. Neither certifies all cross-file GBFS rules.
 
-Optional `python scripts/validate_gbfs_schema.py` uses the pinned official schemas and the dependency in `validation/schema_requirements.txt`. It reports known legacy deviations rather than modifying payloads. Its zero exit status indicates that the audit ran, not that every payload conforms. The report separates intentional local discovery URLs from the missing required `timezone` field.
+An earlier inspection of all 511 historical predictions on 73 integer-exact tasks found no accepted fractional value differing from its reference. That observation does not validate the old coercion rule; future v1.1 runs use the corrected rule while frozen scores remain unchanged.
 
-Keep original inputs/scores frozen. Assign a new version to changes in tasks, references, graders, coverage, or prompts. Resume checks task IDs rather than content hashes; use a fresh run name/output directory for any changed protocol.
+## Remaining publication work
 
-Before journal release: document/recover derived-data construction; independently review reference answers; clarify authored-data licensing; archive a DOI/citation; retain archive, code revision, environment, and configuration together. Semantic chart grading and extra operators/timestamps should be separate improvements with new validation results.
+Confirm component-level authored-data licensing, final contributor declarations, archival DOI and release citation. Acquisition and historical task-authoring records remain incomplete. Additional operators, time slices or future semantic chart tasks require separate provenance, references and evaluation. The [scientific figures](paper/README.md) explain the retained data and actual framework without claiming new model performance.

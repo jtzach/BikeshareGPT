@@ -32,6 +32,7 @@ class RunConfig(BaseModel):
     model_summary: str = "gpt-4o-mini"
     model_moderation: str = "gpt-4o-mini"
     summary_enabled: bool = True
+    few_shot_path: Optional[str] = None
 
     temperature: float = 0.0
     max_retries: int = 2
