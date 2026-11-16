@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+# Preserve submitted outputs/models and outputs/shared; ignore new model runs.
+outputs/mv_rad_gemma_ministral_gpt5_suite/
+outputs/mv_rad_gem_full_suite/
+audit/my_audit.json
