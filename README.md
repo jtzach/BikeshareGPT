@@ -6,6 +6,8 @@ The corrected release fixes two unsupported targets and 25 ambiguous questions, 
 
 Read the [data card](DATA_CARD.md), [evaluation protocol](REPRODUCIBILITY.md), [release notes](docs/releases/v1.1.md) and [validation evidence](validation/v1_1/README.md).
 
+Queries and reference answers were constructed together. For data-dependent questions, LLM-generated reference programs were executed on the frozen snapshot to calculate deterministic answers. Evaluated models receive each question, the data interface and five fixed code examples; the item-specific reference programs and expected answers are withheld from their prompts. The task is to produce executable code that reproduces the reference result. This construction account was confirmed by the author on 20 November 2026; the complete original program archive remains unrecovered. See [reference-answer methods](docs/reference_answers.md) and the [dated provenance update](validation/PROVENANCE.md#author-confirmation-on-20-november-2026).
+
 ## Validate offline
 
 From the repository root with Python 3.10 or newer:
@@ -77,4 +79,4 @@ The 47 tests use fake clients and require no API keys. Execution uses a timeout-
 
 The frozen source contains 64 stations, 11 vehicle types and two regions. Its 335 vehicle rows are derived representations of station bikes, not additional independently observed vehicles. Endpoint updates span 28 February 2026, 12:47:24–12:53:26 UTC; these are feed timestamps, not verified download times. Reconstruction reproduces the retained rows exactly, but historical acquisition logs and construction code remain unrecovered. Coverage is one operator and one snapshot.
 
-Software is MIT; source metadata declares CC0-1.0. Original authored-dataset terms retain research use and attribution, without a standard open license for authored tasks or derived rows. Final licensing, an archival DOI and publication declarations remain to be confirmed.
+Software is MIT; source metadata declares CC0-1.0. The author confirmed retaining the existing research-use and attribution terms for authored tasks and derived rows on 20 November 2026. No replacement license is introduced. The data are publicly available in the [pinned v1.1 repository snapshot](https://github.com/jtzach/BikeshareGPT/tree/3f69fb4b0d2fcf9ee1860ff0e6d2b836150db223/benchmarks/gbfs_mv_rad_v1_1); no archival DOI is currently assigned.

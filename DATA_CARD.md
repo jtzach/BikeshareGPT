@@ -24,6 +24,12 @@ A search of 41 archives recovered an older byte-identical snapshot but no histor
 
 The v1.1 copy normalizes `time_zone` to required `timezone`; original bytes remain in v1. One station lacks capacity, and one reports 12 bikes against capacity 11. Missing capacity is not imputed and ratios above one are retained.
 
+## Query and reference construction
+
+The author confirmed on 20 November 2026 that queries and reference answers were constructed together: LLM-generated reference programs calculated the data-dependent answers deterministically from the frozen snapshot. The evaluated models must generate code that reproduces those results. Their prompts contain the question, the data interface and five fixed code examples, but omit the item-specific reference program and expected answer. These examples cover some of the same operations as benchmark tasks, so this is a fixed few-shot protocol.
+
+The 100 specification questions use source-grounded answer choices; the 190 retrieval and synthesis references are checked by separate Python calculations. The complete historical program archive remains unrecovered. The author-confirmed construction account and the retained code evidence are distinguished in the [provenance update](validation/PROVENANCE.md#author-confirmation-on-20-november-2026). See [reference-answer methods](docs/reference_answers.md) for examples and validation details.
+
 ## Records and contracts
 
 | Field/file | Meaning |
@@ -55,6 +61,8 @@ Historical outputs retain final attempts and counts, not complete repair convers
 
 Three [scientific figures](paper/README.md) describe data composition, station geography/availability and the framework. The dataset supports fixed-input error analysis and versioned comparisons; it provides no temporal sequence or cross-operator generalization evidence.
 
-## Terms and remaining metadata
+## Availability and terms
 
-Software is MIT. Frozen source metadata declares CC0-1.0. Original dataset terms state research use and attribution and are copied unchanged into v1.1; this update grants no additional permissions. Final component-level licensing, archival DOI, citation and publication declarations require confirmation.
+The [corrected tasks and snapshot](https://github.com/jtzach/BikeshareGPT/tree/3f69fb4b0d2fcf9ee1860ff0e6d2b836150db223/benchmarks/gbfs_mv_rad_v1_1) and [original v1 snapshot](https://github.com/jtzach/BikeshareGPT/tree/3f69fb4b0d2fcf9ee1860ff0e6d2b836150db223/benchmarks/gbfs_mv_rad_v1/snapshots/mv_rad) are publicly available at the pinned GitHub revision. These links provide the released source files, normalized copy, derived rows and reference answers. No archival DOI is currently assigned.
+
+Software is MIT. Frozen source metadata declares CC0-1.0. On 20 November 2026, the author confirmed retaining the existing research-use and attribution terms for authored questions and derived records. Those terms remain copied unchanged into v1.1; this documentation update grants no additional permissions and introduces no replacement license.

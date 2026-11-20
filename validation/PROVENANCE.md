@@ -39,3 +39,13 @@ The released semantics YAML and loader recreate all 100 archived semantics task 
 Older paper sources explicitly describe post-processing artifact paths across Windows/POSIX formats. That is documentation consistent with the existence-only score reconciliation, not a recovered executable analysis script.
 
 Machine-readable sources, hashes, search scope, and reconstruction results are in `validation/provenance_search.json`.
+
+## Author confirmation on 20 November 2026
+
+The author confirmed that queries and reference answers were constructed together. For data-dependent questions, LLM-generated reference programs were executed on the frozen snapshot to calculate deterministic answers. This is an author-supplied account of the construction process. It does not change the 16 November search finding: the complete original program archive and acquisition logs were not recovered.
+
+The retained generic generator supports this mechanism by creating each query and its calculated `expected` value in the same operation, although it does not reproduce the complete original task collection. The v1.1 builder retains supported references, applies documented corrections and preserves the original release. Separate Python calculations check its 190 data-dependent references; source-grounded model-assisted review supports the 100 specification answers.
+
+The evaluation pipeline passes the query, data-interface instructions and five fixed code examples to the main model. It omits the item-specific reference program and expected answer from that prompt. The benchmark therefore tests whether generated programs reproduce the reference results; it does not require identical source code. Fixed examples include operations also present in the benchmark, and the subprocess is not isolated from the host filesystem, so prompt withholding is not a claim of a hidden or technically inaccessible test set.
+
+The author also confirmed retaining the existing research-use and attribution terms for authored questions and derived records. Data, code, original audit reports and license files are unchanged by this documentation update. Data availability is through the pinned GitHub release snapshot; no archival DOI is currently assigned.
